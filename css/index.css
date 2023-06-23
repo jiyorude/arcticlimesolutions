@@ -1,0 +1,2808 @@
+@charset "UTF-8";
+
+/* 
+ARCTIC LIME AUDIOVISUAL - INDEX PAGE
+© JORDY VEENSTRA 2022 - DO NOT USE WITHOUT WRITTEN PERMISSION.
+*/
+
+
+
+/* FONT FACES */
+@font-face {
+	font-family: ClearSansRegular;
+	src:url("/fonts/CS-Reg.ttf");
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: normal;	
+}
+
+@font-face {
+	font-family: ClearSansThin;
+	src:url("/fonts/CS-Thin.ttf");
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: normal;	
+}
+
+@font-face {
+	font-family: ClearSansMedium;
+	src:url("/fonts/CS-Med.ttf");
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: ClearSansBold;
+	src:url("/fonts/CS-Bold.ttf");
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: ClearSansLight;
+	src:url("/fonts/CS-Light.ttf");
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: BasementGrotesque;
+	src:url("/fonts/BG.otf");
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: LunchtypeCondensed;
+	src:url("/fonts/LT-Cond.ttf");
+	font-stretch: condensed;
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+
+/* UNORGANIZED LISTS */
+ul {
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* SORRY */
+
+.sorry {
+	display: none;
+}
+
+.sorry2{
+	display:none;
+}
+
+
+
+/* HEADERBAR */
+.Headerbar {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	height: 120px;
+	background-color: #31233c;
+	z-index: 2;
+}
+
+.Arctic_Lime_Logo {
+	display: block;
+	width: 150px;
+	height: 150px;
+	position: fixed;
+	left: 40px;
+	top: 20px;
+	z-index: 2;
+}
+
+.Arctic_Lime_Payoff {
+	display: block;
+	width: 250px;
+	height: 85px;
+	position: fixed;
+	left: 200px;
+	top: 18px;
+	z-index: 2;
+}
+
+#Social_Media_Container {
+	display: flex;
+	width: 750px;
+	height: 100px;
+	position: fixed;
+	left: 1750px;
+	top: 10px;
+	z-index: 5;
+}
+
+.Social_Icons {
+	display: flex;
+	margin-top: 17px;
+	margin-left: 130px;
+	align-items: center;
+	gap: 2.8rem;
+
+}
+
+.alertbar {
+	background-color: #32b156;
+	z-index: 50;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	position: fixed;
+	top: 120px;
+	justify-content: center;
+}
+
+h3 {
+	font-family: ClearSansRegular;
+	font-size: 14px;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 15px;
+	color: #fafafa;
+
+}
+
+/*MAIN CONTENT CONTAINER*/
+
+.MainBody{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.sorry {
+	display:none;
+}
+
+#Index-video {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -5;
+	object-fit: cover;	
+}
+
+h1 {
+	font-family: ClearSansThin;
+	font-size: 100px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fafafa;
+	letter-spacing: 0.2em;
+	vertical-align: middle;
+	margin-top: 550px;
+	z-index: 5
+}
+
+h2 {
+	font-family: BasementGrotesque;
+	font-size: 48px;
+	text-transform: uppercase;
+	color: #d0ff14;
+	list-style: none;
+	text-decoration: none;
+	z-index: 5;
+	line-height: 20px;
+}
+
+a :hover {
+	color: #ba1a50;
+	text-decoration: none;
+}
+
+.TermsPrivacy :hover {
+	text-decoration: none;
+	color: #d0ff14;
+}
+
+h4 {
+	font-family: BasementGrotesque;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #fafafa;
+}
+
+h5 {
+	font-family: ClearSansBold !important;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fafafa;
+	letter-spacing: 0.3em;
+	text-align: right;
+	display: flexbox !important;
+}
+
+.Companyname {
+	position: fixed;
+	left: 2060px;
+	top: 960px;
+	display: flex;
+	width: 900px;
+	
+}
+
+.TermsPrivacy {
+	width: 500px;
+	height: 20px;
+	position: fixed;
+	display: flex;
+	gap: 1.5rem;
+	left: 40px;
+	top: 1072px;
+}
+
+.navigation {
+	display: flex;
+	width: 650px;
+	left: 1800px;
+	top: 990px;
+	position: fixed;
+}
+
+.navi-items {
+	display: flex;
+	width: 250px;
+	height: 120px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-content: center;
+	align-items: flex-end;
+	gap: 0.2rem;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+/*COMPUTERS LOWER THAN 1023 PX WIDE AND LANDSCAPE ORIENTATION*/
+
+@media screen and (max-width: 1023px) and (orientation:landscape) {
+
+.Headerbar {
+	display: none;
+}
+
+.Arctic_Lime_Logo {
+	display:none;
+}
+
+.Arctic_Lime_Payoff {
+	display:none;
+}
+
+#Social_Media_Container {
+	display:none;
+}
+
+.Social_Icons {
+	display: none;
+}
+
+.MainBody{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+.sorry {
+	position: fixed;
+	display:flex;
+	left: 50%;
+    top: 55%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	text-align:center;
+}
+
+p {
+	color: white;
+	font-family: ClearSansRegular;
+	font-size: 14px;
+}
+
+#Index-video {
+	display: none;
+}
+
+h1 {
+	display: none;
+}
+
+h2 {
+	display: none;
+}
+
+h3 {
+	display: none;
+}
+
+h4 {
+	display: none;
+}
+
+h5 {
+	display:none;
+}
+
+h6 {
+	display: none;
+}
+
+.Companyname {
+	display: none;
+	
+}
+
+.TermsPrivacy {
+	display: none;
+}
+
+.navigation {
+	display: none;
+}
+
+.navi-items {
+	display: none;
+}
+
+.sorry2 {
+	display: none;
+}
+
+}
+
+
+/*DESKTOP COMPUTERS, PROJECTORS AND TELEVISIONS*/
+
+/*1024x768*/
+
+@media screen and (min-width: 1024px) and (max-width: 1123px) and (min-height: 768px) {
+
+	.Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 14%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 125px; /*25pxoff*/
+		height: 125px; /*25pxoff*/
+		position: fixed;
+		left: 3%;
+		top: 2.5%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 225px; /*25pxoff*/
+		height: 85px;
+		position: fixed;
+		left: 16.5%;
+		top: 2.4%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 10%;
+		height: 12%;
+		position: fixed;
+		left: 40%;
+		top: 1%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 6%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 12px; /*-2px*/
+		vertical-align: middle;
+		text-align: center;
+		margin-top: 1.4%;
+		color: #fafafa;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 50px; /*-50px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 35%;
+		z-index: 5
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 65%;
+		top: 82%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 12px; /*-3px*/
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 15px; /*-3px*/
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 54.5%;
+		top: 86%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 400px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 2px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+
+
+
+
+/*IN BETWEEN AT 1124PX*/
+
+@media screen and (min-width:1124px) and (max-width:1199px) {
+
+	.Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 14%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 125px; /*25pxoff*/
+		height: 125px; /*25pxoff*/
+		position: fixed;
+		left: 3%;
+		top: 2.5%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 225px; /*25pxoff*/
+		height: 85px;
+		position: fixed;
+		left: 15%;
+		top: 2.4%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 10%;
+		height: 12%;
+		position: fixed;
+		left: 45%;
+		top: 1%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 6%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 12px; /*-2px*/
+		vertical-align: middle;
+		text-align: center;
+		margin-top: 1.4%;
+		color: #fafafa;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 50px; /*-50px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 35%;
+		z-index: 5
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 68.5%;
+		top: 82%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 12px; /*-3px*/
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 15px; /*-3px*/
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 59%;
+		top: 86%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 400px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 2px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+
+/*1200x800*/
+
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+
+	.Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 14%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 125px; /*25pxoff*/
+		height: 125px; /*25pxoff*/
+		position: fixed;
+		left: 3%;
+		top: 2.5%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 225px; /*25pxoff*/
+		height: 85px;
+		position: fixed;
+		left: 14%;
+		top: 2.4%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 10%;
+		height: 12%;
+		position: fixed;
+		left: 50%;
+		top: 1%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 5%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 12px; /*-2px*/
+		vertical-align: middle;
+		text-align: center;
+		color: #fafafa;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 50px; /*-50px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 27%;
+		z-index: 5
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 70%;
+		top: 82%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 12px; /*-3px*/
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 15px; /*-3px*/
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 61%;
+		top: 86%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 400px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 2px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+
+/*1400x900*/
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+
+	.Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 14%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 150px; 
+		height: 150px;
+		position: fixed;
+		left: 3%;
+		top: 2.5%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 250px; 
+		height: 85px;
+		position: fixed;
+		left: 14%;
+		top: 2.4%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 10%;
+		height: 12%;
+		position: fixed;
+		left: 52%;
+		top: 1%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 6%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 14px; /*-2px*/
+		vertical-align: middle;
+		text-align: center;
+		color: #fafafa;
+		margin-top:1.2%;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 60px; /*-40px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 25%;
+		z-index: 5
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 70%;
+		top: 81%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 15px;
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 63%;
+		top: 86%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 450px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 32px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 7px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+
+/*1600x900*/
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+
+	.Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 14%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 150px; 
+		height: 150px;
+		position: fixed;
+		left: 3%;
+		top: 2.5%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 250px; 
+		height: 85px;
+		position: fixed;
+		left: 13%;
+		top: 2.4%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 10%;
+		height: 12%;
+		position: fixed;
+		left: 56%;
+		top: 1%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 6%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 16px;
+		vertical-align: middle;
+		text-align: center;
+		color: #fafafa;
+		margin-top:1.2%;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 70px; /*-30px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 27%;
+		z-index: 5;
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 72%;
+		top: 81%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 15px;
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 66%;
+		top: 86%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 450px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 32px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 7px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+/*1920x1080*/
+
+/*between 1601 and 1800*/
+
+@media screen and (min-width: 1601px) and (max-width: 1800px) {
+	.Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 12.5%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 150px; 
+		height: 150px;
+		position: fixed;
+		left: 3%;
+		top: 2.5%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 250px; 
+		height: 85px;
+		position: fixed;
+		left: 12%;
+		top: 2.4%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 10%;
+		height: 12%;
+		position: fixed;
+		left: 58%;
+		top: 0%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2.8rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 6%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 16px;
+		vertical-align: middle;
+		text-align: center;
+		color: #fafafa;
+		margin-top:1.2%;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 80px; /*-10px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 25%;
+		z-index: 5
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 76%;
+		top: 82.5%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 70%;
+		top: 87%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 450px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 32px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 7px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1801px) and (max-width: 1920px) {
+
+	.Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 12%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 150px; 
+		height: 150px;
+		position: fixed;
+		left: 3%;
+		top: 2.5%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 250px; 
+		height: 85px;
+		position: fixed;
+		left: 11%;
+		top: 2.4%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 10%;
+		height: 12%;
+		position: fixed;
+		left: 63%;
+		top: 0%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2.8rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 6%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 16px;
+		vertical-align: middle;
+		text-align: center;
+		color: #fafafa;
+		margin-top:1.2%;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 90px; /*-10px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 25%;
+		z-index: 5
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 77%;
+		top: 83%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 72%;
+		top: 87%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 450px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 32px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 7px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+/*inbetween 1921 to 2350px*/
+
+@media screen and (min-width: 1921px) and (max-width: 2349px) {
+
+	.Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 11.5%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 150px; 
+		height: 150px;
+		position: fixed;
+		left: 3%;
+		top: 2.5%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 275px; 
+		height: 85px;
+		position: fixed;
+		left: 10.5%;
+		top: 2.2%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 10%;
+		height: 12%;
+		position: fixed;
+		left: 65%;
+		top: -0.4%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2.8rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 6%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 16px;
+		vertical-align: middle;
+		text-align: center;
+		color: #fafafa;
+		margin-top:1.2%;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 90px; /*-10px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 24%;
+		z-index: 5
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 80%;
+		top: 83.5%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 75%;
+		top: 87%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 450px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 32px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 7px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+/*2560x1440*/
+
+@media screen and (min-width: 2350px) and (max-width: 2560px) {
+
+	.Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 10.5%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 175px; 
+		height: 175px;
+		position: fixed;
+		left: 3%;
+		top: 2.2%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 300px; 
+		height: 85px;
+		position: fixed;
+		left: 10.5%;
+		top: 2.0%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 15%;
+		height: 15%;
+		position: fixed;
+		left: 70.5%;
+		top: -2.3%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2.8rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 6%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 22px;
+		vertical-align: middle;
+		text-align: center;
+		color: #fafafa;
+		margin-top:1.2%;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 100px; /*-10px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 25%;
+		z-index: 5
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 77%;
+		top: 83%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 22px;
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 72.5%;
+		top: 87%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 550px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 36px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 12px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 2561px) and (max-width: 3000px) {
+
+	 .Headerbar {
+		display: flex;
+		width: 100%;
+		position: fixed;
+		height: 10%;
+		background-color: #31233c;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Logo {
+		display: block;
+		width: 175px; 
+		height: 175px;
+		position: fixed;
+		left: 3%;
+		top: 2.2%;
+		z-index: 2;
+	}
+
+	.Arctic_Lime_Payoff {
+		display: block;
+		width: 300px; 
+		height: 85px;
+		position: fixed;
+		left:9.5%;
+		top: 2.0%;
+		z-index: 2;
+	}
+
+	#Social_Media_Container {
+		display: flex;
+		width: 15%;
+		height: 15%;
+		position: fixed;
+		left: 74%;
+		top: -2.3%;
+		z-index: 5;
+	}
+	
+	.Social_Icons {
+		display: flex;
+		align-items: center;
+		gap: 2.8rem;
+	
+	}
+
+	.alertbar {
+		background-color: #32b156;
+		z-index: 50;
+		width: 100%;
+		height: 6%;
+		display: flex;
+		position: fixed;
+		top: 14%;
+		justify-content: center;
+	}
+
+	h3 {
+		font-family: ClearSansRegular;
+		font-size: 22px;
+		vertical-align: middle;
+		text-align: center;
+		color: #fafafa;
+		margin-top:1.2%;
+	}
+
+	h1 {
+		font-family: ClearSansThin;
+		font-size: 120px; /*-10px*/
+		text-transform: uppercase;
+		text-align: center;
+		color: #fafafa;
+		letter-spacing: 0.2em;
+		vertical-align: middle;
+		margin-top: 25%;
+		z-index: 5
+	}
+
+	.Companyname {
+		position: fixed;
+		left: 76%;
+		top: 82%;
+	}
+	
+	.TermsPrivacy {
+		position: fixed;
+		display: flex;
+		gap: 1rem;
+		left: 3%;
+		top: 90%;
+		width: 25%;
+	}
+	
+	h4 {
+		font-family: BasementGrotesque;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #fafafa;
+	}
+	
+	h5 {
+		font-family: ClearSansBold !important;
+		font-size: 28px;
+		text-transform: uppercase;
+		color: #fafafa;
+		letter-spacing: 0.3em;
+		text-align: right;
+	}
+
+	.navigation {
+		display: flex;
+		left: 72.5%;
+		top: 87%;
+		position: fixed;
+	}
+	
+	.navi-items {
+		display: flex;
+		width: 650px;
+		height: 50px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	h2 {
+		font-family: BasementGrotesque;
+		font-size: 48px;
+		text-transform: uppercase;
+		color: #d0ff14;
+		list-style: none;
+		text-decoration: none;
+		z-index: 5;
+		line-height: 25px;
+	}
+
+	.sorry {
+		display: none;
+	}
+ 
+	.sorry2 {
+		display: none;
+	}
+}
+
+
+/*BETWEEN 3001 AND 3550PX*/
+
+@media screen and (min-width: 3001px) and (max-width: 3550px) {
+
+	.Headerbar {
+	   display: flex;
+	   width: 100%;
+	   position: fixed;
+	   height: 10%;
+	   background-color: #31233c;
+	   z-index: 2;
+   }
+
+   .Arctic_Lime_Logo {
+	   display: block;
+	   width: 175px; 
+	   height: 175px;
+	   position: fixed;
+	   left: 3%;
+	   top: 2.2%;
+	   z-index: 2;
+   }
+
+   .Arctic_Lime_Payoff {
+	   display: block;
+	   width: 300px; 
+	   height: 85px;
+	   position: fixed;
+	   left:8.5%;
+	   top: 2.0%;
+	   z-index: 2;
+   }
+
+   #Social_Media_Container {
+	   display: flex;
+	   width: 15%;
+	   height: 15%;
+	   position: fixed;
+	   left: 78%;
+	   top: -2.3%;
+	   z-index: 5;
+   }
+   
+   .Social_Icons {
+	   display: flex;
+	   align-items: center;
+	   gap: 2.8rem;
+   
+   }
+
+   .alertbar {
+	   background-color: #32b156;
+	   z-index: 50;
+	   width: 100%;
+	   height: 6%;
+	   display: flex;
+	   position: fixed;
+	   top: 14%;
+	   justify-content: center;
+   }
+
+   h3 {
+	   font-family: ClearSansRegular;
+	   font-size: 22px;
+	   vertical-align: middle;
+	   text-align: center;
+	   color: #fafafa;
+	   margin-top:1.2%;
+   }
+
+   h1 {
+	   font-family: ClearSansThin;
+	   font-size: 120px; /*-10px*/
+	   text-transform: uppercase;
+	   text-align: center;
+	   color: #fafafa;
+	   letter-spacing: 0.2em;
+	   vertical-align: middle;
+	   margin-top: 25%;
+	   z-index: 5
+   }
+
+   .Companyname {
+	   position: fixed;
+	   left: 80%;
+	   top: 82%;
+   }
+   
+   .TermsPrivacy {
+	   position: fixed;
+	   display: flex;
+	   gap: 1rem;
+	   left: 3%;
+	   top: 90%;
+	   width: 25%;
+   }
+   
+   h4 {
+	   font-family: BasementGrotesque;
+	   font-size: 24px;
+	   text-transform: uppercase;
+	   color: #fafafa;
+   }
+   
+   h5 {
+	   font-family: ClearSansBold !important;
+	   font-size: 28px;
+	   text-transform: uppercase;
+	   color: #fafafa;
+	   letter-spacing: 0.3em;
+	   text-align: right;
+   }
+
+   .navigation {
+	   display: flex;
+	   left: 77%;
+	   top: 87%;
+	   position: fixed;
+   }
+   
+   .navi-items {
+	   display: flex;
+	   width: 650px;
+	   height: 50px;
+	   flex-wrap: wrap;
+	   justify-content: flex-end;
+	   align-content: center;
+	   align-items: flex-end;
+	   gap: 1rem;
+   }
+
+   h2 {
+	   font-family: BasementGrotesque;
+	   font-size: 48px;
+	   text-transform: uppercase;
+	   color: #d0ff14;
+	   list-style: none;
+	   text-decoration: none;
+	   z-index: 5;
+	   line-height: 25px;
+   }
+
+   .sorry {
+	display: none;
+}
+
+.sorry2 {
+	display: none;
+}
+}
+
+/*BETWEEN 3551 AND 4096PX*/
+
+@media screen and (min-width: 3551px) and (max-width: 4096px) {
+
+	.Headerbar {
+	   display: flex;
+	   width: 100%;
+	   position: fixed;
+	   height: 8.5%;
+	   background-color: #31233c;
+	   z-index: 2;
+   }
+
+   .Arctic_Lime_Logo {
+	   display: block;
+	   width: 175px; 
+	   height: 175px;
+	   position: fixed;
+	   left: 2%;
+	   top: 2.2%;
+	   z-index: 2;
+   }
+
+   .Arctic_Lime_Payoff {
+	   display: block;
+	   width: 300px; 
+	   height: 85px;
+	   position: fixed;
+	   left:6.8%;
+	   top: 2.1%;
+	   z-index: 2;
+   }
+
+   #Social_Media_Container {
+	   display: flex;
+	   width: 15%;
+	   height: 15%;
+	   position: fixed;
+	   left: 81%;
+	   top: -3.3%;
+	   z-index: 5;
+   }
+   
+   .Social_Icons {
+	   display: flex;
+	   align-items: center;
+	   gap: 2.8rem;
+   
+   }
+
+   .alertbar {
+	   background-color: #32b156;
+	   z-index: 50;
+	   width: 100%;
+	   height: 6%;
+	   display: flex;
+	   position: fixed;
+	   top: 14%;
+	   justify-content: center;
+   }
+
+   h3 {
+	   font-family: ClearSansRegular;
+	   font-size: 22px;
+	   vertical-align: middle;
+	   text-align: center;
+	   color: #fafafa;
+	   margin-top:1.2%;
+   }
+
+   h1 {
+	   font-family: ClearSansThin;
+	   font-size: 120px; /*-10px*/
+	   text-transform: uppercase;
+	   text-align: center;
+	   color: #fafafa;
+	   letter-spacing: 0.2em;
+	   vertical-align: middle;
+	   margin-top: 25%;
+	   z-index: 5
+   }
+
+   .Companyname {
+	   position: fixed;
+	   left: 82%;
+	   top: 83%;
+   }
+   
+   .TermsPrivacy {
+	   position: fixed;
+	   display: flex;
+	   gap: 1rem;
+	   left: 3%;
+	   top: 90%;
+	   width: 25%;
+   }
+   
+   h4 {
+	   font-family: BasementGrotesque;
+	   font-size: 24px;
+	   text-transform: uppercase;
+	   color: #fafafa;
+   }
+   
+   h5 {
+	   font-family: ClearSansBold !important;
+	   font-size: 28px;
+	   text-transform: uppercase;
+	   color: #fafafa;
+	   letter-spacing: 0.3em;
+	   text-align: right;
+   }
+
+   .navigation {
+	   display: flex;
+	   left: 79.6%;
+	   top: 87%;
+	   position: fixed;
+   }
+   
+   .navi-items {
+	   display: flex;
+	   width: 650px;
+	   height: 50px;
+	   flex-wrap: wrap;
+	   justify-content: flex-end;
+	   align-content: center;
+	   align-items: flex-end;
+	   gap: 1rem;
+   }
+
+   h2 {
+	   font-family: BasementGrotesque;
+	   font-size: 48px;
+	   text-transform: uppercase;
+	   color: #d0ff14;
+	   list-style: none;
+	   text-decoration: none;
+	   z-index: 5;
+	   line-height: 25px;
+   }
+
+   .sorry {
+	   display: none;
+   }
+
+   .sorry2 {
+	   display: none;
+   }
+}
+
+/*Between 4096 and 5000px*/
+
+@media screen and (min-width: 4097px) and (max-width: 5000px) {
+
+	.Headerbar {
+	   display: flex;
+	   width: 100%;
+	   position: fixed;
+	   height: 8.5%;
+	   background-color: #31233c;
+	   z-index: 2;
+   }
+
+   .Arctic_Lime_Logo {
+	   display: block;
+	   width: 175px; 
+	   height: 175px;
+	   position: fixed;
+	   left: 2%;
+	   top: 2.2%;
+	   z-index: 2;
+   }
+
+   .Arctic_Lime_Payoff {
+	   display: block;
+	   width: 300px; 
+	   height: 85px;
+	   position: fixed;
+	   left:6.8%;
+	   top: 2.1%;
+	   z-index: 2;
+   }
+
+   #Social_Media_Container {
+	   display: flex;
+	   width: 15%;
+	   height: 15%;
+	   position: fixed;
+	   left: 82%;
+	   top: -3.3%;
+	   z-index: 5;
+   }
+   
+   .Social_Icons {
+	   display: flex;
+	   align-items: center;
+	   gap: 2.8rem;
+   
+   }
+
+   .alertbar {
+	   background-color: #32b156;
+	   z-index: 50;
+	   width: 100%;
+	   height: 6%;
+	   display: flex;
+	   position: fixed;
+	   top: 14%;
+	   justify-content: center;
+   }
+
+   h3 {
+	   font-family: ClearSansRegular;
+	   font-size: 22px;
+	   vertical-align: middle;
+	   text-align: center;
+	   color: #fafafa;
+	   margin-top:1.2%;
+   }
+
+   h1 {
+	   font-family: ClearSansThin;
+	   font-size: 120px; /*-10px*/
+	   text-transform: uppercase;
+	   text-align: center;
+	   color: #fafafa;
+	   letter-spacing: 0.2em;
+	   vertical-align: middle;
+	   margin-top: 25%;
+	   z-index: 5
+   }
+
+   .Companyname {
+	   position: fixed;
+	   left: 82%;
+	   top: 83%;
+   }
+   
+   .TermsPrivacy {
+	   position: fixed;
+	   display: flex;
+	   gap: 1rem;
+	   left: 3%;
+	   top: 90%;
+	   width: 25%;
+   }
+   
+   h4 {
+	   font-family: BasementGrotesque;
+	   font-size: 24px;
+	   text-transform: uppercase;
+	   color: #fafafa;
+   }
+   
+   h5 {
+	   font-family: ClearSansBold !important;
+	   font-size: 28px;
+	   text-transform: uppercase;
+	   color: #fafafa;
+	   letter-spacing: 0.3em;
+	   text-align: right;
+   }
+
+   .navigation {
+	   display: flex;
+	   left: 79.6%;
+	   top: 87%;
+	   position: fixed;
+   }
+   
+   .navi-items {
+	   display: flex;
+	   width: 650px;
+	   height: 50px;
+	   flex-wrap: wrap;
+	   justify-content: flex-end;
+	   align-content: center;
+	   align-items: flex-end;
+	   gap: 1rem;
+   }
+
+   h2 {
+	   font-family: BasementGrotesque;
+	   font-size: 48px;
+	   text-transform: uppercase;
+	   color: #d0ff14;
+	   list-style: none;
+	   text-decoration: none;
+	   z-index: 5;
+	   line-height: 25px;
+   }
+
+   .sorry {
+	   display: none;
+   }
+
+   .sorry2 {
+	   display: none;
+   }
+}
+
+/*computers between 5120 and 6017px - such as iMacs, high res windows monitors or mac pro's*/
+
+@media screen and (min-width: 5001px) and (max-width: 6017px) {
+
+	.Headerbar {
+	   display: flex;
+	   width: 100%;
+	   position: fixed;
+	   height: 9%;
+	   background-color: #31233c;
+	   z-index: 2;
+   }
+
+   .Arctic_Lime_Logo {
+	   display: block;
+	   width: 250px; 
+	   height: 250x;
+	   position: fixed;
+	   left: 2%;
+	   top: 2.2%;
+	   z-index: 2;
+   }
+
+   .Arctic_Lime_Payoff {
+	   display: block;
+	   width: 450px; 
+	   height: 85px;
+	   position: fixed;
+	   left:7%;
+	   top: 2.1%;
+	   z-index: 2;
+   }
+
+   #Social_Media_Container {
+	   display: flex;
+	   width: 15%;
+	   height: 15%;
+	   position: fixed;
+	   left: 81%;
+	   top: -3.3%;
+	   z-index: 5;
+   }
+   
+   .Social_Icons {
+	   display: flex;
+	   align-items: center;
+	   gap: 2.8rem;
+   
+   }
+
+   .alertbar {
+	   background-color: #32b156;
+	   z-index: 50;
+	   width: 100%;
+	   height: 6%;
+	   display: flex;
+	   position: fixed;
+	   top: 14%;
+	   justify-content: center;
+   }
+
+   h3 {
+	   font-family: ClearSansRegular;
+	   font-size: 22px;
+	   vertical-align: middle;
+	   text-align: center;
+	   color: #fafafa;
+	   margin-top:1.2%;
+   }
+
+   h1 {
+	   font-family: ClearSansThin;
+	   font-size: 120px; /*-10px*/
+	   text-transform: uppercase;
+	   text-align: center;
+	   color: #fafafa;
+	   letter-spacing: 0.2em;
+	   vertical-align: middle;
+	   margin-top: 25%;
+	   z-index: 5
+   }
+
+   .Companyname {
+	   position: fixed;
+	   left: 82%;
+	   top: 84%;
+   }
+   
+   .TermsPrivacy {
+	   position: fixed;
+	   display: flex;
+	   gap: 1rem;
+	   left: 3%;
+	   top: 90%;
+	   width: 25%;
+   }
+   
+   h4 {
+	   font-family: BasementGrotesque;
+	   font-size: 24px;
+	   text-transform: uppercase;
+	   color: #fafafa;
+   }
+   
+   h5 {
+	   font-family: ClearSansBold !important;
+	   font-size: 28px;
+	   text-transform: uppercase;
+	   color: #fafafa;
+	   letter-spacing: 0.3em;
+	   text-align: right;
+   }
+
+   .navigation {
+	   display: flex;
+	   left: 80%;
+	   top: 87%;
+	   position: fixed;
+   }
+   
+   .navi-items {
+	   display: flex;
+	   width: 650px;
+	   height: 50px;
+	   flex-wrap: wrap;
+	   justify-content: flex-end;
+	   align-content: center;
+	   align-items: flex-end;
+	   gap: 1rem;
+   }
+
+   h2 {
+	   font-family: BasementGrotesque;
+	   font-size: 48px;
+	   text-transform: uppercase;
+	   color: #d0ff14;
+	   list-style: none;
+	   text-decoration: none;
+	   z-index: 5;
+	   line-height: 25px;
+   }
+
+   .sorry {
+	   display: none;
+   }
+
+   .sorry2 {
+	   display: none;
+   }
+}
+
+
+
+/*LANDSCAPE RESOLUTIONS
+RESOLUTIONS HIGHER THAN 6017PX (APPLE PRO XDR SCREEN) AND 5K PROJECTORS*/
+@media screen and (min-width: 6017px) and (min-height: 3385px) and (orientation:landscape) {
+
+	.Headerbar {
+		display: none;
+	}
+	
+	.Arctic_Lime_Logo {
+		display:none;
+	}
+	
+	.Arctic_Lime_Payoff {
+		display:none;
+	}
+	
+	#Social_Media_Container {
+		display:none;
+	}
+	
+	.Social_Icons {
+		display: none;
+	}
+	
+	.MainBody{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+	}
+	
+	.sorry2 {
+		position: fixed;
+		display:flex;
+		left: 50%;
+		top: 55%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		text-align:center;
+	}
+	
+	p {
+		color: white;
+		font-family: ClearSansRegular;
+		font-size: 14px;
+	}
+	
+	#Index-video {
+		display: none;
+	}
+	
+	h1 {
+		display: none;
+	}
+	
+	h2 {
+		display: none;
+	}
+	
+	h3 {
+		display: none;
+	}
+	
+	h4 {
+		display: none;
+	}
+	
+	h5 {
+		display:none;
+	}
+	
+	h6 {
+		display: none;
+	}
+	
+	.Companyname {
+		display: none;
+		
+	}
+	
+	.TermsPrivacy {
+		display: none;
+	}
+	
+	.navigation {
+		display: none;
+	}
+	
+	.navi-items {
+		display: none;
+	}
+	}
+
+	/* END OF LANDSCAPE MEDIA QUERIES FOR DESKTOPS*/
+
+	
+	/*PORTRAIT - REGULAR PHONES
+	ONLY THE BAR, BACKGROUND, LOGO, AND TEXT. NO SOCIAL MEDIA. PUT ON CONTACT PAGE*/
+	
+	@media screen and (orientation: portrait) and (min-width:1px) and (min-height: 1px) {
+		.sorry {
+			display:none;
+		}
+
+		.sorry2 {
+			display: none;
+		}
+
+		.Companyname {
+			display: none;
+		}
+
+		.Arctic_Lime_Payoff {
+			display: none;
+		}
+
+		.Arctic_Lime_Logo {
+			display: block;
+			width: 150px;
+			height: 150px;
+			left: 51%;
+			transform:translate(-50%, -50%);
+			top: 7%;
+			margin-top:10%;
+			align-content: center;
+			align-items: center;
+		}
+
+		.Headerbar {
+			height: 13%;
+			display: flex;
+		}
+
+		h1 {
+			font-size: 27px;
+			display: flex;
+		}
+
+		.index-text {
+			display: flex !important;
+			position: fixed !important;
+			align-content: center;
+			align-items: center;
+			justify-content: center;
+			transform:translate(-50%,-50%);
+			left: 50%;
+			top: 10%;
+			width: 300px;
+		}
+
+		.TermsPrivacy {
+			display: flex;
+			transform:translate(-50%, -50%);
+			align-content: center;
+			align-items: center;
+			justify-content: center;
+			justify-items: center;
+			left: 50%;
+			right: -50%;
+			top: 95%;
+			gap: 1rem;
+		}
+
+		h4 {
+			font-size: 10px;
+		}
+
+		#Social_Media_Container {
+			transform:translate(-50%, -50%);
+			left: 28%;
+			padding-left: 3%;
+			display: flex;
+			top:87%;
+			position: fixed;
+			align-content: center;
+			align-items: center;
+			justify-content: center;
+			justify-items: center;
+
+		}
+
+		.Social_Icons {
+			gap: 1.8rem;
+			transform:scale(50%);
+		}
+
+		.navigation {
+			width: 500px;
+			align-content: center;
+			align-items: center;
+			justify-items: center;
+			justify-content: center;
+			transform:translate(-50%,-50%);
+			top:76%;
+			left: 47%;
+			display: flex !important;
+			position: relative;
+			flex-wrap: wrap;
+		}
+
+		.navi-items {
+			flex-direction: row;
+			transform:scale(45%);
+			align-content: center;
+			align-items: center;
+			justify-items: center;
+			justify-content: center;
+			gap:2rem;
+
+		}
+	}
+	
+	
+	
+	/* PORTRAIT - SMARTPHONES - BIG SCREENS */
+
+	@media screen and (orientation: portrait) and (min-width:810px) and (min-height:1080px) {
+
+		.sorry {
+			display: none;
+		}
+
+		.sorry2 {
+			display: none;
+		}
+
+		.Companyname {
+			display: none;
+		}
+
+		.TermsPrivacy {
+			display: flex;
+			transform:translate(-50%, -50%);
+			align-content: center;
+			align-items: center;
+			justify-content: center;
+			justify-items: center;
+			left: 50%;
+			right: -50%;
+			top: 96%;
+			gap: 1rem;
+		}
+
+		h1 {
+			font-size: 50px;
+	
+		}
+
+		.index-text {
+			display: block !important;
+			position: fixed !important;
+			align-content: center;
+			align-items: center;
+			justify-content: center;
+			transform:translate(-50%);
+			left: 50%;
+			top: -8%;
+			width: 500px;
+		}
+
+		.Arctic_Lime_Payoff {
+			display: none;
+		}
+
+		.Arctic_Lime_Logo {
+			transform:translate(-50%, -50%);
+			display: block;
+			top: 79%;
+			left: 50%;
+			margin-top: 10%;
+		}
+
+		#Social_Media_Container {
+			transform:translate(-50%, -50%);
+			left: 40%;
+			padding-left: 3%;
+			display: flex;
+			top:50%;
+			position: relative;
+			align-content: center;
+			align-items: center;
+			justify-content: center;
+			justify-items: center;
+
+		}
+
+		.Social_Icons {
+			gap: 2rem;
+			transform:scale(100%);
+		}
+
+		.navigation {
+			width: 500px;
+			align-content: center;
+			align-items: center;
+			justify-items: center;
+			justify-content: center;
+			transform:translate(-50%,-50%);
+			top:70%;
+			left: 47%;
+			display: flex !important;
+			position: relative;
+			flex-wrap: wrap;
+		}
+
+		.navi-items {
+			flex-direction: row;
+			transform:scale(65%);
+			align-content: center;
+			align-items: center;
+			justify-items: center;
+			justify-content: center;
+			gap:2.4rem;
+
+		}
+		
+	
+	}
+
+/*END OF CASCADE STYLING SHEET*/
+

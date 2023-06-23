@@ -1,0 +1,428 @@
+/* FONT FACES */
+
+@font-face {
+	font-family: BasementGrotesque;
+	src:url("/fonts/BG.otf");
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+  font-family: ClearSansThin;
+  src:url("/fonts/CS-Thin.ttf");
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: ClearSansRegular;
+  src:url("/fonts/CS-Reg.ttf");
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: ClearSansMedium;
+  src:url("/fonts/CS-Med.ttf");
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: ClearSansBold;
+  src:url("/fonts/CS-Bold.ttf");
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: ClearSansLight;
+  src: url("/fonts/CS-Light.ttf");
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: LunchtypeCondensed;
+  src:url("/fonts/LT-Cond.ttf");
+  font-stretch:condensed;
+  font-style: normal;
+  font-weight: normal; 
+}
+
+
+/* Style the body and outer container */
+
+body {
+  margin: 0;
+  color: #2b2b2b;
+  background-color: #31233c;
+  display:flex;
+  width: 100%;
+  height: 100%;
+  font-family: ClearSansThin;
+}
+
+#container {
+  width: 85%;
+  height: auto;
+  background: #fafafa;
+  margin: 20px auto;
+  padding: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-bottom: 1px solid #31233c;
+  overflow-y:scroll;
+}
+
+
+/* The logo and footer */
+
+#logo {
+  display: block;
+  width: 85px;
+  align-items:center;
+  align-content:center;
+  position:relative;
+  padding: 0 0 10px 0;
+  border: none;
+  margin-bottom: 40px;
+}
+
+#footer {
+  border-top: 1px solid #31233c;
+  margin-top: 40px;
+  padding: 20px 0 0 0;
+  font-size: .8em;
+  text-align:center;
+}
+
+
+/* Headings */
+
+h1 {
+  color: #ba1a50;
+  font-family: BasementGrotesque;
+  margin-bottom: 30px;
+  line-height: 1.2em;
+}
+
+h2 h2 a {
+  color: #31233c;
+  font-family: BasementGrotesque;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #31233c;
+
+}
+
+a :visited {
+  color: #31233c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #d0ff14;
+}
+
+
+/* Article headlines */
+
+#headlines {
+  list-style: none;
+  font-family: BasementGrotesque;
+  padding-left: 0;
+  width: 85%;
+  text-decoration: none;
+}
+
+#headlines a :hover {
+  text-decoration: none;
+  color: #d0ff14;
+}
+
+#headlines li {
+  margin-bottom: 1em;
+}
+
+.pubDate {
+  font-size: .6em;
+  color: #31233c;
+  text-transform: uppercase;
+  font-family: ClearSansThin;
+  text-decoration:underline;
+}
+
+#headlines .pubDate {
+  display: inline-block;
+  width: 100px;
+  font-size: .6em;
+  vertical-align: middle;
+  font-family: ClearSansThin;
+}
+
+#headlines .summary {
+  margin-top:-10px;
+
+}
+
+#headlines.archive .pubDate {
+  width: 130px;
+  font-size: .5em;
+  font-family: ClearSansThin;
+}
+
+.summary {
+  padding-left: 100px;
+  font-family: ClearSansThin;
+  font-size: 0.8em;
+  font-style:italic;
+  padding-bottom:20px;
+}
+
+#headlines.archive .summary {
+  padding-left: 130px;
+  font-size: 0.8em;
+  font-style:italic;
+  font-family: ClearSansThin;
+  margin-top: -10px;
+
+}
+
+p {
+  font-family: ClearSansThin;
+}
+
+p a {
+  text-decoration: none;
+}
+
+p a :hover {
+  color: #d0ff14;
+  text-decoration: none;
+}
+
+
+/* "You are logged in..." header on admin pages */
+
+#adminHeader {
+  width: 940px;
+  padding: 0 10px;
+  border-bottom: 1px solid #31233c;
+  margin: -30px 0 40px 0;
+  font-size: 0.8em;
+}
+
+
+/* Style the form with a coloured background, along with curved corners and a drop shadow */
+
+form {
+  margin: 20px auto;
+  padding: 40px 20px;
+  overflow: auto;
+  background: #fafafa;
+  border: 1px solid #2b2b2b;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+
+/* Give form elements consistent margin, padding and line height */
+
+form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form ul li {
+  margin: .9em 0 0 0;
+  padding: 0;
+}
+
+form * {
+  line-height: 1em;
+}
+
+
+/* The field labels */
+
+label {
+  display: block;
+  float: left;
+  clear: left;
+  text-align: right;
+  width: 15%;
+  padding: .4em 0 0 0;
+  margin: .15em .5em 0 0;
+}
+
+
+/* The fields */
+
+input, select, textarea {
+  display: block;
+  margin: 0;
+  padding: .4em;
+  width: 80%;
+}
+
+input, textarea, .date {
+  border: 2px solid #ba1a50;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;    
+  border-radius: 5px;
+  background: #fafafa;
+}
+
+input {
+  font-size: .9em;
+}
+
+select {
+  padding: 0;
+  margin-bottom: 2.5em;
+  position: relative;
+  top: .7em;
+}
+
+textarea {
+  font-family: ClearSansThin;
+  font-size: .9em;
+  height: 5em;
+  line-height: 1.5em;
+}
+
+textarea#content {
+  font-family: ClearSansThin;
+}
+  
+
+/* Place a border around focused fields */
+
+form *:focus {
+  border: 2px solid #d0ff14;
+  outline: none;
+}
+
+
+/* Display correctly filled-in fields with a green background */
+
+input:valid, textarea:valid {
+  background: #efe;
+}
+
+
+/* Submit buttons */
+
+.buttons {
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+input[type="submit"] {
+  display: inline;
+  margin: 0 20px;
+  width: 12em;
+  padding: 10px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  color: #fafafa;
+  background: #2b2b2b;
+  font-weight: bold;
+  -webkit-appearance: none;
+  border: 0px !important;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active {
+  cursor: pointer;
+  background: #ba1a50;
+  color: #fafafa;
+}
+
+input[type="submit"]:active {
+  background: #eee;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+}
+
+
+/* Tables */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr, th, td {
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+table, th {
+  border: 1px solid #FAFAFA;
+}
+
+th {
+  border-left: none;
+  border-right: none;
+  background: #ba1a50;
+  color: #fafafa;
+  cursor: default;
+}
+
+tr:nth-child(odd) {
+  background: #fff4cf;
+}
+
+tr:nth-child(even) {
+  background: #fff;
+}
+
+tr:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+
+/* Status and error boxes */
+
+.statusMessage, .errorMessage {
+  font-size: .8em;
+  padding: .5em;
+  margin: 2em 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+}
+
+.statusMessage {
+  background-color: #2b2;
+  border: 1px solid #080;
+  color: #fff;
+}
+
+.errorMessage {
+  background-color: #f22;
+  border: 1px solid #800;
+  color: #fff;
+}
+
