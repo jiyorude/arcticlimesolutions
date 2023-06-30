@@ -3,14 +3,27 @@
 
 header {
     background-color: $DUSK;
-    height: 8vw;
-
+    height: 7vw;
+    width: 100vw;
+    display:inline-flex;
 }
 
 svg {
-    float: left;
-    height: min(12vw, 300px);
-    margin-top: 1.5vw;
+    height: 10vw;
+    margin-top: 0.7vw;
+    margin-left: 1.7vw;
+}
 
-    
+a span {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+}
+
+ul {
+    border: 2px solid green;
+    text-decoration: none;
+    list-style-type:none;
 }
