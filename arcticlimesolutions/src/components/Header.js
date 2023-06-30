@@ -1,14 +1,15 @@
 import React from 'react'
 import "../css/header.min.css";
+import { ReactComponent as Logo } from '../image/svg/arclime.svg';
 
 const Header = () => {
   return (
     <>
-    <header>
-        
-    </header>
+      <header>
+          <Logo />
+      </header>
     </>
-  )
+  );
 }
 
 export default Header

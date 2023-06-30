@@ -1,2 +1,16 @@
 @import '../base/typography.scss';
 @import '../abstracts/variables.scss';
+
+header {
+    background-color: $DUSK;
+    height: 8vw;
+
+}
+
+svg {
+    float: left;
+    height: min(12vw, 300px);
+    margin-top: 1.5vw;
+
+    
+}
