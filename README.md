@@ -3,6 +3,6 @@
 </p>
 
 <h3 align="center">ARCTIC LIME Solutions</h3>
-------
-<p align="center">Personal Freelance Website built in React offering services for Video Production, Post-Production and Delivery, Animation, Graphic Design, Software Development and Front-End Development.</p>
+
+<p align="center">Personal Freelance Website built in React offering services for Video Production, Post-Production, Delivery for Web/TV/Cinema, Animation, Graphic Design, Software Development and Front-End Development.</p>
 
