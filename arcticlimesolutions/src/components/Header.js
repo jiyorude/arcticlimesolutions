@@ -1,12 +1,12 @@
 import React from 'react'
-// header scss
+import "../css/header.min.css";
 
 const Header = () => {
   return (
     <>
-    <div>ARCTIC LIME Solutions</div>
-    <div>LOGO</div>
-    <div>PAYOFF</div>
+    <header>
+        
+    </header>
     </>
   )
 }
