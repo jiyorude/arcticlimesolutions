@@ -5,25 +5,95 @@ header {
     background-color: $DUSK;
     height: 7vw;
     width: 100vw;
-    display:inline-flex;
-}
+};
 
-svg {
+.arclimelogo {
     height: 10vw;
     margin-top: 0.7vw;
     margin-left: 1.7vw;
+    position: fixed;
+};
+
+.whatsappLogo, .whatsappLogo:hover {
+    height: 3.4vw;
+    margin-top: 1.55vw;
+    position: fixed;
+    width: 4%;
+    right: 9%;
+
+};
+
+.emailLogo, .emailLogo:hover {
+    cursor: pointer;
+    height: 4vw;
+    margin-top: 1.2vw;
+    position: fixed;
+    width: 4%;
+    right: 4%;
+    border: 2px solid red;
+    
 }
 
-a span {
+a span, a span:hover {
     height: 1px;
     width: 1px;
     position: absolute;
     overflow: hidden;
     top: -10px;
-}
+    cursor: pointer;
+};
 
 ul {
-    border: 2px solid green;
     text-decoration: none;
     list-style-type:none;
-}
+};
+
+@media screen and (orientation: portrait) {
+    header {
+        background-color: $DUSK;
+        height: 7vh;
+        width: 100vw;
+    };
+    
+    .arclimelogo {
+        height: 10vh;
+        margin-top: 0.7vh;
+        margin-left: 1.7vh;
+        position: fixed;
+    };
+    
+    .whatsappLogo,
+    .whatsappLogo:hover {
+        height: 4%;
+        margin-top: 1.4vh;
+        position: fixed;
+        width: 4vh;
+        right: 8vh;
+        cursor: pointer;
+    };
+    
+    .emailLogo,
+    .emailLogo:hover {
+        cursor: pointer;
+        height: 4vh;
+        margin-top: 1.4vh;
+        position: fixed;
+        width: 5vh;
+        right: 2vh;
+    };
+    
+    a span,
+    a span:hover {
+        height: 1px;
+        width: 1px;
+        position: absolute;
+        overflow: hidden;
+        top: -10px;
+        cursor: pointer;
+    };
+    
+    ul {
+        text-decoration: none;
+        list-style-type: none;
+    };
+};
