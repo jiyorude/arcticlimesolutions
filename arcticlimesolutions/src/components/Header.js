@@ -7,14 +7,23 @@ import { useState } from "react";
 
 const Header = () => {
   const [hover, setHover] = useState(false);
+  const [secondHover, setSecondHover] = useState(false);
 
   const handleHoverOver = () => {
     setHover(true);
   };
 
+  const handleSecondHoverOver = () => {
+    setSecondHover(true);
+  };
+
   const handleHoverReturn = () => {
     setHover(false);
   };
+
+  const handleSecondHoverReturn = () => {
+    setSecondHover(false);
+  }
 
   return (
     <>
@@ -36,9 +45,10 @@ const Header = () => {
             <a href="mailto:arcticlimesolutions@gmail.com" title="Send me an e-mail!">
               <span>Contact ARCTIC LIME Solutions through e-mail.</span>
               <EMail className="emailLogo" 
-              style={{ color: hover ? "#BA1A50" : "#D0FF14" }}
-              onMouseEnter={handleHoverOver}
-              onMouseLeave={handleHoverReturn} 
+              style={{ stroke: secondHover ? "#BA1A50" : "#D0FF14" }}
+              // NOTE: Hover Effect not working yet, seems stroke is not affected while it should. Fix.
+              onMouseEnter={handleSecondHoverOver}
+              onMouseLeave={handleSecondHoverReturn} 
             />
             </a>
           </li>
