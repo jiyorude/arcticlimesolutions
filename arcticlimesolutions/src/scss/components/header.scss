@@ -31,14 +31,14 @@ header {
     right: 4%;
 };
 
-a span, a span:hover {
+a span {
     height: 1px;
     width: 1px;
     position: absolute;
     overflow: hidden;
     top: -10px;
-    cursor: pointer;
 };
+
 
 ul {
     text-decoration: none;
