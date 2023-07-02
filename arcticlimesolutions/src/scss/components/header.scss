@@ -22,14 +22,21 @@ header {
     right: 9%;
 };
 
-.emailLogo, .emailLogo:hover {
+.whatsappLogo:hover {
     cursor: pointer;
+}
+
+.emailLogo {
     height: 4vw;
     margin-top: 1.2vw;
     position: fixed;
     width: 4%;
     right: 4%;
 };
+
+.emailLogo:hover {
+    cursor: pointer;
+}
 
 a span {
     height: 1px;

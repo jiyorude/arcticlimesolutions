@@ -1,10 +1,13 @@
 ARCTIC LIME SOLUTIONS
 
 CURRENT VERSION: 
-0.0.0
+0.0.1
 
 
 CHANGELOG:
+0.0.1 - July 2, 2023
+Header Component 100% done.
+Header Component fully responsive.
 
 0.0.0 - June 30, 2023
 Initial Commit/Version
