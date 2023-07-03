@@ -3,23 +3,23 @@
 
 header {
     background-color: $DUSK;
-    height: 7vw;
+    height: 4.85vw;
     width: 100vw;
 };
 
 .arclimelogo {
-    height: 10vw;
-    margin-top: 0.7vw;
-    margin-left: 1.7vw;
+    height: 7vw;
+    margin-top: 0.5vw;
+    margin-left: 1.1vw;
     position: fixed;
 };
 
 .whatsappLogo, .whatsappLogo:hover {
-    height: 3.4vw;
-    margin-top: 1.55vw;
+    height: 2.2vw;
+    margin-top: 1.25vw;
     position: fixed;
     width: 4%;
-    right: 9%;
+    right: 4%;
 };
 
 .whatsappLogo:hover {
@@ -27,11 +27,11 @@ header {
 }
 
 .emailLogo {
-    height: 4vw;
+    height: 2.2vw;
     margin-top: 1.2vw;
     position: fixed;
     width: 4%;
-    right: 4%;
+    right: 1%;
 };
 
 .emailLogo:hover {
@@ -72,7 +72,7 @@ ul {
         margin-top: 1.4vh;
         position: fixed;
         width: 4vh;
-        right: 8vh;
+        right: 8.7vh;
         cursor: pointer;
     };
     
@@ -83,7 +83,7 @@ ul {
         margin-top: 1.4vh;
         position: fixed;
         width: 5vh;
-        right: 2vh;
+        right: 2.6vh;
     };
     
     a span,
