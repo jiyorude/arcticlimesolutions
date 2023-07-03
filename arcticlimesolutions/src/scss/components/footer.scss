@@ -1,0 +1,40 @@
+@import '../base/typography.scss';
+@import '../abstracts/variables.scss';
+
+.footerblock {
+    width: 100vw;
+    height: 3.2vw;
+    display: flex; 
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    border: 1px solid $DUSK;
+    flex-flow: row nowrap;
+};
+
+.arcinfo {
+    width: 33.33vw;
+    background-color: $DUSK;
+    border-radius: 5px 5px 0px 0px;
+    color: $SMOKEWHITE;
+};
+
+.newsticker {
+    background-color: $DUSK;
+    width: 33.33vw;
+    height: 2vw;
+    display: flex;
+    color: $SMOKEWHITE;
+    align-self: flex-end;
+};
+
+.privterms {
+    background-color: $DUSK;
+    width: 33.33vw;
+    height: 2vw;
+    display: flex;
+    align-self: flex-end;
+    color: $SMOKEWHITE;
+}
+
+
