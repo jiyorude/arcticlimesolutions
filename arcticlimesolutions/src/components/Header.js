@@ -46,7 +46,6 @@ const Header = () => {
               <span>Contact ARCTIC LIME Solutions through e-mail.</span>
               <EMail className="emailLogo" 
               style={{ stroke: secondHover ? "#BA1A50" : "#D0FF14" }}
-              // NOTE: Hover Effect not working yet, seems stroke is not affected while it should. Fix.
               onMouseEnter={handleSecondHoverOver}
               onMouseLeave={handleSecondHoverReturn} 
             />

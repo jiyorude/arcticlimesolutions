@@ -1,14 +1,18 @@
-ARCTIC LIME SOLUTIONS
+ARCTIC LIME SOLUTIONS WEBSITE
+© JORDY VEENSTRA 2023
 
 CURRENT VERSION: 
-0.0.1-off
+0.0.1
 
+UPCOMING VERSION:
+0.0.2
+(Footer component completed plus fully responsive, but without react router to terms/privacy modals)
 
 CHANGELOG:
-0.0.1-offline - July 2, 2023
+0.0.1 - July 2, 2023
 Header Component 100% done.
 Header Component fully responsive.
 
-0.0.0-offline - June 30, 2023
+0.0.0 - June 30, 2023
 Initial Commit/Version
 Create-React-App boilerplate
