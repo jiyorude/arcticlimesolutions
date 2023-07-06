@@ -3,7 +3,7 @@
 
 .footerblock {
     width: 100vw;
-    height: 3.2vw;
+    height: 4.5vw;
     display: flex; 
     position: fixed;
     bottom: 0%;
@@ -21,7 +21,7 @@
 .newsticker {
     background-color: $DUSK;
     width: 33.33vw;
-    height: 2vw;
+    height: 3vw;
     display: flex;
     color: $SMOKEWHITE;
     align-self: flex-end;
@@ -30,7 +30,7 @@
 .privterms {
     background-color: $DUSK;
     width: 33.33vw;
-    height: 2vw;
+    height: 3vw;
     display: flex;
     align-self: flex-end;
     color: $SMOKEWHITE;
@@ -57,7 +57,7 @@ li {
 
 h2 {
     font-family: $BG;
-    font-size: 0.6vw;
+    font-size: 0.85vw;
 }
 
 h2:hover {
@@ -72,20 +72,58 @@ span {
     top: -10px;
 };
 
-.info {
-    width: 100%;
-    border: 2px solid red;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-}
-
 h3 {
     font-family: $CS-TH;
-    font-size: 0.6vw;
+    font-size: 0.8vw;
 }
+
+h5 {
+    font-family: $CS-LI;
+    font-size: 0.70vw;
+}
+
+.info {
+    height: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copy {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.coc {
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+
+.vat {
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
