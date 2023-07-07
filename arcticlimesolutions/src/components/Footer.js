@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="arcinfo">
           <div className="info">
             <div className="copy">
-              <h3>&copy; ARCTIC LIME Solutions {year}</h3>
+              <h3>&copy; ARCTIC LIME SOLUTIONS {year}</h3>
             </div>
             <div className="coc">
               <h5>KVK/COC: 85701319</h5>
