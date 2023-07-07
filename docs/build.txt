@@ -1,14 +1,21 @@
 ARCTIC LIME SOLUTIONS WEBSITE
 © JORDY VEENSTRA 2023
 
-CURRENT VERSION: 
-0.0.1
-
-UPCOMING VERSION:
+CURRENT VERSION:
 0.0.2
-(Footer component completed plus fully responsive, but without react router to terms/privacy modals)
+
+
+TO-DO FOR VERSION 0.0.3:
+Links to Terms/Conditions with corresponding modals and content
+Home Page Content: Background Video and navigation
+Fix Google search popup on mobile upon click/hover
+
 
 CHANGELOG:
+0.0.2 - July 7, 2023
+Footer Component 100% done
+Footer Component fully responsive
+
 0.0.1 - July 2, 2023
 Header Component 100% done.
 Header Component fully responsive.

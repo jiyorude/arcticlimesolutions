@@ -24,24 +24,23 @@ const Footer = () => {
     setTermHover(false);
   };
 
-
   return (
     <>
       <section className="footerblock">
         <div className="newsticker">
-          <div class="ticker-wrap">
-            <div class="ticker">
-              <div class="text">
+          <div className="ticker-wrap">
+            <div className="ticker">
+              <div className="text">
                 Video Editing&emsp; Video Production&emsp; Audio Mixing (Web/R128)&emsp; Delivery (Web/TV)&emsp; 2D
                 Animation&emsp; Motion Graphics&emsp; Subtitling and Translation&emsp; Color Grading&emsp; Graphic
-                Design&emsp; Web Development&emsp; UX/UI Design&emsp; Software Development&ensp;
+                Design&emsp; Web Development&emsp; UX/UI Design&ensp; 
               </div>
             </div>
-            <div class="ticker2">
-              <div class="text">
+            <div className="ticker2">
+              <div className="text">
                 Video Editing&emsp; Video Production&emsp; Audio Mixing (Web/R128)&emsp; Delivery (Web/TV)&emsp; 2D
                 Animation&emsp; Motion Graphics&emsp; Subtitling and Translation&emsp; Color Grading&emsp; Graphic
-                Design&emsp; Web Development&emsp; UX/UI Design&emsp; Software Development&ensp;
+                Design&emsp; Web Development&emsp; UX/UI Design&ensp;
               </div>
             </div>
           </div>
@@ -62,7 +61,7 @@ const Footer = () => {
         <div className="privterms">
           <div className="btncontainer">
             <ul>
-              <li>
+              <li className='privlist'>
                 <h2
                   style={{ color: privHover ? "#D0FF14" : "#FAFAFA" }}
                   onMouseEnter={handlePrivHover}
@@ -73,7 +72,7 @@ const Footer = () => {
                 </h2>
                 <span>Click here to read ARCTIC LIME's Privacy Statement</span>
               </li>
-              <li>
+              <li className='privlist'>
                 <h2
                   style={{ color: termHover ? "#D0FF14" : "#FAFAFA" }}
                   onMouseEnter={handleTermHover}
@@ -91,5 +90,4 @@ const Footer = () => {
     </>
   );
 }
-// Footer with copyright that changes upon the year, plus news ticker.
 export default Footer

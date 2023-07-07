@@ -7,7 +7,6 @@
 <p align="center">Personal Freelance Website built in React offering services for Video Production, Post-Production, Delivery for Web/TV/Cinema, Animation, Graphic Design, Software Development and Front-End Development.</p>
 
 ```
-© Jordy Veenstra 2023 
-Do not use code without permission
+© Jordy Veenstra 2023 - Do not use code without permission
 ```
 

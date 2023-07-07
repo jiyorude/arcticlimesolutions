@@ -35,35 +35,32 @@
     display: flex;
     align-self: flex-end;
     color: $SMOKEWHITE;
-}
+};
 
 .btncontainer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
+};
 
 ul {
     display: flex;
     text-decoration: none;
     list-style: none;
-}
+};
 
 li {
     display: inline-block;
     margin-left: 1vw;
     margin-right: 1vw;
-}
+};
 
-h2 {
+h2, h2:hover {
     font-family: $BG;
     font-size: 0.85vw;
-}
-
-h2:hover {
     cursor: pointer;
-}
+};
 
 span {
     height: 1px;
@@ -76,18 +73,18 @@ span {
 h3 {
     font-family: $CS-BO;
     font-size: 0.8vw;
-}
+};
 
 h5 {
     font-family: $CS-LI;
     font-size: 0.70vw;
-}
+};
 
 .info {
     height: 100%; 
     display: flex;
     flex-wrap: wrap;
-}
+};
 
 .copy {
     display: flex;
@@ -96,7 +93,7 @@ h5 {
     height: 40%;
     justify-content: center;
     align-items: center;
-}
+};
 
 .coc {
     height: 60%;
@@ -105,7 +102,7 @@ h5 {
     display: flex;
     width: 50%;
     text-align: center;
-}
+};
 
 .vat {
     height: 60%;
@@ -114,7 +111,7 @@ h5 {
     display: flex;
     width: 50%;
     text-align: center;
-}
+};
 
 @-webkit-keyframes ticker {
     0% {
@@ -125,7 +122,7 @@ h5 {
     100% {
         transform: translate3d(-100%, 0, 0);
     }
-}
+};
 
 @keyframes ticker {
     0% {
@@ -136,7 +133,7 @@ h5 {
     100% {
         transform: translate3d(-100%, 0, 0);
     }
-}
+};
 
 .ticker-wrap {
     display: inline-flex;
@@ -144,7 +141,7 @@ h5 {
     overflow: hidden;
     align-items: center;
     text-transform: uppercase;
-}
+};
 
 .ticker-wrap .ticker,
 .ticker-wrap .ticker2 {
@@ -152,12 +149,12 @@ h5 {
     padding-left: 1rem;
     line-height: 4rem;
     white-space: nowrap;
-}
+};
 
 .text {
     padding-left: 20px;
     padding-right: 20px;
-}
+};
 
 
 .ticker-wrap .ticker,
@@ -170,11 +167,11 @@ h5 {
     animation-name: ticker;
     -webkit-animation-duration: 35s;
     animation-duration: 35s;
-}
+};
 
 .ticker-wrap .ticker2 {
     left: 80%;
-}
+};
 
 .ticker-wrap .text {
     display: block;
@@ -184,9 +181,102 @@ h5 {
     padding: 0;
     margin: 0;
     border: 0;
-}
+};
 
-// Next: Fully responsive
+@media screen and (orientation: portrait) {
+    .ticker-wrap .text {
+        font-size: 1.1vh;
+    };
+
+    .footerblock {
+        width: 100vw;
+        height: 10vh;
+        flex-direction: column;
+        align-items: center;
+    };
+
+    .copy {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    };
+
+    .coc {
+        height: 0%;
+        display: none;
+    };
+
+    .vat {
+        height: 0%;
+        display: none;
+    };
+
+    .arcinfo {
+        height: 25%;
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 0;
+    };
+
+    .newsticker {
+        width: 100%;
+        display: flex;
+        order: 2;
+        height: 37.5%;
+        border-bottom: 0.5px solid $SMOKEWHITE;
+        border-left: 0.5px solid $SMOKEWHITE;
+        border-right: 0.5px solid $SMOKEWHITE;
+    };
+
+    .privterms {
+        background-color: $DUSK;
+        width: 100%;
+        height: 37.5%;
+        display: flex;
+        color: $SMOKEWHITE;
+        border: 0.5px solid $SMOKEWHITE;
+    };
+
+    .btncontainer {
+        justify-content: space-evenly;
+    };
+
+    h3 {
+        font-size: 1vh;
+    };
+    
+    h5 {
+        font-size: 1.2vh;
+    };
+
+    h2 {
+        font-size: 1.2vh;
+    };
+
+    h2:hover {
+        cursor: pointer;
+    };
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    };
+
+    li {
+        width: 49vw;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+    };
+
+    .privlist {
+        align-items: center;
+    };    
+};
 
 
 
