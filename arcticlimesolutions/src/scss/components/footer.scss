@@ -226,8 +226,6 @@ h5 {
         order: 2;
         height: 37.5%;
         border-bottom: 0.5px solid $SMOKEWHITE;
-        border-left: 0.5px solid $SMOKEWHITE;
-        border-right: 0.5px solid $SMOKEWHITE;
     };
 
     .privterms {
@@ -236,7 +234,8 @@ h5 {
         height: 37.5%;
         display: flex;
         color: $SMOKEWHITE;
-        border: 0.5px solid $SMOKEWHITE;
+        border-top: 0.5px solid $SMOKEWHITE;
+        border-bottom: 0.5px solid $SMOKEWHITE;
     };
 
     .btncontainer {
