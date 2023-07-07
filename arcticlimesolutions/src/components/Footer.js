@@ -28,19 +28,35 @@ const Footer = () => {
   return (
     <>
       <section className="footerblock">
-        <div className="newsticker">HERE IS GOING TO BE THE NEWSTICKER</div>
-
-        {/*Copyright plus company info. KVK number and BTW number HERE */}
+        <div className="newsticker">
+          <div class="ticker-wrap">
+            <div class="ticker">
+              <div class="text">
+                Video Editing&emsp; Video Production&emsp; Audio Mixing (Web/R128)&emsp; Delivery (Web/TV)&emsp; 2D
+                Animation&emsp; Motion Graphics&emsp; Subtitling and Translation&emsp; Color Grading&emsp; Graphic
+                Design&emsp; Web Development&emsp; UX/UI Design&emsp; Software Development&ensp;
+              </div>
+            </div>
+            <div class="ticker2">
+              <div class="text">
+                Video Editing&emsp; Video Production&emsp; Audio Mixing (Web/R128)&emsp; Delivery (Web/TV)&emsp; 2D
+                Animation&emsp; Motion Graphics&emsp; Subtitling and Translation&emsp; Color Grading&emsp; Graphic
+                Design&emsp; Web Development&emsp; UX/UI Design&emsp; Software Development&ensp;
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="arcinfo">
           <div className="info">
             <div className="copy">
               <h3>&copy; ARCTIC LIME Solutions {year}</h3>
             </div>
-             <div className="coc">
+            <div className="coc">
               <h5>KVK/COC: 85701319</h5>
             </div>
             <div className="vat">
-            <h5>BTW/VAT: NL004134441B80</h5></div>
+              <h5>BTW/VAT: NL004134441B80</h5>
+            </div>
           </div>
         </div>
         <div className="privterms">

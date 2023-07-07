@@ -25,6 +25,7 @@
     display: flex;
     color: $SMOKEWHITE;
     align-self: flex-end;
+    overflow: hidden;
 };
 
 .privterms {
@@ -73,7 +74,7 @@ span {
 };
 
 h3 {
-    font-family: $CS-TH;
+    font-family: $CS-BO;
     font-size: 0.8vw;
 }
 
@@ -115,7 +116,75 @@ h5 {
     text-align: center;
 }
 
+@-webkit-keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
 
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-wrap {
+    display: inline-flex;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.ticker-wrap .ticker,
+.ticker-wrap .ticker2 {
+    display: inline-block;
+    padding-left: 1rem;
+    line-height: 4rem;
+    white-space: nowrap;
+}
+
+.text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.ticker-wrap .ticker,
+.ticker-wrap .ticker2 {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 35s;
+    animation-duration: 35s;
+}
+
+.ticker-wrap .ticker2 {
+    left: 80%;
+}
+
+.ticker-wrap .text {
+    display: block;
+    font-size: 0.9vw;
+    color: white;
+    font-family: $BG;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
 
 
