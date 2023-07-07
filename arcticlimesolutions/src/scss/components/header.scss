@@ -5,6 +5,7 @@ header {
     background-color: $DUSK;
     height: 4.85vw;
     width: 100vw;
+    position: fixed;
 };
 
 .arclimelogo {
@@ -61,6 +62,7 @@ ul {
         background-color: $DUSK;
         height: 7vh;
         width: 100vw;
+        position: fixed;
     };
     
     .arclimelogo {
@@ -74,10 +76,10 @@ ul {
     .whatsappLogo:hover {
         height: 4%;
         margin-top: 1.4vh;
-        position: fixed;
         width: 4vh;
         right: 8.7vh;
         cursor: pointer;
+        position: fixed;
     };
     
     .emailLogo,

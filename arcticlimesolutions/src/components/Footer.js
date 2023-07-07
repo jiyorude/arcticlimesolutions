@@ -1,12 +1,15 @@
-import React from 'react'
+import React from "react";
 import "../css/footer.min.css";
 import { useState } from "react";
+
 
 const Footer = () => {
   const [privHover, setPrivHover] = useState(false);
   const [termHover, setTermHover] = useState(false);
+  const [terms, setTerms] = useState(false);
   const date = new Date();
   const year = date.getFullYear();
+
 
   const handlePrivHover = () => {
     setPrivHover(true);
@@ -24,6 +27,14 @@ const Footer = () => {
     setTermHover(false);
   };
 
+  const openTerms = () => {
+    setTerms(true);
+  };
+
+  const closeTerms = () => {
+    setTerms(false);
+  };
+
   return (
     <>
       <section className="footerblock">
@@ -33,7 +44,7 @@ const Footer = () => {
               <div className="text">
                 Video Editing&emsp; Video Production&emsp; Audio Mixing (Web/R128)&emsp; Delivery (Web/TV)&emsp; 2D
                 Animation&emsp; Motion Graphics&emsp; Subtitling and Translation&emsp; Color Grading&emsp; Graphic
-                Design&emsp; Web Development&emsp; UX/UI Design&ensp; 
+                Design&emsp; Web Development&emsp; UX/UI Design&ensp;
               </div>
             </div>
             <div className="ticker2">
@@ -61,7 +72,7 @@ const Footer = () => {
         <div className="privterms">
           <div className="btncontainer">
             <ul>
-              <li className='privlist'>
+              <li className="privlist">
                 <h2
                   style={{ color: privHover ? "#D0FF14" : "#FAFAFA" }}
                   onMouseEnter={handlePrivHover}
@@ -72,11 +83,12 @@ const Footer = () => {
                 </h2>
                 <span>Click here to read ARCTIC LIME's Privacy Statement</span>
               </li>
-              <li className='privlist'>
+              <li className="privlist">
                 <h2
                   style={{ color: termHover ? "#D0FF14" : "#FAFAFA" }}
                   onMouseEnter={handleTermHover}
                   onMouseLeave={returnTermHover}
+                  onClick={openTerms}
                   title="Click here for the Terms and Conditions"
                 >
                   TERMS AND CONDITIONS
@@ -87,7 +99,14 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      {terms && (
+        <>
+          <div className="terms" onClick={closeTerms}>
+            <div className="termscontainer">The modal is working, for now.</div>
+          </div>
+        </>
+      )}
     </>
   );
-}
-export default Footer
+};
+export default Footer;
