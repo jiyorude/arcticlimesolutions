@@ -1,0 +1,7 @@
+- Add Logo properly in Terms and Conditions
+- Add Content Terms and Conditions as in the paper version
+- Change the links to Dutch and English version
+- Once done with the content, check if the scroll works and smooth scroll
+- Continue with Privacy Statement
+- Add Anime React to add animations.
+- Update SCSS for mobile responsivity.

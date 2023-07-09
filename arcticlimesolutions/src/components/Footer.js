@@ -1,7 +1,9 @@
 import React from "react";
 import "../css/footer.min.css";
 import { useState } from "react";
-
+import { ReactComponent as FlagNL } from "../image/svg/flag_nl.svg";
+import { ReactComponent as FlagUSA } from "../image/svg/flag_us.svg";
+import { ReactComponent as ArcLime } from "../image/svg/arclime.svg";
 
 const Footer = () => {
   const [privHover, setPrivHover] = useState(false);
@@ -37,7 +39,7 @@ const Footer = () => {
 
   return (
     <>
-      <section className="footerblock">
+      <footer className="footerblock">
         <div className="newsticker">
           <div className="ticker-wrap">
             <div className="ticker">
@@ -98,12 +100,27 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </footer>
       {terms && (
         <>
           <div className="terms" onClick={closeTerms}>
-            <div className="termscontainer">The modal is working, for now.</div>
-          </div>
+            <div className="termscontainer">
+                <div className="language">
+                  <a href="#dutchheader" title="Click here for Dutch Terms and Conditions">
+                    <span>Click here to read the Terms and Conditions in Dutch.</span>
+                    <FlagNL className="flag" />
+                  </a>
+                  <a href="https://" title="Click here for English Terms and Conditions">
+                    <span>Click here to read the Terms and Conditions in English.</span>
+                    <FlagUSA className="flag" />
+                  </a>
+                </div>
+                <section className="termcontent">
+                  <ArcLime className="arclogo" />
+                  <p id="dutchheader">ALGEMENE LEVERINGSVOORWAARDEN</p>
+                </section>
+              </div>
+            </div>
         </>
       )}
     </>
