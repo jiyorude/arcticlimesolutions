@@ -1,7 +1,11 @@
-- Add Logo properly in Terms and Conditions
-- Add Content Terms and Conditions as in the paper version
+- Add Content Terms and Conditions as in the paper version - Nederlandse versie 80% klaar
 - Change the links to Dutch and English version
-- Once done with the content, check if the scroll works and smooth scroll
+- Content English teRMS AND coNDITIONS
 - Continue with Privacy Statement
 - Add Anime React to add animations.
 - Update SCSS for mobile responsivity.
+- Update to version 0.0.3
+- Homepage main
+- Homepage background video
+- Homepage responsive
+- Once homepage is fully done, update to version 0.1.0
