@@ -228,35 +228,94 @@ overflow: hidden;
 };
 
 .termcontent {
-    border: 2px solid orange;
     width: 70%;
     height: 90%;
     display: flex;
     align-items: center;
     align-self: flex-end;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     flex-flow: column nowrap;
+    border: 2px solid red;
 };
 
 a {
-    scroll-behavior: smooth;
-};
-
-#dutchheader {
-    margin-top: 10%;
-    width: 100%;
-    height: 5%;
-    text-align: center;
-    font-family: $BG;
-    font-size: 1vw;
     color: $PIANO;
 };
 
-.arclogo {
-    border: 2px solid yellow;
-    height: 50%;
-    width: 50%;
-}
+#dutchheader {
+    margin-top: 5%;
+    width: 100%;
+    padding-left: 1%;
+    text-align: center;
+    font-family: $BG;
+    font-size: 0.8vw;
+    color: $DUSK;
+    border: 2px solid red;
+};
+
+.date {
+    width: 100%;
+    margin-top: 3%;
+    border: 2px solid red;
+    text-align: center;
+};
+
+.textheader {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5vw;
+};
+
+.text {
+    width: 35%;
+    margin-top: 0.5vw;
+    border: 2px solid red;
+    word-break: break-word;
+    text-align: justify;
+};
+
+.disclaimer {
+    width: 60%;
+    border: 2px solid red;
+    text-align: center;
+    margin-top: 3%;
+};
+
+.bold {
+    font-family: $CS-BO;
+    font-weight: 700;
+    font-size: 0.5vw;
+    color: $PIANO;
+};
+
+.standard {
+    font-family: $CS-RE;
+    font-weight: 100;
+    font-size: 0.5vw;
+    color: $PIANO;
+};
+
+.whitespace {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    width: 100%;
+    height: 6%;
+};
+
+.section {
+    font-family: $BG;
+    width: 100%;
+    font-size: 1vw;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $DUSK;
+    color: $SMOKEWHITE;
+    line-height: 1vw;
+    padding-top: 0.2vw;
+    margin-top: 3%;
+};
+
 @media screen and (orientation: portrait) {
     .ticker-wrap .text {
         font-size: 1.1vh;
