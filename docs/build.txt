@@ -9,6 +9,7 @@ TO-DO FOR VERSION 0.0.3:
 Links to Terms/Conditions with corresponding modals and content
 Home Page Content: Background Video and navigation
 Fix Google search popup on mobile upon click/hover
+Add animation for correspondig modals.
 
 
 CHANGELOG:

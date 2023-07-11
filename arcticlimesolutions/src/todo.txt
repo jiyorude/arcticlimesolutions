@@ -1,5 +1,3 @@
-- Add Content Terms and Conditions as in the paper version - Nederlandse versie 80% klaar
-- Change the links to Dutch and English version
 - Content English teRMS AND coNDITIONS
 - Continue with Privacy Statement
 - Add Anime React to add animations.
