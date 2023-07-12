@@ -907,7 +907,50 @@ const Footer = () => {
                 <p className="text standard">Quotations are without obligation. The client is under no circumstances obliged to purchase services from entrepreneur after receiving a quotation.</p>
                 <p className="textheader bold">4.4 Quotation obligation</p>
                 <p className="text standard">Entrepreneur reserves the right to choose not to make an offer to the client.
-                Entrepreneur is not obligated to communicate the reason to the client. </p>
+                Entrepreneur is not obligated in any way to communicate the reason behind the rejection to the client. </p>
+                <p className="textheader bold">4.5 Application of quotations to future assignments</p>
+                <p className="text standard">An offer made by entrepreneur is not automatically valid for any future assignment. This applies to any discounts received in the past as well.</p>
+                <p className="textheader bold">4.6 Calculation of costs and working hours</p>
+                <p className="text standard">Entrepreneur draws up quotations based on a estimate calculations of hours required in order to carry out the client's assignment as well as possible.
+                Entrepreneur declares to do this in all reasonableness and according to his professional insight. Additional work, services, digital materials, physical materials and working hours
+                are not included in the quotation and will be added separately on the final invoice.</p>
+                <p className="textheader bold">4.7 Additional Costs</p>
+                <p className="text standard">So-called 'additional costs' are not included in quotations. Think of travel costs, accomodation costs, costs that must be
+                paid to external bodies and that are also determined by these parties, such as royalties to BUMA-STEMRA or stock content.
+                All of these costs will be added separately on the final invoice. Entrepreneur is allowed to ask for a pre-payment for these costs from client whenever
+                entrepreneur is unable to pay these up front by himself.</p>
+                <p className="textheader bold">4.8 Prices</p>
+                <p className="text standard">Prices are specified on the pricelist of ARCTIC LIME Solutions, which can be requested free of charge through WhatsApp or e-mail.
+                Prices are, if VAT is appliccable, excluding 21% VAT.</p>
+                <section className="whitespace"></section>
+                <p className="section">Section 5<br></br>Agreements</p>
+                <p className="textheader bold">5.1 Agreement</p>
+                <p className="text standard">An agreement between client and entrepreneur has only been properly established when client accepts the quotation extended to him.
+                Client can indicate his acknowledgement by signing the quotation physically or digitally and by returning a signed copy to entrepreneur.</p>
+                <p className="textheader bold">5.2 Duration of agreement</p>
+                <p className="text standard">Agreements are entered for a definitive period of time, unless the nature of the assignment contradicts this or this has been established in writing between client and entrepreneur.</p>
+                <p className="textheader bold">5.3 Changes in agreement</p>
+                <p className="text standard">If during the execution of the agreement it appears that an amendment to the agreement is necessary in order to guarantee a proper execution of the assignment, the entrepreneur will inform the client of this in a timely manner.
+                It is up to the client and the entrepreneur to proceed to the adjustment of the agreement in a timely manner and through mutual consultation.</p>
+                <p className="textheader bold">5.4 Execution of agreement</p>
+                <p className="text standard">Entrepreneur declares to perform the agreement according to his professional insight, best ability, knowledge and craftsmanship, as it should benefit him as a professional in the audiovisual and web development industry. He will do this within
+                the framework of the general terms and conditions, the available time frame and the contents of the quotation that was extended to client. However, entrepreneur cannot guarantee the achievement
+                of the intended result of the client.</p>
+                <p className="textheader bold">5.5 Performances of work conducted by third parties</p>
+                <p className="text standard">Entrepreneur is authorized to have certain activities performed by third parties. Entrepreneur is not obligated to inform client about this.</p>
+                <p className="textheader bold">5.6 Delivery of required materials</p>
+                <p className="text standard">It is the responsibility of the client to ensure that the correct information, briefings, software, physical objects, digital or physical files, activation keys, download links, or other facilities are in the possession of
+                entrepreneur in a timely manner. This also applies to so-called facilities that the client should know are necessary for the proper execution of the agreement.</p>
+                <p className="textheader bold">5.7 Failure of delivery</p>
+                <p className="text standard">If the required materials are not, untimely, or unreasonably delivered by the client, the entrepreneur reserves the right to suspend the execution of the agreement
+                until the client complies with this. In addition, entrepreneur retains the right to charge the extra costs resulting from the delay to the client according to his usual rates and to one-sidedly terminate
+                the agreement if client is unable to present a reasonable timeframe in which he is able to meet his responsibility regarding the delivery of the required materials. Costs and worked hours that have been made up until the point of one-sided termination of the agreement
+                will still be charged to client through a final invoice.</p>
+                <p className="textheader bold">5.8 Phase-based execution of agreement</p>
+                <p className="text standard">Entrepreneur has the right to execute the agreement in phases if he deems this necessary. If this is the case, the entrepreneur is entitled to invoice each separately performed part.
+                If the agreement is executed in phases, the entrepreneur has the right to suspend activities that belong to the next phase until the client has approved the results of the preceding phases in writing.</p>
+
+
 
               </section>
             </div>
