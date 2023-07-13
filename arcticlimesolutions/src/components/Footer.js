@@ -7,21 +7,30 @@ import { ReactComponent as FlagUSA } from "../image/svg/flag_us.svg";
 const Footer = () => {
   const [privHover, setPrivHover] = useState(false);
   const [termHover, setTermHover] = useState(false);
+  const [rateHover, setRateHover] = useState(false);
   const [terms, setTerms] = useState(false);
+  const [priv, setPriv] = useState(false);
   const date = new Date();
   const year = date.getFullYear();
-
 
   const handlePrivHover = () => {
     setPrivHover(true);
   };
 
   const returnPrivHover = () => {
-    setPrivHover(false); 
+    setPrivHover(false);
   };
 
   const handleTermHover = () => {
     setTermHover(true);
+  };
+
+  const handleRateHover = () => {
+    setRateHover(true);
+  };
+
+  const returnRateHover = () => {
+    setRateHover(false);
   };
 
   const returnTermHover = () => {
@@ -34,6 +43,14 @@ const Footer = () => {
 
   const closeTerms = () => {
     setTerms(false);
+  };
+
+  const openPriv = () => {
+    setPriv(true);
+  };
+
+  const closePriv = () => {
+    setPriv(false);
   };
 
   return (
@@ -78,6 +95,7 @@ const Footer = () => {
                   style={{ color: privHover ? "#D0FF14" : "#FAFAFA" }}
                   onMouseEnter={handlePrivHover}
                   onMouseLeave={returnPrivHover}
+                  onClick={openPriv}
                   title="Learn more about how your data is processed"
                 >
                   PRIVACY STATEMENT
@@ -102,15 +120,24 @@ const Footer = () => {
                 </span>
               </li>
               <li className="privlist">
-                <h2 title="Check out the rates here">
+                <h2
+                  style={{ color: rateHover ? "#D0FF14" : "#FAFAFA" }}
+                  onMouseEnter={handleRateHover}
+                  onMouseLeave={returnRateHover}
+                  title="Check out the rates here"
+                >
                   RATES
                 </h2>
-                <span>Click here for more information regarding our rates. Klik hier om de prijslijst van ARCTIC LIME Solutions te lezen.</span>
+                <span>
+                  Click here for more information regarding our rates. Klik hier om de prijslijst van ARCTIC LIME
+                  Solutions te lezen.
+                </span>
               </li>
             </ul>
           </div>
         </div>
       </footer>
+      {/* TERMS AND CONDITIONS */}
       {terms && (
         <>
           <div className="terms">
@@ -587,14 +614,13 @@ const Footer = () => {
                 <p className="text standard">
                   Op elke overeenkomst rust een bedenktijd van 48 uur. Dit betekent dat de opdrachtgever binnen 48 uur
                   na het terugsturen van een ondertekende offerte de mogelijkheid heeft om de overeenkomst eenzijdig en
-                  zonder kosten te ontbinden. Opdrachtnemer behoudt het recht om ditzelfde tijdsbestek aan te
-                  houden voordat hij met de werkzaamheden start om een kosteloze ontbinding te garanderen aan
-                  opdrachtgever, tenzij opdrachtgever van hem verlangt per direct te starten met de werkzaamheden.
-                  Wanneer opdrachtgever dit zogeheten 'verzoek tot directe start' schriftelijk aan opdrachtnemer kenbaar
-                  maakt behoudt opdrachtgever het recht om binnen 48 uur na het ingaan van de overeenkomst deze te
-                  ontbinden. Echter is opdrachtnemer dan wel bevoegd om de tot dan gemaakte kosten, uren,
-                  materiaalkosten en additionele kosten bij opdrachtgever in rekening te brengen, zoals omschreven in
-                  artikel 11.3.
+                  zonder kosten te ontbinden. Opdrachtnemer behoudt het recht om ditzelfde tijdsbestek aan te houden
+                  voordat hij met de werkzaamheden start om een kosteloze ontbinding te garanderen aan opdrachtgever,
+                  tenzij opdrachtgever van hem verlangt per direct te starten met de werkzaamheden. Wanneer
+                  opdrachtgever dit zogeheten 'verzoek tot directe start' schriftelijk aan opdrachtnemer kenbaar maakt
+                  behoudt opdrachtgever het recht om binnen 48 uur na het ingaan van de overeenkomst deze te ontbinden.
+                  Echter is opdrachtnemer dan wel bevoegd om de tot dan gemaakte kosten, uren, materiaalkosten en
+                  additionele kosten bij opdrachtgever in rekening te brengen, zoals omschreven in artikel 11.3.
                 </p>
                 <p className="textheader bold">11.2 Opzegging van de overeenkomst</p>
                 <p className="text standard">
@@ -723,13 +749,13 @@ const Footer = () => {
                 </p>
                 <p className="textheader bold">13.1 Intellectueel Eigendom</p>
                 <p className="text standard">
-                  Designs, prototypes, UX/UI Designs of Prototypes, gemaakte materialen, schetsen, plannen, concepten,
-                  interpretaties, presentaties, leveringen, videoproducties, animaties, motion graphics, fotografie,
-                  code, webdesigns, montages en al het andere gemaakte werk door ARCTIC LIME Solutions vallen onder het
-                  auteursrecht van opdrachtnemer. Dit auteursrecht is in geen enkel geval overdraagbaar en blijven
-                  formeel en juridisch in het bezit van opdrachtnemer. Wanneer er inbreuk wordt gemaakt op dit
-                  auteursrecht wordt gemaakt, of wanneer dit auteursrecht als eigen geclaimd wordt door opdrachtgever,
-                  kan opdrachtgever hiervoor in kwestie juridisch aansprakelijk worden gesteld door opdrachtnemer.
+                  Designs, prototypes, UX/UI Designs, gemaakte materialen, schetsen, plannen, concepten, interpretaties,
+                  presentaties, leveringen, videoproducties, animaties, motion graphics, fotografie, code, webdesigns,
+                  montages en al het andere gemaakte werk door ARCTIC LIME Solutions vallen onder het auteursrecht van
+                  opdrachtnemer. Dit auteursrecht is in geen enkel geval overdraagbaar en blijven formeel en juridisch
+                  in het bezit van opdrachtnemer. Wanneer er inbreuk wordt gemaakt op dit auteursrecht wordt gemaakt, of
+                  wanneer dit auteursrecht als eigen geclaimd wordt door opdrachtgever, kan opdrachtgever hiervoor in
+                  kwestie juridisch aansprakelijk worden gesteld door opdrachtnemer.
                 </p>
                 <p className="text standard">
                   Zelfs na een gesloten overeenkomst tussen opdrachtnemer en opdrachtgever betekent dit in geen geval
@@ -745,8 +771,8 @@ const Footer = () => {
                 </p>
                 <p className="text standard">
                   Zolang het eigendom van het geleverde niet over is gegaan op de opdrachtgever, mag deze hetgeen onder
-                  het eigendomsvoorbehoud valt niet doorverkopen, verpanden, deployen, uploaden, delen op het internet,
-                  sociale media, video platforms, eigen intranet of op enige andere wijze bezwaren.{" "}
+                  het eigendomsvoorbehoud valt niet doorverkopen, verpanden of op enige andere wijze bezwaren, tenzij
+                  het valt onder zijn normale dagelijkse bedrijfsgang.{" "}
                 </p>
                 <p className="textheader bold">13.2 Toegenomen kennis</p>
                 <p className="text standard">
@@ -804,10 +830,10 @@ const Footer = () => {
                 </p>
                 <p className="textheader bold">14.5 Gedeeltelijke nakoming bij een overmachtssituatie</p>
                 <p className="text standard">
-                  Wanneer opdrachtnemer ten tijde van intreden van de overmacht zijn verplichtingen gedeeltelijk
-                  isnagenkomen en aan het nagekomen zelfstandige waarde toekomt, is opdrachtnemer gerechtigd om het
-                  reeds nagekomen en het na te komen gedeelte apart te factureren. Opdrachtgever is gehouden deze
-                  factuur te voldoen als ware er sprake is van een afzonderlijke overeenkomst.
+                  Wanneer opdrachtnemer ten tijde van intreden van de overmacht zijn verplichtingen gedeeltelijk is
+                  nagekomen en aan het nagekomen zelfstandige waarde toekomt, is opdrachtnemer gerechtigd om het reeds
+                  nagekomen en het na te komen gedeelte apart te factureren. Opdrachtgever is gehouden deze factuur te
+                  voldoen als ware er sprake is van een afzonderlijke overeenkomst.
                 </p>
                 <section className="whitespace"></section>
                 <p className="section">
@@ -821,7 +847,8 @@ const Footer = () => {
                 </p>
                 <p className="textheader bold">15.2 Ingang wijzigingen</p>
                 <p className="text standard">
-                  Wijzigingen van de algemene leveringsvoorwaarden zullen na 30 dagen van kracht zijn
+                  Wijzigingen van de algemene leveringsvoorwaarden zullen na 30 dagen van kracht zijn, ingaande op de
+                  dag dat deze wijzigingen zijn aangekondigd.
                 </p>
                 <p className="textheader bold">
                   15.3 Ontbinden overeenkomst na wijziging algemene leveringsvoorwaarden
@@ -1123,110 +1150,476 @@ const Footer = () => {
                 <p className="text standard">Text/Print: PDF</p>
                 <p className="text standard">Photography: JPG, PNG</p>
                 <p className="text standard">Motion Graphics: MOV (APR4444XQ plus alpha channels), GIF</p>
-                <p className="text standard">If client wishes to receive a file in a different file format or codec that has not been specified in entrepreneur's Standard Delivery Protocol, he can
-                request entrepeneur to deliver the file in the requested file format and/or codec. Entrepreneur is entitled to charge costs for this that are in line with his price list. </p>
+                <p className="text standard">
+                  If client wishes to receive a file in a different file format or codec that has not been specified in
+                  entrepreneur's Standard Delivery Protocol, he can request entrepeneur to deliver the file in the
+                  requested file format and/or codec. Entrepreneur is entitled to charge costs for this that are in line
+                  with his price list.{" "}
+                </p>
                 <p className="textheader bold">7.7 File formats outside of the Standard Delivery Protocol</p>
-                <p className="text standard">Entrepreneur is entitled to charge additional costs for the delivery of file formats or codecs outside of the Standard Delivery Protocol for various platforms
-                such as cinemas, streaming services, television stations and printers. The prices are stated on the price list of entrepreneur.</p>
-                <p className="text standard">This includes delivery (but not limited to) in the following formats: DPX, Broadcast MXF, IMF, DCP, Uncompressed Quicktime, TARGA, TIFF, EXR, DNXHD, and 5.1/7.1 surround sound audiomixes </p>
+                <p className="text standard">
+                  Entrepreneur is entitled to charge additional costs for the delivery of file formats or codecs outside
+                  of the Standard Delivery Protocol for various platforms such as cinemas, streaming services,
+                  television stations and printers. The prices are stated on the price list of entrepreneur.
+                </p>
+                <p className="text standard">
+                  This includes delivery (but not limited to) in the following formats: DPX, Broadcast MXF, IMF, DCP,
+                  Uncompressed Quicktime, TARGA, TIFF, EXR, DNXHD, and 5.1/7.1 surround sound audiomixes{" "}
+                </p>
                 <p className="textheader bold">7.8 Transport files and project files</p>
-                <p className="text standard">Unless otherwise agreed between client and entrepreneur, entrepreneur will not deliver so-called transport/project files to the client, such as (but not limited to) .pproj, .aep, .psd, .omf, .xml, .edl, .cdl and .aal files.</p>
+                <p className="text standard">
+                  Unless otherwise agreed between client and entrepreneur, entrepreneur will not deliver so-called
+                  transport/project files to the client, such as (but not limited to) .pproj, .aep, .psd, .omf, .xml,
+                  .edl, .cdl and .aal files.
+                </p>
                 <section className="whitespace"></section>
-                <p className="section">Section 8<br></br>Prices</p>
+                <p className="section">
+                  Section 8<br></br>Prices
+                </p>
                 <p className="textheader bold">8.1 Prices</p>
-                <p className="text standard">Entrepreneur's fee is based on the rates stated on his price list, and does not depend on project basis.</p>
+                <p className="text standard">
+                  Entrepreneur's fee is based on the rates stated on his price list, and does not depend on project
+                  basis.
+                </p>
                 <p className="textheader bold">8.2 Price changes</p>
-                <p className="text standard">If entrepreneur, at the time of concluding the agreement, agrees on a fixed fee, price or rate, then entrepreneur remains entitled to increase his prices over the course of the agreement.
-                If entrepreneur intends to change the fee, price or fee, he must inform the client as soon as possible.</p>
-                <p className="text standard">If the increase in fee, price or rate takes place within three months after the conclusion of the agreement, the adjacent party may terminate the agreement by means of a written statement, unless:</p>
-                <p className="text standard">the increase arises from a power or an obligation resting on entrepreneur under Dutch law;</p>
-                <p className="text standard">the increase is caused by an increase in the price of raw materials, wages, etc. or on other grounds that could not reasonably be foreseen when the agreement was entered into;</p>
-                <p className="text standard">entrepreneur is still willing to perform the agreement on the exact same price that was originally agreed upon;</p>
-                <p className="text standard">it is stipulated that the execution of the agreement will be carried out longer than three months after the agreement was established.</p>
-                <p className="text standard">The client has the right to terminate the agreement if fee, price or rate is increased after more than three months after the agreement was established, unless the agreement specifically notes that execution of the agreement will last longer than 3 months when it was originally agreed upon and signed by both parties.</p>
-                <p className="text standard">Entrepreneur will inform client as soon as possible in the event of an increase in prices and/or fees. Entrepreneur hereby also indicates a date when these new prices will be effective.</p>
+                <p className="text standard">
+                  If entrepreneur, at the time of concluding the agreement, agrees on a fixed fee, price or rate, then
+                  entrepreneur remains entitled to increase his prices over the course of the agreement. If entrepreneur
+                  intends to change the fee, price or fee, he must inform the client as soon as possible.
+                </p>
+                <p className="text standard">
+                  If the increase in fee, price or rate takes place within three months after the conclusion of the
+                  agreement, the adjacent party may terminate the agreement by means of a written statement, unless:
+                </p>
+                <p className="text standard">
+                  the increase arises from a power or an obligation resting on entrepreneur under Dutch law;
+                </p>
+                <p className="text standard">
+                  the increase is caused by an increase in the price of raw materials, wages, etc. or on other grounds
+                  that could not reasonably be foreseen when the agreement was entered into;
+                </p>
+                <p className="text standard">
+                  entrepreneur is still willing to perform the agreement on the exact same price that was originally
+                  agreed upon;
+                </p>
+                <p className="text standard">
+                  it is stipulated that the execution of the agreement will be carried out longer than three months
+                  after the agreement was established.
+                </p>
+                <p className="text standard">
+                  The client has the right to terminate the agreement if fee, price or rate is increased after more than
+                  three months after the agreement was established, unless the agreement specifically notes that
+                  execution of the agreement will last longer than 3 months when it was originally agreed upon and
+                  signed by both parties.
+                </p>
+                <p className="text standard">
+                  Entrepreneur will inform client as soon as possible in the event of an increase in prices and/or fees.
+                  Entrepreneur hereby also indicates a date when these new prices will be effective.
+                </p>
                 <p className="textheader bold">8.3 Currency</p>
-                <p className="text standard">Prices are expressed in euro, exclusive of VAT and other fees/levies, unless indicated otherwise. Prices do not include so-called additional costs, which are described in section 4.7.</p>
+                <p className="text standard">
+                  Prices are expressed in euro, exclusive of VAT and other fees/levies, unless indicated otherwise.
+                  Prices do not include so-called additional costs, which are described in section 4.7.
+                </p>
                 <section className="whitespace"></section>
-                <p className="section">Section 9<br></br>Payment</p>
+                <p className="section">
+                  Section 9<br></br>Payment
+                </p>
                 <p className="textheader bold">9.1 Payment term</p>
-                <p className="text standard">Payment must be made within 14 days of the invoice date to the IBAN number provided by entrepreneur. The payment description should match the invoice number on the invoice.</p>
+                <p className="text standard">
+                  Payment must be made within 14 days of the invoice date to the IBAN number provided by entrepreneur.
+                  The payment description should match the invoice number on the invoice.
+                </p>
                 <p className="textheader bold">9.2 Expiry of payment term</p>
-                <p className="text standard">After the payment term has expired, statutory interest will be charged to the client, without notice of default being required from entrepreneur.</p>
+                <p className="text standard">
+                  After the payment term has expired, statutory interest will be charged to the client, without notice
+                  of default being required from entrepreneur.
+                </p>
                 <p className="textheader bold">9.3 Failure to meet payment obligation</p>
-                <p className="text standard">If client fails to comply with the payment obligation, entrepreneur retains to right to charge all judicial, extrajudicial and collection costs 
-                incurred by the entrepreneur to client due to non-compliance with the payment obligation.</p>
+                <p className="text standard">
+                  If client fails to comply with the payment obligation, entrepreneur retains to right to charge all
+                  judicial, extrajudicial and collection costs incurred by the entrepreneur to client due to
+                  non-compliance with the payment obligation.
+                </p>
                 <p className="textheader bold">9.4 Counterclaims</p>
-                <p className="text standard">The client is not authorized to deduct any amount due from a counterclaim made by him.</p>
+                <p className="text standard">
+                  The client is not authorized to deduct any amount due from a counterclaim made by him.
+                </p>
                 <p className="textheader bold">9.5 Bankruptcy, guardianship and suspension of payment</p>
-                <p className="text standard">In the event that client has experienced bankruptcy, suspension of payments, or if client is placed under guardianship, all claims of entrepreneur and the obligations of client towards entrepreneur are immediately due and payable.</p>
+                <p className="text standard">
+                  In the event that client has experienced bankruptcy, suspension of payments, or if client is placed
+                  under guardianship, all claims of entrepreneur and the obligations of client towards entrepreneur are
+                  immediately due and payable.
+                </p>
                 <p className="textheader bold">9.6 Currency</p>
-                <p className="text standard">Payment of invoices must be made in euro's, unless client and entrepreneur explicitly have agreed otherwise through writing. If payment occurs in a 'foreign currency' other than euro after mutual written agreement, it is the client's responsibility
-                to ensure that transaction costs and currency exchange costs are paid in full and that the transferred amount exactly matches the invoice amount after being exchanged to euro. If client fails to do so, he is still obligated to pay the remaining due amount, including the currency exchange and transaction costs involved while paying the remaining due amount.</p>
+                <p className="text standard">
+                  Payment of invoices must be made in euro's, unless client and entrepreneur explicitly have agreed
+                  otherwise through writing. If payment occurs in a 'foreign currency' other than euro after mutual
+                  written agreement, it is the client's responsibility to ensure that transaction costs and currency
+                  exchange costs are paid in full and that the transferred amount exactly matches the invoice amount
+                  after being exchanged to euro. If client fails to do so, he is still obligated to pay the remaining
+                  due amount, including the currency exchange and transaction costs involved while paying the remaining
+                  due amount.
+                </p>
                 <p className="textheader bold">9.7 Transaction costs for payments from outside the EU/EEA</p>
-                <p className="text standard">If client resides outside of the European Union, or the direct European Economic Area, it is possible that additional transaction costs will be charged to client by entrepreneur.
-                Entrepreneur declares not to have any influence regarding the amount of these costs, as they are charge by the bank to entrepreneur and subsequently from him to the client. If the situation arises of a so-called 'world payment', costs will be specified on the quotation.
-                Client understands that the transaction costs on the quotation are subject to change and no means final. The transaction costs on the final invoice are, at all times, considered leading.</p>
+                <p className="text standard">
+                  If client resides outside of the European Union, or the direct European Economic Area, it is possible
+                  that additional transaction costs will be charged to client by entrepreneur. Entrepreneur declares not
+                  to have any influence regarding the amount of these costs, as they are charge by the bank to
+                  entrepreneur and subsequently from him to the client. If the situation arises of a so-called 'world
+                  payment', costs will be specified on the quotation. Client understands that the transaction costs on
+                  the quotation are subject to change and no means final. The transaction costs on the final invoice
+                  are, at all times, considered leading.
+                </p>
                 <section className="whitespace"></section>
-                <p className="section">Section 10<br></br>Complaints</p>
+                <p className="section">
+                  Section 10<br></br>Complaints
+                </p>
                 <p className="textheader bold">10.1 Complaints</p>
-                <p className="text standard">Complaints about the work performed must be reported to entrepreneur in writing by client no later than 10 days after delivery. The client must submit a description of the complaint as detailed as possible,
-                and if possible, substantiate his claim with documents so that entrepreneur is able to respond appropriately to the client's complaint.</p>
+                <p className="text standard">
+                  Complaints about the work performed must be reported to entrepreneur in writing by client no later
+                  than 10 days after delivery. The client must submit a description of the complaint as detailed as
+                  possible, and if possible, substantiate his claim with documents so that entrepreneur is able to
+                  respond appropriately to the client's complaint.
+                </p>
                 <p className="textheader bold">10.2 Courtesy of a justified complaint</p>
-                <p className="text standard">If a justication for client's complaint has been granted, entrepreneur has the right to choose from one of the following courtesy options:</p>
+                <p className="text standard">
+                  If a justication for client's complaint has been granted, entrepreneur has the right to choose from
+                  one of the following courtesy options:
+                </p>
                 <p className="text standard">improving the rejected work, free of charge;</p>
                 <p className="text standard">performing the work again, free of charge;</p>
                 <p className="text standard">adjustment of the charged fee;</p>
-                <p className="text standard">wholly/partially (no longer) performing the work against a proportional refund.</p>
+                <p className="text standard">
+                  wholly/partially (no longer) performing the work against a proportional refund.
+                </p>
                 <p className="textheader bold">10.3 Payment obligation after submission of complaint</p>
-                <p className="text standard">Submitting a complaint does not suspend the clients playment obligation.</p>
+                <p className="text standard">
+                  Submitting a complaint does not suspend the clients playment obligation.
+                </p>
                 <section className="whitespace"></section>
-                <p className="section">Section 11<br></br>Termination</p>
+                <p className="section">
+                  Section 11<br></br>Termination
+                </p>
                 <p className="textheader bold">11.1 Cooldown period</p>
-                <p className="text standard">Every agreement comes with a so-called 'cooldown' period of 48 hours. This means that client has the right to terminate the agreement, one-sidedly and without having to pay any cost to entrepreneur.
-                However, entrepreneur retains the right to start executing the agreement after the cooldown period has ended in order to be able to guarantee a termination that is free of charge
-                to the client if he decided to terminate the agreement during the cooldown period, unless client asks entrepreneur to start the execution of the agreement right away.
-                If client asks entrepreneur for this 'direct execution' of the agreement through writing, client will be still allowed to terminate the agreement during the 48-hour cooldown period. However,
-                entrepreneur is entitled to charge all of the working hours, costs, material costs and additional costs to client up until the point of termination, as described in section 11.3</p>
+                <p className="text standard">
+                  Every agreement comes with a so-called 'cooldown' period of 48 hours. This means that client has the
+                  right to terminate the agreement, one-sidedly and without having to pay any cost to entrepreneur.
+                  However, entrepreneur retains the right to start executing the agreement after the cooldown period has
+                  ended in order to be able to guarantee a termination that is free of charge to the client if he
+                  decided to terminate the agreement during the cooldown period, unless client asks entrepreneur to
+                  start the execution of the agreement right away. If client asks entrepreneur for this 'direct
+                  execution' of the agreement through writing, client will be still allowed to terminate the agreement
+                  during the 48-hour cooldown period. However, entrepreneur is entitled to charge all of the working
+                  hours, costs, material costs and additional costs to client up until the point of termination, as
+                  described in section 11.3
+                </p>
                 <p className="textheader bold">11.2 Termination of agreement</p>
-                <p className="text standard">If client does not, not fully, not timely or not properly fulfill his obligations under the agreement, entrepreneur is entitled to dissolve the agreement
-                with immediate effect, unless the shortcoming is of such minor significance that it will not justify the termination of the agreement.
-                Both parties can unilaterally terminate the agreement prematurely if one of the parties' opinion is that the execution of the assignment can no longer
-                take place in accordance with the agreement. This must be communicated to the other party with valid reasons and in writing. If the other party believes the first party's 
-                motivation is unclear or insufficiently subtantiated, he is allowed to return a counteroffer or a response to the counterparty, containing a valid motivation of their own.
-                Both parties will have to come to an agreement by themselves and declare they will do the best they possibly can to come to an agreement or a compromise. A valid agreement has only been fully
-                terminated when both parties have agreed and must state this through writing.</p>
-                <p className="text standard">Entrepreneur is authorized to dissolve the agreement with immediate effect if:</p>
-                <p className="text standard">entrepreneur has become aware of circumcstances in which entrepreneur may fear that client will not fulfill his obligations;</p>
-                <p className="text standard">client has been requested to provide security for the payment of its obligations, and this security has not been forthcoming or is deemed insufficient;</p>
-                <p className="text standard">due to a delay on behalf of the client, entrepreneur can no longer be expected to fulfill the agreement under the original agreed conditions;</p>
-                <p className="text standard">circumstances arise of such a nature that fulfillment of the agreement is impossible or that unaltered maintenance of the agreement cannot in all reasonableness be expected from entrepreneur;</p>
-                <p className="text standard">client is declared bankrupt, files a deferment of payment, is placed under guardianship, parts of his property (or his property in whole) has been seized or has deceased.</p>
+                <p className="text standard">
+                  If client does not, not fully, not timely or not properly fulfill his obligations under the agreement,
+                  entrepreneur is entitled to dissolve the agreement with immediate effect, unless the shortcoming is of
+                  such minor significance that it will not justify the termination of the agreement. Both parties can
+                  unilaterally terminate the agreement prematurely if one of the parties' opinion is that the execution
+                  of the assignment can no longer take place in accordance with the agreement. This must be communicated
+                  to the other party with valid reasons and in writing. If the other party believes the first party's
+                  motivation is unclear or insufficiently subtantiated, he is allowed to return a counteroffer or a
+                  response to the counterparty, containing a valid motivation of their own. Both parties will have to
+                  come to an agreement by themselves and declare they will do the best they possibly can to come to an
+                  agreement or a compromise. A valid agreement has only been fully terminated when both parties have
+                  agreed and must state this through writing.
+                </p>
+                <p className="text standard">
+                  Entrepreneur is authorized to dissolve the agreement with immediate effect if:
+                </p>
+                <p className="text standard">
+                  entrepreneur has become aware of circumcstances in which entrepreneur may fear that client will not
+                  fulfill his obligations;
+                </p>
+                <p className="text standard">
+                  client has been requested to provide security for the payment of its obligations, and this security
+                  has not been forthcoming or is deemed insufficient;
+                </p>
+                <p className="text standard">
+                  due to a delay on behalf of the client, entrepreneur can no longer be expected to fulfill the
+                  agreement under the original agreed conditions;
+                </p>
+                <p className="text standard">
+                  circumstances arise of such a nature that fulfillment of the agreement is impossible or that unaltered
+                  maintenance of the agreement cannot in all reasonableness be expected from entrepreneur;
+                </p>
+                <p className="text standard">
+                  client is declared bankrupt, files a deferment of payment, is placed under guardianship, parts of his
+                  property (or his property in whole) has been seized or has deceased.
+                </p>
                 <p className="textheader bold">11.3 Compensation upon termination of the agreement</p>
-                <p className="text standard">Entrepreneur is entitled to compensation based on the working hours, costs and additional costs incurred up to that point if the agreement is terminated.</p>
+                <p className="text standard">
+                  Entrepreneur is entitled to compensation based on the working hours, costs and additional costs
+                  incurred up to that point if the agreement is terminated.
+                </p>
                 <p className="textheader bold">11.4 Additional ways of termination (for entrepreneur)</p>
-                <p className="text standard">In addition to matters mentioned in section 11.2, entrepreneur is entitled to use his authority to prematurely terminate the agreement
-                whenever circumstances or facts arise that are beyond his control or cannot be attributed to him, such as situations of force majeure and sudden impediment that prevent the completion of the agreement in all reasonableness.</p>
+                <p className="text standard">
+                  In addition to matters mentioned in section 11.2, entrepreneur is entitled to use his authority to
+                  prematurely terminate the agreement whenever circumstances or facts arise that are beyond his control
+                  or cannot be attributed to him, such as situations of force majeure and sudden impediment that prevent
+                  the completion of the agreement in all reasonableness.
+                </p>
                 <p className="textheader bold">11.5 Delivery Time</p>
-                <p className="text standard">A missed delivery term, or 'deadline' does not count as a valid reason to cancel the agreement.</p>
+                <p className="text standard">
+                  A missed delivery term, or 'deadline' does not count as a valid reason to cancel the agreement.
+                </p>
                 <p className="textheader bold">11.6 Cancellation in case of late payment</p>
-                <p className="text standard">Entrepreneur reserves the right to terminate the agreement immediately in the event of late payment of the client. In this case, entrepreneur retains the right to full payment.</p>
+                <p className="text standard">
+                  Entrepreneur reserves the right to terminate the agreement immediately in the event of late payment of
+                  the client. In this case, entrepreneur retains the right to full payment.
+                </p>
                 <p className="textheader bold">11.7 Damages upon termination of contract</p>
-                <p className="text standard">Entrepreneur is not liable for any damages, compensation or costs suffered by client when entrepreneur dissolves the agreeement.</p>
+                <p className="text standard">
+                  Entrepreneur is not liable for any damages, compensation or costs suffered by client when entrepreneur
+                  dissolves the agreeement.
+                </p>
                 <p className="textheader bold">11.8 Due and payable</p>
-                <p className="text standard">When the agreement is terminated, outstanding claims of the entrepreneur towards client are immediately due and payable.</p>
+                <p className="text standard">
+                  When the agreement is terminated, outstanding claims of the entrepreneur towards client are
+                  immediately due and payable.
+                </p>
                 <section className="whitespace"></section>
-                <p className="section">Section 12<br></br>Storage and Back-up</p>
+                <p className="section">
+                  Section 12<br></br>Storage and Back-up
+                </p>
                 <p className="textheader bold">12.1 Storage and back-up of files</p>
-                <p className="text standard">As described in section 6.6 of this agreement, the risk of digital and physical files is transferred
-                to the client upon delivery. Although entrepreneur will conduct his best effort possible to ensure the storage and back-up of as many files and projects as possible, this never counts as
-                a back-up guarantee. Entrepreneur is not obligated to save, backup or retain any files related to projects once the project has reached 'completed' status.</p>
-                <p className="text standard">A project is classifed as 'completed' whenever entrepreneur has delivered the final files to the client, the invoice has been paid in full and the
-                complaint period has expired.</p>
-
-
-
-
+                <p className="text standard">
+                  As described in section 6.6 of this agreement, the risk of digital and physical files is transferred
+                  to the client upon delivery. Although entrepreneur will conduct his best effort possible to ensure the
+                  storage and back-up of as many files and projects as possible, this never counts as a back-up
+                  guarantee. Entrepreneur is not obligated to save, backup or retain any files related to projects once
+                  the project has reached 'completed' status.
+                </p>
+                <p className="text standard">
+                  A project is classifed as 'completed' whenever entrepreneur has delivered the final files to the
+                  client, the invoice has been paid in full and the complaint period has expired.
+                </p>
+                <p className="textheader bold">12.2 Storage of Personal Data</p>
+                <p className="text standard">
+                  Entrepreneur declares to only save personal- and company related data of client that are required for
+                  the execution of the agreement, such as address details, e-mail addresses, VAT and Chamber of Commerce
+                  numbers. Entrepreneur saves this data and maintains this data with the greatest possible care Client
+                  is entitled to see the data that entrepreneur has saved from him, at all times and free of charge.
+                  Client is free to inform entrepreneur to adjust parts of his data or in whole, or to have his
+                  information deleted. If the personal data in question is required for the completion of a current
+                  agreement, then entrepreneur declares to delete the information as soon as the current agreement has
+                  received a 'completed' status.
+                </p>
+                <p className="textheader bold">12.3 Storage of physical data carriers that belong to client</p>
+                <p className="text standard">
+                  Entrepreneur uses the greatest possible care towards the correct storage of physical data carriers
+                  that have been made available to him by the client. Entrepreneur, however, cannot guarantee the
+                  operation of these data carriers and the prevention of any data loss.
+                </p>
+                <p className="textheader bold">12.4 Return of data carriers that belong to client</p>
+                <p className="text standard">
+                  After completion of the project, data carriers from the client will be returned to him, unless the
+                  client indicates in writing that he does not want to receive them back. If this is the case, client
+                  agrees to transfer the ownership of these data carriers to entrepreneur. Under no circumstances does
+                  this oblige the entrepreneur to keep, maintain and back-up the data on these carriers. If return
+                  shipping costs have not been declared in the quotation, entrepreneur is entitled to charge these
+                  seperately with the final invoice. See section 6.8 for liability.
+                </p>
+                <p className="textheader bold">12.5 Loss of Data</p>
+                <p className="text standard">
+                  Entrepreneur takes the greatest possible care in storing, backing up and maintaining digital files
+                  during the course of the project. However, entrepreneur cannot guarantee technical limitations and/or
+                  problems or the irreversible loss of data. No rights and compensation can be derived from loss of
+                  data.
+                </p>
+                <section className="whitespace"></section>
+                <p className="section">
+                  Section 13<br></br>Intellectual Property
+                </p>
+                <p className="textheader bold">13.1 Intellectual Property</p>
+                <p className="text standard">
+                  Designs, prototypes, UX/UI Designs, crafted materials, sketches, plans, concepts, interpretations,
+                  presentations, deliveries, videoproductions, animations, motion graphics, photographs, code,
+                  webdesigns and video edits and all of the other created work by ARCTIC LIME Solutions fall under the
+                  copyright of entrepreneur. The copyright is in no way transferable to the client and remains formally
+                  and legally in the possession of the entrepreneur. If this copyright is infringed, or if this
+                  copyright is claimed as its own by the client, the client in question can be held legally liable for
+                  this.
+                </p>
+                <p className="text standard">
+                  Even after a concluded agreement between entrepreneur and client, this does not mean that copyright or
+                  direct rights of the entrepreneur's intellectual property can be transferred in any form, either
+                  partially or in full.
+                </p>
+                <p className="text standard">
+                  All goods delivered by the entrepreneur in the context of the agreement remain the property of ARCTIC
+                  LIME Solutions until the client has properly fulfilled and paid in full what he owes under the
+                  agreement. The amount owed also includes: the compensation of all costs and interest, also of earlier
+                  and later deliveries and services rendered, as well as claims for damages due to failure to perform.
+                </p>
+                <p className="text standard">
+                  As long as the ownership of the delivered goods has not passed to the client, the latter may not
+                  resell, pledge or in any other way encumber that which falls under the retention of title, except
+                  within the normal course of his/her business.
+                </p>
+                <p className="textheader bold">13.2 Use of gained knowledge</p>
+                <p className="text standard">
+                  Entrepreneur reserves the right to use the knowledge gained through the per- formance of the work for
+                  other purposes, insofar as no confidential informa- tion is disclosed to third parties.
+                </p>
+                <p className="textheader bold">13.3 Intellectual property during a third-party seizure</p>
+                <p className="text standard">
+                  If third parties seize goods delivered by entrepreneur to the client, or wish to establish or enforce
+                  rights thereon, the client is obliged to inform entrepeneur as soon as can reasonably be expected.
+                </p>
+                <p className="textheader bold">13.4 Copyright infringement</p>
+                <p className="text standard">
+                  Client indicates that he will refrain from infringing the copyright of entrepreneur.
+                </p>
+                <section className="whitespace"></section>
+                <p className="section">
+                  Section 14<br></br>Force Majeure
+                </p>
+                <p className="textheader bold">14.1 Force Majeure</p>
+                <p className="text standard">
+                  A shortcoming cannot be attributed to the entrepreneur or client if the shortcoming is not due to his
+                  fault, law, legal act or generally accepted views. In this case, the parties are not obliged to
+                  fulfill the obligations specified in the agreement. Section 14.3 sketches a couple of examples of what
+                  can be understood as a 'force majeure'.
+                </p>
+                <p className="textheader bold">14.2 Definition of Force Majeure</p>
+                <p className="text standard">
+                  Within these terms and conditions, a force majeure is understood to mean, in addition to what is
+                  understood in that area in law in jurisprudence, all external causes, foreseen or unforeseen, over
+                  which entrepreneur has no influence and as a result of which entrepreneur is unable to fulfill his
+                  obligations.
+                </p>
+                <p className="textheader bold">14.3 Force Majeure Situations</p>
+                <p className="text standard">
+                  Examples of force majeure situations include lockout, fire, water damage, natural disasters, war,
+                  mobilization, (un)friendly invasion, traffic obstructions, other external calamities, government
+                  restrictions, delays in the import of raw materials, machine parts or any other circumstance that the
+                  normal course of business of ARCTIC LIME Solutions is hindered as a result of fulfillment of the
+                  agreed upon under the agreement. Entrepreneur has the right to invoke force majeure if a circumstance
+                  that prevents (further) fulfillment of the agreement occurs after the entrepreneur should have
+                  fulfilled his obligation.
+                </p>
+                <p className="textheader bold">14.4 Suspension of agreement during Force Majeure</p>
+                <p className="text standard">
+                  Both parties can suspend obligations under the agreement in whole or in part during the period that
+                  the (temporary) force majeure continues. If this period of force majeure lasts longer than two months,
+                  both parties are entitled to dissolve the agreement with immediate effect, without judicial
+                  intervention, by means of written notification. Neither party can claim any damages.
+                </p>
+                <p className="textheader bold">14.5 Partial performance in a force majeure situation</p>
+                <p className="text standard">
+                  If entrepreneur has partially fulfilled his obligations at the time of the force majeure and the
+                  fulfilled independent value accrues, entrepreneur is entitled to invoice the already fulfilled and the
+                  part to be fulfilled separately. Client is obliged to pay this invoice as if there were a separate
+                  agreement.
+                </p>
+                <section className="whitespace"></section>
+                <p className="section">
+                  Section 15<br></br>Changes and applicable law
+                </p>
+                <p className="textheader bold">15.1 Changes made to the terms and conditions</p>
+                <p className="text standard">
+                  Entrepreneur reserves the right to unilaterally change these general terms and conditions of delivery.
+                  These changes also apply to agreements already concluded. Entrepreneur will inform the client of this
+                  in writing if he intends to change these terms and conditions.
+                </p>
+                <p className="textheader bold">15.2 Timeframe</p>
+                <p className="text standard">
+                  Changes made to the terms and conditions will be in effect after 30 days, starting from the day these
+                  changes were announced.
+                </p>
+                <p className="textheader bold">15.3 Termination of agreement after changes to terms and conditions</p>
+                <p className="text standard">
+                  During this period of 30 days, client is entitled to terminate the agreement unilaterally if he does
+                  not agree with the announced changes. Entrepreneur remains entitled to the to invoice work done up to
+                  that point to client if he wishes to terminate the agreement.
+                </p>
+                <p className="textheader bold">15.4 Applicable Law</p>
+                <p className="text standard">
+                  Dutch law applies exclusively to all legal relationships to which entrepreneur is a party. This also
+                  applies if the agreement is performed in full or abroad, or if the client is abroad or is established
+                  there.
+                </p>
+                <p className="textheader bold">15.5 Vienna Sales Convention</p>
+                <p className="text standard">
+                  The applicability of the 1980 Vienna Sales Convention (CISG) is excluded.
+                </p>
+                <section className="whitespace"></section>
+                <section className="whitespace"></section>
+              </section>
+            </div>
+          </div>
+        </>
+      )}
+      ;{/*PRIVACY STATEMENT*/}
+      {priv && (
+        <>
+          <div className="privacy">
+            <div className="privacycontainer">
+              <div className="language">
+                <a href="#privnl" title="Click here for the Privacy Statement in Dutch">
+                  <span>
+                    Click here to read the Privacy Statement in Dutch. Klik hier om het Privacy Statement in het
+                    Nederlands te lezen.
+                  </span>
+                  <FlagNL className="flag" />
+                </a>
+                <a href="#privusa" title="Click here for the Privacy Statement in English.">
+                  <span>
+                    Click here to read the Privacy Statement in English. Klik hier om het Privacy Statement in het
+                    Engels te lezen.
+                  </span>
+                  <FlagUSA className="flag" />
+                </a>
+              </div>
+              <section className="privcontent" onClick={closePriv}>
+                <section className="whitespace" id="privnl"></section>
+                <p className="privheader">PRIVACY STATEMENT - NEDERLANDS</p>
+                <section className="whitespace"></section>
+                <p className="text standard">
+                  Gegevens die u aan ARCTIC LIME Solutions verstrekt zullen zorgvuldig en vertrouwelijk worden bewaard.
+                  ARCTIC LIME Solutions houdt op grond van de Algemene Verordering Gegevensbescherming een register bij
+                  met haar verwerkingsactiviteiten. U heeft recht op inzage, correctie en verwijdering van de
+                  doorgegeven persoonsgegevens. Wanneer u de website van ARCTIC LIME Solutions bezoekt, is het mogelijk
+                  dat informatie over uw gebruik van de website kan worden verzameld door middel het plaatsen van
+                  cookies.
+                </p>
+                <p className="text standard">
+                  ARCTIC LIME Solutions verklaart hierbij de informatie die voortvloeit uit de cookies niet te
+                  gebruiken. Gedeelde persoonlijke informatie met ARCTIC LIME Solutions zullen alleen en uitsluitend
+                  gebruikt worden ten behoeve van orderovereenkomsten. Uw gegevens zullen niet worden uitgeleend,
+                  verhuurd, verkocht of op een andere manier openbaar worden gemaakt. Daarnaast zal ARCTIC LIME
+                  Solutions uw persoonsgegevens niet langer bewaren dan nodig is. U bent gerechtigd om bij de Autoriteit
+                  Persoonsgegevens een klacht in te dienen omtrent uw persoonsgegevens. Bij vragen over deze privacy
+                  verklaring kunt u contact opnemen met ARCTIC LIME Solutions via e-mail.
+                </p>
+                <section className="whitespace"></section>
+                <section className="whitespace" id="privusa"></section>
+                <p className="privheader">PRIVACY STATEMENT - ENGLISH</p>
+                <section className="whitespace"></section>
+                <p className="text standard">
+                  Information you provide to ARCTIC LIME Solutions will be kept carefully and confidentially. ARCTIC
+                  LIME Solutions keeps a register of its processing activities on the basis of the General Data
+                  Protection Regulation. You have the right to inspect, correct and delete the personal data passed on.
+                  When you visit the ARCTIC LIME Solutions website, it is possible that information about your use of
+                  the website can be collected by placing cookies.
+                </p>
+                <p className="text standard">
+                  ARCTIC LIME Solutions hereby declares not to use the information resulting from the cookies. Personal
+                  information shared with ARCTIC LIME Solutions will only and exclusively be used for the purpose of
+                  order agreements. Your data will not be lent, rented, sold or made public in any other way. In
+                  addition, ARCTIC LIME Solutions will not store your personal data longer than necessary. You are
+                  entitled to submit a complaint about your personal data to the Dutch Data Protection Authority. If you
+                  have any questions about this privacy statement, please contact ARCTIC LIME Solutions by
+                  <a href="mailto:arcticlimesolutions@gmail.com"> email.</a>
+                </p>
+                <section className="whitespace"></section>
+                <section className="whitespace"></section>
+                <section className="whitespace"></section>
               </section>
             </div>
           </div>

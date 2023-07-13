@@ -1,6 +1,4 @@
-- Content English teRMS AND coNDITIONS
-- Continue with Privacy Statement
-- Continue with rates modal.
+- Continue with rates modal and fill in all the content.
 - Add Anime React to add animations.
 - Update SCSS for mobile responsivity.
 - Update to version 0.0.3
@@ -8,4 +6,11 @@
 - Homepage background video
 - Homepage buttons for services and work
 - Homepage responsive
+- Update all of the CSS to % if possible. Make a backup of the original scss file.
+- Check all of the homepage content for typos
 - Once homepage is fully done, update to version 0.1.0
+- React Routers to both pages
+- Add header to both pages
+- Create a tiny footer that returns the user to the homepage.
+- Link ARC Lime logo to homepage as well
+- Update to version 0.1.1
