@@ -101,6 +101,12 @@ const Footer = () => {
                   leveringsvoorwaarden van ARCTIC LIME Solutions te lezen.
                 </span>
               </li>
+              <li className="privlist">
+                <h2 title="Check out the rates here">
+                  RATES
+                </h2>
+                <span>Click here for more information regarding our rates. Klik hier om de prijslijst van ARCTIC LIME Solutions te lezen.</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -581,7 +587,7 @@ const Footer = () => {
                 <p className="text standard">
                   Op elke overeenkomst rust een bedenktijd van 48 uur. Dit betekent dat de opdrachtgever binnen 48 uur
                   na het terugsturen van een ondertekende offerte de mogelijkheid heeft om de overeenkomst eenzijdig en
-                  zonder extra kosten te ontbinden. Opdrachtnemer behoudt het recht om ditzelfde tijdsbestek aan te
+                  zonder kosten te ontbinden. Opdrachtnemer behoudt het recht om ditzelfde tijdsbestek aan te
                   houden voordat hij met de werkzaamheden start om een kosteloze ontbinding te garanderen aan
                   opdrachtgever, tenzij opdrachtgever van hem verlangt per direct te starten met de werkzaamheden.
                   Wanneer opdrachtgever dit zogeheten 'verzoek tot directe start' schriftelijk aan opdrachtnemer kenbaar
@@ -886,69 +892,338 @@ const Footer = () => {
                   NL004134441B80{" "}
                 </p>
                 <section className="whitespace"></section>
-                <p className="section">Section 3<br></br>Applicability</p>
+                <p className="section">
+                  Section 3<br></br>Applicability
+                </p>
                 <p className="textheader bold">3.1 Applicability of Terms and Conditions</p>
-                <p className="text standard">The terms and conditions specified on this page are applied on all offers, quotations, work, contracts and agreements made with/by entrepreneur, 
-                unless both parties have explictly agreed otherwise and have created an additional written and signed agreement.</p>
+                <p className="text standard">
+                  The terms and conditions specified on this page are applied on all offers, quotations, work, contracts
+                  and agreements made with/by entrepreneur, unless both parties have explictly agreed otherwise and have
+                  created an additional written and signed agreement.
+                </p>
                 <p className="textheader bold">3.2 Availability and visibility of Terms and Conditions</p>
-                <p className="text standard">The terms and conditions set by entrepreneur are available free of charge on the website of ARCTIC LIME Solutions. The terms and conditions
-                are available in both Dutch and English. A reference towards the terms and conditions can be found on all quotations made by entrepreneur.</p>
+                <p className="text standard">
+                  The terms and conditions set by entrepreneur are available free of charge on the website of ARCTIC
+                  LIME Solutions. The terms and conditions are available in both Dutch and English. A reference towards
+                  the terms and conditions can be found on all quotations made by entrepreneur.
+                </p>
                 <p className="textheader bold">3.3 Devation from Terms and Conditions</p>
-                <p className="text standard">Devations from the terms and conditions set by entrepreneur are only valid whenever client and entrepreneur have agreed otherwise
-                and have established a written agreement to do so.</p>
+                <p className="text standard">
+                  Devations from the terms and conditions set by entrepreneur are only valid whenever client and
+                  entrepreneur have agreed otherwise and have established a written agreement to do so.
+                </p>
                 <section className="whitespace"></section>
-                <p className="section">Section 4<br></br>Offers</p>
+                <p className="section">
+                  Section 4<br></br>Offers
+                </p>
                 <p className="textheader bold">4.1 Validity of quotations</p>
-                <p className="text standard">Unless notified in writing by entrepreneur, quotations are valid for 14 days, commencing on the quotation date.</p>
+                <p className="text standard">
+                  Unless notified in writing by entrepreneur, quotations are valid for 14 days, commencing on the
+                  quotation date.
+                </p>
                 <p className="textheader bold">4.2 Expiration of quotations</p>
-                <p className="text standard">After the validity of the offer has expired, the quotation will lapse. Entrepreneur does not have to inform the client of this.
-                It is not possible to derive any rights from information from an expired quotation, such prices, activities and/or discounts.</p>
+                <p className="text standard">
+                  After the validity of the offer has expired, the quotation will lapse. Entrepreneur does not have to
+                  inform the client of this. It is not possible to derive any rights from information from an expired
+                  quotation, such prices, activities and/or discounts.
+                </p>
                 <p className="textheader bold">4.3 Obligations concerning quotations</p>
-                <p className="text standard">Quotations are without obligation. The client is under no circumstances obliged to purchase services from entrepreneur after receiving a quotation.</p>
+                <p className="text standard">
+                  Quotations are without obligation. The client is under no circumstances obliged to purchase services
+                  from entrepreneur after receiving a quotation.
+                </p>
                 <p className="textheader bold">4.4 Quotation obligation</p>
-                <p className="text standard">Entrepreneur reserves the right to choose not to make an offer to the client.
-                Entrepreneur is not obligated in any way to communicate the reason behind the rejection to the client. </p>
+                <p className="text standard">
+                  Entrepreneur reserves the right to choose not to make an offer to the client. Entrepreneur is not
+                  obligated in any way to communicate the reason behind the rejection to the client.{" "}
+                </p>
                 <p className="textheader bold">4.5 Application of quotations to future assignments</p>
-                <p className="text standard">An offer made by entrepreneur is not automatically valid for any future assignment. This applies to any discounts received in the past as well.</p>
+                <p className="text standard">
+                  An offer made by entrepreneur is not automatically valid for any future assignment. This applies to
+                  any discounts received in the past as well.
+                </p>
                 <p className="textheader bold">4.6 Calculation of costs and working hours</p>
-                <p className="text standard">Entrepreneur draws up quotations based on a estimate calculations of hours required in order to carry out the client's assignment as well as possible.
-                Entrepreneur declares to do this in all reasonableness and according to his professional insight. Additional work, services, digital materials, physical materials and working hours
-                are not included in the quotation and will be added separately on the final invoice.</p>
+                <p className="text standard">
+                  Entrepreneur draws up quotations based on a estimate calculations of hours required in order to carry
+                  out the client's assignment as well as possible. Entrepreneur declares to do this in all
+                  reasonableness and according to his professional insight. Additional work, services, digital
+                  materials, physical materials and working hours are not included in the quotation and will be added
+                  separately on the final invoice.
+                </p>
                 <p className="textheader bold">4.7 Additional Costs</p>
-                <p className="text standard">So-called 'additional costs' are not included in quotations. Think of travel costs, accomodation costs, costs that must be
-                paid to external bodies and that are also determined by these parties, such as royalties to BUMA-STEMRA or stock content.
-                All of these costs will be added separately on the final invoice. Entrepreneur is allowed to ask for a pre-payment for these costs from client whenever
-                entrepreneur is unable to pay these up front by himself.</p>
+                <p className="text standard">
+                  So-called 'additional costs' are not included in quotations. Think of travel costs, accomodation
+                  costs, costs that must be paid to external bodies and that are also determined by these parties, such
+                  as royalties to BUMA-STEMRA or stock content. All of these costs will be added separately on the final
+                  invoice. Entrepreneur is allowed to ask for a pre-payment for these costs from client whenever
+                  entrepreneur is unable to pay these up front by himself.
+                </p>
                 <p className="textheader bold">4.8 Prices</p>
-                <p className="text standard">Prices are specified on the pricelist of ARCTIC LIME Solutions, which can be requested free of charge through WhatsApp or e-mail.
-                Prices are, if VAT is appliccable, excluding 21% VAT.</p>
+                <p className="text standard">
+                  Prices are specified on the pricelist of ARCTIC LIME Solutions, which can be requested free of charge
+                  through WhatsApp or e-mail. Prices are, if VAT is appliccable, excluding 21% VAT.
+                </p>
                 <section className="whitespace"></section>
-                <p className="section">Section 5<br></br>Agreements</p>
+                <p className="section">
+                  Section 5<br></br>Agreements
+                </p>
                 <p className="textheader bold">5.1 Agreement</p>
-                <p className="text standard">An agreement between client and entrepreneur has only been properly established when client accepts the quotation extended to him.
-                Client can indicate his acknowledgement by signing the quotation physically or digitally and by returning a signed copy to entrepreneur.</p>
+                <p className="text standard">
+                  An agreement between client and entrepreneur has only been properly established when client accepts
+                  the quotation extended to him. Client can indicate his acknowledgement by signing the quotation
+                  physically or digitally and by returning a signed copy to entrepreneur.
+                </p>
                 <p className="textheader bold">5.2 Duration of agreement</p>
-                <p className="text standard">Agreements are entered for a definitive period of time, unless the nature of the assignment contradicts this or this has been established in writing between client and entrepreneur.</p>
+                <p className="text standard">
+                  Agreements are entered for a definitive period of time, unless the nature of the assignment
+                  contradicts this or this has been established in writing between client and entrepreneur.
+                </p>
                 <p className="textheader bold">5.3 Changes in agreement</p>
-                <p className="text standard">If during the execution of the agreement it appears that an amendment to the agreement is necessary in order to guarantee a proper execution of the assignment, the entrepreneur will inform the client of this in a timely manner.
-                It is up to the client and the entrepreneur to proceed to the adjustment of the agreement in a timely manner and through mutual consultation.</p>
+                <p className="text standard">
+                  If during the execution of the agreement it appears that an amendment to the agreement is necessary in
+                  order to guarantee a proper execution of the assignment, the entrepreneur will inform the client of
+                  this in a timely manner. It is up to the client and the entrepreneur to proceed to the adjustment of
+                  the agreement in a timely manner and through mutual consultation.
+                </p>
                 <p className="textheader bold">5.4 Execution of agreement</p>
-                <p className="text standard">Entrepreneur declares to perform the agreement according to his professional insight, best ability, knowledge and craftsmanship, as it should benefit him as a professional in the audiovisual and web development industry. He will do this within
-                the framework of the general terms and conditions, the available time frame and the contents of the quotation that was extended to client. However, entrepreneur cannot guarantee the achievement
-                of the intended result of the client.</p>
+                <p className="text standard">
+                  Entrepreneur declares to perform the agreement according to his professional insight, best ability,
+                  knowledge and craftsmanship, as it should benefit him as a professional in the audiovisual and web
+                  development industry. He will do this within the framework of the general terms and conditions, the
+                  available time frame and the contents of the quotation that was extended to client. However,
+                  entrepreneur cannot guarantee the achievement of the intended result of the client.
+                </p>
                 <p className="textheader bold">5.5 Performances of work conducted by third parties</p>
-                <p className="text standard">Entrepreneur is authorized to have certain activities performed by third parties. Entrepreneur is not obligated to inform client about this.</p>
+                <p className="text standard">
+                  Entrepreneur is authorized to have certain activities performed by third parties. Entrepreneur is not
+                  obligated to inform client about this.
+                </p>
                 <p className="textheader bold">5.6 Delivery of required materials</p>
-                <p className="text standard">It is the responsibility of the client to ensure that the correct information, briefings, software, physical objects, digital or physical files, activation keys, download links, or other facilities are in the possession of
-                entrepreneur in a timely manner. This also applies to so-called facilities that the client should know are necessary for the proper execution of the agreement.</p>
+                <p className="text standard">
+                  It is the responsibility of the client to ensure that the correct information, briefings, software,
+                  physical objects, digital or physical files, activation keys, download links, or other facilities are
+                  in the possession of entrepreneur in a timely manner. This also applies to so-called facilities that
+                  the client should know are necessary for the proper execution of the agreement.
+                </p>
                 <p className="textheader bold">5.7 Failure of delivery</p>
-                <p className="text standard">If the required materials are not, untimely, or unreasonably delivered by the client, the entrepreneur reserves the right to suspend the execution of the agreement
-                until the client complies with this. In addition, entrepreneur retains the right to charge the extra costs resulting from the delay to the client according to his usual rates and to one-sidedly terminate
-                the agreement if client is unable to present a reasonable timeframe in which he is able to meet his responsibility regarding the delivery of the required materials. Costs and worked hours that have been made up until the point of one-sided termination of the agreement
-                will still be charged to client through a final invoice.</p>
+                <p className="text standard">
+                  If the required materials are not, untimely, or unreasonably delivered by the client, the entrepreneur
+                  reserves the right to suspend the execution of the agreement until the client complies with this. In
+                  addition, entrepreneur retains the right to charge the extra costs resulting from the delay to the
+                  client according to his usual rates and to one-sidedly terminate the agreement if client is unable to
+                  present a reasonable timeframe in which he is able to meet his responsibility regarding the delivery
+                  of the required materials. Costs and worked hours that have been made up until the point of one-sided
+                  termination of the agreement will still be charged to client through a final invoice.
+                </p>
                 <p className="textheader bold">5.8 Phase-based execution of agreement</p>
-                <p className="text standard">Entrepreneur has the right to execute the agreement in phases if he deems this necessary. If this is the case, the entrepreneur is entitled to invoice each separately performed part.
-                If the agreement is executed in phases, the entrepreneur has the right to suspend activities that belong to the next phase until the client has approved the results of the preceding phases in writing.</p>
+                <p className="text standard">
+                  Entrepreneur has the right to execute the agreement in phases if he deems this necessary. If this is
+                  the case, the entrepreneur is entitled to invoice each separately performed part. If the agreement is
+                  executed in phases, the entrepreneur has the right to suspend activities that belong to the next phase
+                  until the client has approved the results of the preceding phases in writing.
+                </p>
+                <section className="whitespace"></section>
+                <p className="section">
+                  Section 6<br></br>Liability
+                </p>
+                <p className="textheader bold">6.1 Effort Obligation</p>
+                <p className="text standard">
+                  Liability of entrepreneur towards the client is limited to compliance with the contractual obligations
+                  that have been established in the agreemeent, and a so-called 'obligation to execute contractual
+                  obligations in his best possible effort' in which entrepreneur makes every effort to perform as agreed
+                  upon. Under no circumstancces is client able to claim compensation from entrepreneur other than
+                  non-compliance with the aforementioned effort obligation. Client is not entitled to claim any
+                  compensation to entrepeneur other than in respect of non-compliance with the intended effort
+                  obligation.{" "}
+                </p>
+                <p className="textheader bold">6.2 Liability and Damages</p>
+                <p className="text standard">
+                  The liability for any damage whatsoever, caused by attributable shortcomings on behalf of entrepreneur
+                  are limited to the amount of the fee or honorarium that entrepreneur has received for its work in the
+                  context of that assignment.
+                </p>
+                <p className="textheader bold">6.3 Indirect Damages</p>
+                <p className="text standard">
+                  Entrepreneur is not responsible for indirect damage, such as consequential damage, loss of turnover,
+                  missed savings, business interruption or immaterial damage.
+                </p>
+                <p className="textheader bold">6.4 Liability Period</p>
+                <p className="text standard">
+                  If entrepreneur is liable for any damage, client must report this to entrepreneur in writing within
+                  ten days after the incident. After this term, the liability period for entrepreneur towards client
+                  lapses.
+                </p>
+                <p className="textheader bold">6.5 Third-Party Indemnification</p>
+                <p className="text standard">
+                  Client must hold entrepreneur harmless and free from third parties that are currently, directly or
+                  indirectly related to the work of the entrepreneur for the client. If the entrepreneur is approached
+                  by a third-party, client is expected to assist the entrepreneur both outside- and in court. All costs
+                  and damage on the part of the entrepreneur and its third parties are for full account and risk of the
+                  client.
+                </p>
+                <p className="textheader bold">6.6 Transitional risks upon delivery</p>
+                <p className="text standard">
+                  Until digital or physical transfer and/or the process of delivering the final product to client, items
+                  that are subject of the agreement are at expense and risk of entrepreneur. The risk of loss, damage
+                  and depreciation that are part of the agreement is transferred to the client at the time of transfer.
+                </p>
+                <p className="textheader bold">6.7 Confidentiality</p>
+                <p className="text standard">
+                  Entrepreneur will carefully keep all information and files it receives from the client under a duty of
+                  confidentiality, unless entrepreneur is obliged by law, code of conduct or a professional code to
+                  share this information with others.
+                </p>
+                <p className="textheader bold">6.8 Transport</p>
+                <p className="text standard">
+                  Entrepreneur cannot be held liable for damage or loss of items such as physical carriers, digital
+                  files and other products or objects during transport or shipment by courier service or post. This does
+                  not matter whether the shipment is addressed to or sent by client, entrepreneur or third parties.
+                </p>
+                <section className="whitespace"></section>
+                <p className="section">
+                  Section 7<br></br>Delivery
+                </p>
+                <p className="textheader bold">7.1 Delivery</p>
+                <p className="text standard">
+                  Delivery takes place whenever the final product is made available to the client digitally or through a
+                  physical carrier. After this so-called delivery, the risk passes on to client as described in section
+                  6.6
+                </p>
+                <p className="textheader bold">7.2 Means of delivery</p>
+                <p className="text standard">
+                  Delivery takes place in the manner indicated by entrepreneur, unless otherwise agreed by both parties.
+                </p>
+                <p className="textheader bold">7.3 Shipping costs</p>
+                <p className="text standard">
+                  If shipping costs are to be paid for the delivery of the (final) product, such as the shipment of
+                  physical data carriers, then entrepreneur will add these costs on the quotation. If shipping costs
+                  become relevant during the execution of the agreement, the shipping costs will be added to the final
+                  invoice.
+                </p>
+                <p className="textheader bold">7.4 Delivery times</p>
+                <p className="text standard">
+                  The delivery term of the final product and related work will be carried out by a term specified by
+                  entrepreneur. Delivery times that are communicated to the client in writing or by quotation are merely
+                  indications. Indicated delivery times cannot be regarded as a strict deadline.
+                </p>
+                <p className="textheader bold">7.5 Definitive Deadlines</p>
+                <p className="text standard">
+                  If the delivery or execution period has been exceed, client must give entrepreneur a written notice of
+                  default. While doing so, client must still offer entrepreneur a reasonable term to deliver the product
+                  or to proceed with the execution of the agreement.
+                </p>
+                <p className="textheader bold">7.6 Standard Delivery Protocol for video files</p>
+                <p className="text standard">
+                  Entrepreneur uses a so-called Standard Delivery Protocol for the delivery of video files to the
+                  client. The delivery of digital files in the following formats are included in the price of the
+                  quotation:
+                </p>
+                <p className="text standard">Video: MP4, MOV (APR4444XQ), GIF</p>
+                <p className="text standard">Audio: WAV, MP3, AIFF (-14LUFS, -16LUFS or -23LUFS) - Stereo </p>
+                <p className="text standard">Text/Print: PDF</p>
+                <p className="text standard">Photography: JPG, PNG</p>
+                <p className="text standard">Motion Graphics: MOV (APR4444XQ plus alpha channels), GIF</p>
+                <p className="text standard">If client wishes to receive a file in a different file format or codec that has not been specified in entrepreneur's Standard Delivery Protocol, he can
+                request entrepeneur to deliver the file in the requested file format and/or codec. Entrepreneur is entitled to charge costs for this that are in line with his price list. </p>
+                <p className="textheader bold">7.7 File formats outside of the Standard Delivery Protocol</p>
+                <p className="text standard">Entrepreneur is entitled to charge additional costs for the delivery of file formats or codecs outside of the Standard Delivery Protocol for various platforms
+                such as cinemas, streaming services, television stations and printers. The prices are stated on the price list of entrepreneur.</p>
+                <p className="text standard">This includes delivery (but not limited to) in the following formats: DPX, Broadcast MXF, IMF, DCP, Uncompressed Quicktime, TARGA, TIFF, EXR, DNXHD, and 5.1/7.1 surround sound audiomixes </p>
+                <p className="textheader bold">7.8 Transport files and project files</p>
+                <p className="text standard">Unless otherwise agreed between client and entrepreneur, entrepreneur will not deliver so-called transport/project files to the client, such as (but not limited to) .pproj, .aep, .psd, .omf, .xml, .edl, .cdl and .aal files.</p>
+                <section className="whitespace"></section>
+                <p className="section">Section 8<br></br>Prices</p>
+                <p className="textheader bold">8.1 Prices</p>
+                <p className="text standard">Entrepreneur's fee is based on the rates stated on his price list, and does not depend on project basis.</p>
+                <p className="textheader bold">8.2 Price changes</p>
+                <p className="text standard">If entrepreneur, at the time of concluding the agreement, agrees on a fixed fee, price or rate, then entrepreneur remains entitled to increase his prices over the course of the agreement.
+                If entrepreneur intends to change the fee, price or fee, he must inform the client as soon as possible.</p>
+                <p className="text standard">If the increase in fee, price or rate takes place within three months after the conclusion of the agreement, the adjacent party may terminate the agreement by means of a written statement, unless:</p>
+                <p className="text standard">the increase arises from a power or an obligation resting on entrepreneur under Dutch law;</p>
+                <p className="text standard">the increase is caused by an increase in the price of raw materials, wages, etc. or on other grounds that could not reasonably be foreseen when the agreement was entered into;</p>
+                <p className="text standard">entrepreneur is still willing to perform the agreement on the exact same price that was originally agreed upon;</p>
+                <p className="text standard">it is stipulated that the execution of the agreement will be carried out longer than three months after the agreement was established.</p>
+                <p className="text standard">The client has the right to terminate the agreement if fee, price or rate is increased after more than three months after the agreement was established, unless the agreement specifically notes that execution of the agreement will last longer than 3 months when it was originally agreed upon and signed by both parties.</p>
+                <p className="text standard">Entrepreneur will inform client as soon as possible in the event of an increase in prices and/or fees. Entrepreneur hereby also indicates a date when these new prices will be effective.</p>
+                <p className="textheader bold">8.3 Currency</p>
+                <p className="text standard">Prices are expressed in euro, exclusive of VAT and other fees/levies, unless indicated otherwise. Prices do not include so-called additional costs, which are described in section 4.7.</p>
+                <section className="whitespace"></section>
+                <p className="section">Section 9<br></br>Payment</p>
+                <p className="textheader bold">9.1 Payment term</p>
+                <p className="text standard">Payment must be made within 14 days of the invoice date to the IBAN number provided by entrepreneur. The payment description should match the invoice number on the invoice.</p>
+                <p className="textheader bold">9.2 Expiry of payment term</p>
+                <p className="text standard">After the payment term has expired, statutory interest will be charged to the client, without notice of default being required from entrepreneur.</p>
+                <p className="textheader bold">9.3 Failure to meet payment obligation</p>
+                <p className="text standard">If client fails to comply with the payment obligation, entrepreneur retains to right to charge all judicial, extrajudicial and collection costs 
+                incurred by the entrepreneur to client due to non-compliance with the payment obligation.</p>
+                <p className="textheader bold">9.4 Counterclaims</p>
+                <p className="text standard">The client is not authorized to deduct any amount due from a counterclaim made by him.</p>
+                <p className="textheader bold">9.5 Bankruptcy, guardianship and suspension of payment</p>
+                <p className="text standard">In the event that client has experienced bankruptcy, suspension of payments, or if client is placed under guardianship, all claims of entrepreneur and the obligations of client towards entrepreneur are immediately due and payable.</p>
+                <p className="textheader bold">9.6 Currency</p>
+                <p className="text standard">Payment of invoices must be made in euro's, unless client and entrepreneur explicitly have agreed otherwise through writing. If payment occurs in a 'foreign currency' other than euro after mutual written agreement, it is the client's responsibility
+                to ensure that transaction costs and currency exchange costs are paid in full and that the transferred amount exactly matches the invoice amount after being exchanged to euro. If client fails to do so, he is still obligated to pay the remaining due amount, including the currency exchange and transaction costs involved while paying the remaining due amount.</p>
+                <p className="textheader bold">9.7 Transaction costs for payments from outside the EU/EEA</p>
+                <p className="text standard">If client resides outside of the European Union, or the direct European Economic Area, it is possible that additional transaction costs will be charged to client by entrepreneur.
+                Entrepreneur declares not to have any influence regarding the amount of these costs, as they are charge by the bank to entrepreneur and subsequently from him to the client. If the situation arises of a so-called 'world payment', costs will be specified on the quotation.
+                Client understands that the transaction costs on the quotation are subject to change and no means final. The transaction costs on the final invoice are, at all times, considered leading.</p>
+                <section className="whitespace"></section>
+                <p className="section">Section 10<br></br>Complaints</p>
+                <p className="textheader bold">10.1 Complaints</p>
+                <p className="text standard">Complaints about the work performed must be reported to entrepreneur in writing by client no later than 10 days after delivery. The client must submit a description of the complaint as detailed as possible,
+                and if possible, substantiate his claim with documents so that entrepreneur is able to respond appropriately to the client's complaint.</p>
+                <p className="textheader bold">10.2 Courtesy of a justified complaint</p>
+                <p className="text standard">If a justication for client's complaint has been granted, entrepreneur has the right to choose from one of the following courtesy options:</p>
+                <p className="text standard">improving the rejected work, free of charge;</p>
+                <p className="text standard">performing the work again, free of charge;</p>
+                <p className="text standard">adjustment of the charged fee;</p>
+                <p className="text standard">wholly/partially (no longer) performing the work against a proportional refund.</p>
+                <p className="textheader bold">10.3 Payment obligation after submission of complaint</p>
+                <p className="text standard">Submitting a complaint does not suspend the clients playment obligation.</p>
+                <section className="whitespace"></section>
+                <p className="section">Section 11<br></br>Termination</p>
+                <p className="textheader bold">11.1 Cooldown period</p>
+                <p className="text standard">Every agreement comes with a so-called 'cooldown' period of 48 hours. This means that client has the right to terminate the agreement, one-sidedly and without having to pay any cost to entrepreneur.
+                However, entrepreneur retains the right to start executing the agreement after the cooldown period has ended in order to be able to guarantee a termination that is free of charge
+                to the client if he decided to terminate the agreement during the cooldown period, unless client asks entrepreneur to start the execution of the agreement right away.
+                If client asks entrepreneur for this 'direct execution' of the agreement through writing, client will be still allowed to terminate the agreement during the 48-hour cooldown period. However,
+                entrepreneur is entitled to charge all of the working hours, costs, material costs and additional costs to client up until the point of termination, as described in section 11.3</p>
+                <p className="textheader bold">11.2 Termination of agreement</p>
+                <p className="text standard">If client does not, not fully, not timely or not properly fulfill his obligations under the agreement, entrepreneur is entitled to dissolve the agreement
+                with immediate effect, unless the shortcoming is of such minor significance that it will not justify the termination of the agreement.
+                Both parties can unilaterally terminate the agreement prematurely if one of the parties' opinion is that the execution of the assignment can no longer
+                take place in accordance with the agreement. This must be communicated to the other party with valid reasons and in writing. If the other party believes the first party's 
+                motivation is unclear or insufficiently subtantiated, he is allowed to return a counteroffer or a response to the counterparty, containing a valid motivation of their own.
+                Both parties will have to come to an agreement by themselves and declare they will do the best they possibly can to come to an agreement or a compromise. A valid agreement has only been fully
+                terminated when both parties have agreed and must state this through writing.</p>
+                <p className="text standard">Entrepreneur is authorized to dissolve the agreement with immediate effect if:</p>
+                <p className="text standard">entrepreneur has become aware of circumcstances in which entrepreneur may fear that client will not fulfill his obligations;</p>
+                <p className="text standard">client has been requested to provide security for the payment of its obligations, and this security has not been forthcoming or is deemed insufficient;</p>
+                <p className="text standard">due to a delay on behalf of the client, entrepreneur can no longer be expected to fulfill the agreement under the original agreed conditions;</p>
+                <p className="text standard">circumstances arise of such a nature that fulfillment of the agreement is impossible or that unaltered maintenance of the agreement cannot in all reasonableness be expected from entrepreneur;</p>
+                <p className="text standard">client is declared bankrupt, files a deferment of payment, is placed under guardianship, parts of his property (or his property in whole) has been seized or has deceased.</p>
+                <p className="textheader bold">11.3 Compensation upon termination of the agreement</p>
+                <p className="text standard">Entrepreneur is entitled to compensation based on the working hours, costs and additional costs incurred up to that point if the agreement is terminated.</p>
+                <p className="textheader bold">11.4 Additional ways of termination (for entrepreneur)</p>
+                <p className="text standard">In addition to matters mentioned in section 11.2, entrepreneur is entitled to use his authority to prematurely terminate the agreement
+                whenever circumstances or facts arise that are beyond his control or cannot be attributed to him, such as situations of force majeure and sudden impediment that prevent the completion of the agreement in all reasonableness.</p>
+                <p className="textheader bold">11.5 Delivery Time</p>
+                <p className="text standard">A missed delivery term, or 'deadline' does not count as a valid reason to cancel the agreement.</p>
+                <p className="textheader bold">11.6 Cancellation in case of late payment</p>
+                <p className="text standard">Entrepreneur reserves the right to terminate the agreement immediately in the event of late payment of the client. In this case, entrepreneur retains the right to full payment.</p>
+                <p className="textheader bold">11.7 Damages upon termination of contract</p>
+                <p className="text standard">Entrepreneur is not liable for any damages, compensation or costs suffered by client when entrepreneur dissolves the agreeement.</p>
+                <p className="textheader bold">11.8 Due and payable</p>
+                <p className="text standard">When the agreement is terminated, outstanding claims of the entrepreneur towards client are immediately due and payable.</p>
+                <section className="whitespace"></section>
+                <p className="section">Section 12<br></br>Storage and Back-up</p>
+                <p className="textheader bold">12.1 Storage and back-up of files</p>
+                <p className="text standard">As described in section 6.6 of this agreement, the risk of digital and physical files is transferred
+                to the client upon delivery. Although entrepreneur will conduct his best effort possible to ensure the storage and back-up of as many files and projects as possible, this never counts as
+                a back-up guarantee. Entrepreneur is not obligated to save, backup or retain any files related to projects once the project has reached 'completed' status.</p>
+                <p className="text standard">A project is classifed as 'completed' whenever entrepreneur has delivered the final files to the client, the invoice has been paid in full and the
+                complaint period has expired.</p>
+
 
 
 

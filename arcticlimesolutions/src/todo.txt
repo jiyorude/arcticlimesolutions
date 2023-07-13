@@ -1,9 +1,11 @@
 - Content English teRMS AND coNDITIONS
 - Continue with Privacy Statement
+- Continue with rates modal.
 - Add Anime React to add animations.
 - Update SCSS for mobile responsivity.
 - Update to version 0.0.3
 - Homepage main
 - Homepage background video
+- Homepage buttons for services and work
 - Homepage responsive
 - Once homepage is fully done, update to version 0.1.0
