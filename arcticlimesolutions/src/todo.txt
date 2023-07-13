@@ -1,6 +1,6 @@
 - Continue with rates modal and fill in all the content.
-- Add Anime React to add animations.
 - Update SCSS for mobile responsivity.
+- Add Anime React to add animations.
 - Update to version 0.0.3
 - Homepage main
 - Homepage background video
