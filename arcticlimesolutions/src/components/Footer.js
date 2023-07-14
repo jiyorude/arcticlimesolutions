@@ -12,57 +12,44 @@ const Footer = () => {
   const [termHover, setTermHover] = useState(false);
   const [terms, setTerms] = useState(false);
   const [priv, setPriv] = useState(false);
-  const [aniComplete, setAniComplete] = useState(false);
   const date = new Date();
   const year = date.getFullYear();
+  const termsBGIn = useRef(null);
+  const termsAniIn = useRef(null);
 
-  const termsBG = useRef(null);
-  const termsAni = useRef(null);
+/*HOW CAN YOU ACHIEVE THE SAME EFFECT BUT THEN BACKWARDS WITH ANIME? CAN YOU THROW IT INTO A TIMELINE, AND THEN REVERSE THE TIMELINE?
+like const animation = anime.timeline({})
+animation.current.reverse() OR CAN YOU DO USESTATE false. when you click it becomes true. When you want to do the exit animation if (terms == undefined // setTerms == undefined) and then move to false?*/
+
+    useEffect(() => {
+     const termsbackgroundIn = termsBGIn.current;
+     const termsContIn = termsAniIn.current;
   
-  useEffect(() => {
-   const background = termsBG.current;
-   const termsCont = termsAni.current;
-    
-   if (terms) {
-      
-    if (!aniComplete) {
-        anime({
-          targets: background,
-          opacity: [0, 0.8],
-          duration: 500,
-          easing: "easeInOutExpo",
-        });
-        anime({
-          targets: termsCont,
-          marginTop: [-2000, 0],
-          duration: 800,
-          easing: "easeInOutExpo",
-          complete: () => {
-            setAniComplete(true);
-          }
-        });
-    } 
-  } else {
-
-    if (aniComplete) {
+    if (terms) {
       anime({
-        targets: background,
-        opacity: [0.8, 0],
-        duration: 500,
-        easing: "easeInOutExpo",
-      });
-      anime({
-        targets: termsCont,
-        marginTop: [0, -2000],
+        targets: termsbackgroundIn,
         duration: 800,
+        opacity: [0, 0.8],
         easing: "easeInOutExpo",
-        complete: () => {
-          setAniComplete(false);
-        }
       });
-     }
+
+      anime({
+        targets: termsContIn,
+        delay: 200,
+        duration: 700,
+        marginTop: [-2000, 0],
+        easing: "easeInOutExpo"
+      });
     }
-  }, [terms, aniComplete]);
+  }, [terms]);
+
+  const openTerms = () => {
+    setTerms(true);
+  };
+
+  const closeTerms = () => {
+    setTerms(false);
+  };
 
   const handlePrivHover = () => {
     setPrivHover(true);
@@ -78,14 +65,6 @@ const Footer = () => {
 
   const returnTermHover = () => {
     setTermHover(false);
-  };
-
-  const openTerms = () => {
-    setTerms(true);
-  };
-
-  const closeTerms = () => {
-    setTerms(false);
   };
 
   const openPriv = () => {
@@ -167,11 +146,11 @@ const Footer = () => {
         </div>
       </footer>
       {/* TERMS AND CONDITIONS */}
-      {terms && (
+      {terms && 
         <>
-          <div className="bg" ref={termsBG}></div>
+          <div className="bg" ref={termsBGIn}></div>
           <div className="terms">
-            <div className="termscontainer" ref={termsAni}>
+            <div className="termscontainer" ref={termsAniIn}>
               <div className="language">
                 <a href="#headernl" title="Click here for Dutch Terms and Conditions">
                   <span>
@@ -1584,9 +1563,9 @@ const Footer = () => {
             </div>
           </div>
         </>
-      )}
-    
-      ;{/*PRIVACY STATEMENT*/}
+      };
+       
+      {/*PRIVACY STATEMENT*/}
       {priv && (
         <>
           <div className="privacy">
