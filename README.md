@@ -8,5 +8,6 @@
 
 ```
 © Jordy Veenstra 2023 - All Rights Reserved.
+Lime Vector Icon obtained from vecteezy.com
 ```
 

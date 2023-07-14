@@ -1,13 +1,11 @@
-- Continue with rates modal and fill in all the content.
-- Update SCSS for mobile responsivity.
 - Add Anime React to add animations.
 - Update to version 0.0.3
 - Homepage main
 - Homepage background video
-- Homepage buttons for services and work
+- Homepage buttons for services, rates and work
 - Homepage responsive
 - Update all of the CSS to % if possible. Make a backup of the original scss file.
-- Check all of the homepage content for typos
+- Check all of the homepage content for typos, incl prijslijst bij algemene voorwaarden. SCSS text bigger on desktop?
 - Once homepage is fully done, update to version 0.1.0
 - React Routers to both pages
 - Add header to both pages

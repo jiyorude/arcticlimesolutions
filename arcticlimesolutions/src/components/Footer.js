@@ -1,17 +1,68 @@
 import React from "react";
 import "../css/footer.min.css";
 import { useState } from "react";
+import anime from "animejs/lib/anime.es";
+import { useRef } from "react";
+import { useEffect } from "react";
 import { ReactComponent as FlagNL } from "../image/svg/flag_nl.svg";
 import { ReactComponent as FlagUSA } from "../image/svg/flag_us.svg";
 
 const Footer = () => {
   const [privHover, setPrivHover] = useState(false);
   const [termHover, setTermHover] = useState(false);
-  const [rateHover, setRateHover] = useState(false);
   const [terms, setTerms] = useState(false);
   const [priv, setPriv] = useState(false);
+  const [aniComplete, setAniComplete] = useState(false);
   const date = new Date();
   const year = date.getFullYear();
+
+  const termsBG = useRef(null);
+  const termsAni = useRef(null);
+  
+  useEffect(() => {
+   const background = termsBG.current;
+   const termsCont = termsAni.current;
+    
+   if (terms) {
+      
+    if (!aniComplete) {
+        anime({
+          targets: background,
+          opacity: [0, 0.8],
+          duration: 500,
+          easing: "easeInOutExpo",
+        });
+        anime({
+          targets: termsCont,
+          marginTop: [-2000, 0],
+          duration: 800,
+          easing: "easeInOutExpo",
+          complete: () => {
+            setAniComplete(true);
+          }
+        });
+    } 
+  } else {
+
+    if (aniComplete) {
+      anime({
+        targets: background,
+        opacity: [0.8, 0],
+        duration: 500,
+        easing: "easeInOutExpo",
+      });
+      anime({
+        targets: termsCont,
+        marginTop: [0, -2000],
+        duration: 800,
+        easing: "easeInOutExpo",
+        complete: () => {
+          setAniComplete(false);
+        }
+      });
+     }
+    }
+  }, [terms, aniComplete]);
 
   const handlePrivHover = () => {
     setPrivHover(true);
@@ -23,14 +74,6 @@ const Footer = () => {
 
   const handleTermHover = () => {
     setTermHover(true);
-  };
-
-  const handleRateHover = () => {
-    setRateHover(true);
-  };
-
-  const returnRateHover = () => {
-    setRateHover(false);
   };
 
   const returnTermHover = () => {
@@ -119,20 +162,6 @@ const Footer = () => {
                   leveringsvoorwaarden van ARCTIC LIME Solutions te lezen.
                 </span>
               </li>
-              <li className="privlist">
-                <h2
-                  style={{ color: rateHover ? "#D0FF14" : "#FAFAFA" }}
-                  onMouseEnter={handleRateHover}
-                  onMouseLeave={returnRateHover}
-                  title="Check out the rates here"
-                >
-                  RATES
-                </h2>
-                <span>
-                  Click here for more information regarding our rates. Klik hier om de prijslijst van ARCTIC LIME
-                  Solutions te lezen.
-                </span>
-              </li>
             </ul>
           </div>
         </div>
@@ -140,8 +169,9 @@ const Footer = () => {
       {/* TERMS AND CONDITIONS */}
       {terms && (
         <>
+          <div className="bg" ref={termsBG}></div>
           <div className="terms">
-            <div className="termscontainer">
+            <div className="termscontainer" ref={termsAni}>
               <div className="language">
                 <a href="#headernl" title="Click here for Dutch Terms and Conditions">
                   <span>
@@ -447,6 +477,7 @@ const Footer = () => {
                 <p className="text standard">Tekst/Print: PDF</p>
                 <p className="text standard">Fotografie: JPG, PNG</p>
                 <p className="text standard">Motion Graphics: MOV (APR4444XQ plus alpha kanalen), GIF</p>
+                <p className="text standard">Ondertiteling: SRT of 'Burn-In-Video'</p>
                 <p className="text standard">
                   Wanneer opdrachtgever een zaak in een bestandsformaat of codec wenst te ontvangen die niet staat
                   beschreven in het standaard delivery protocol, dan kan hij dit bij opdrachtnemer voorleggen.
@@ -850,9 +881,7 @@ const Footer = () => {
                   Wijzigingen van de algemene leveringsvoorwaarden zullen na 30 dagen van kracht zijn, ingaande op de
                   dag dat deze wijzigingen zijn aangekondigd.
                 </p>
-                <p className="textheader bold">
-                  15.3 Ontbinden overeenkomst na wijziging algemene leveringsvoorwaarden
-                </p>
+                <p className="textheader bold">15.3 Ontbinden overeenkomst na wijziging</p>
                 <p className="text standard">
                   Opdrachtgever is gerechtigd gedurende deze periode van 30 dagen de overeenkomst eenzijdig te ontbinden
                   wanneer deze niet akkoord gaat met de aangekondigde wijzigingen. Opdrachtnemer blijft gerechtigd de
@@ -1150,6 +1179,7 @@ const Footer = () => {
                 <p className="text standard">Text/Print: PDF</p>
                 <p className="text standard">Photography: JPG, PNG</p>
                 <p className="text standard">Motion Graphics: MOV (APR4444XQ plus alpha channels), GIF</p>
+                <p className="text standard">Subtitles: SRT or 'Burn-In-Video'</p>
                 <p className="text standard">
                   If client wishes to receive a file in a different file format or codec that has not been specified in
                   entrepreneur's Standard Delivery Protocol, he can request entrepeneur to deliver the file in the
@@ -1532,7 +1562,7 @@ const Footer = () => {
                   Changes made to the terms and conditions will be in effect after 30 days, starting from the day these
                   changes were announced.
                 </p>
-                <p className="textheader bold">15.3 Termination of agreement after changes to terms and conditions</p>
+                <p className="textheader bold">15.3 Termination of agreement after changes to TOC</p>
                 <p className="text standard">
                   During this period of 30 days, client is entitled to terminate the agreement unilaterally if he does
                   not agree with the announced changes. Entrepreneur remains entitled to the to invoice work done up to
@@ -1555,6 +1585,7 @@ const Footer = () => {
           </div>
         </>
       )}
+    
       ;{/*PRIVACY STATEMENT*/}
       {priv && (
         <>
@@ -1588,6 +1619,7 @@ const Footer = () => {
                   dat informatie over uw gebruik van de website kan worden verzameld door middel het plaatsen van
                   cookies.
                 </p>
+                <section className="whitespace"></section>
                 <p className="text standard">
                   ARCTIC LIME Solutions verklaart hierbij de informatie die voortvloeit uit de cookies niet te
                   gebruiken. Gedeelde persoonlijke informatie met ARCTIC LIME Solutions zullen alleen en uitsluitend
@@ -1608,6 +1640,7 @@ const Footer = () => {
                   When you visit the ARCTIC LIME Solutions website, it is possible that information about your use of
                   the website can be collected by placing cookies.
                 </p>
+                <section className="whitespace"></section>
                 <p className="text standard">
                   ARCTIC LIME Solutions hereby declares not to use the information resulting from the cookies. Personal
                   information shared with ARCTIC LIME Solutions will only and exclusively be used for the purpose of
@@ -1625,6 +1658,7 @@ const Footer = () => {
           </div>
         </>
       )}
+      ;
     </>
   );
 };
