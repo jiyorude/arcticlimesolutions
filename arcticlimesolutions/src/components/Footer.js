@@ -145,8 +145,9 @@ animation.current.reverse() OR CAN YOU DO USESTATE false. when you click it beco
           </div>
         </div>
       </footer>
+
       {/* TERMS AND CONDITIONS */}
-      {terms && 
+      {terms && (
         <>
           <div className="bg" ref={termsBGIn}></div>
           <div className="terms">
@@ -1563,7 +1564,7 @@ animation.current.reverse() OR CAN YOU DO USESTATE false. when you click it beco
             </div>
           </div>
         </>
-      };
+      )};
        
       {/*PRIVACY STATEMENT*/}
       {priv && (
