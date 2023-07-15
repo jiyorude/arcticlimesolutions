@@ -11,20 +11,17 @@ const Footer = () => {
   const [privHover, setPrivHover] = useState(false);
   const [termHover, setTermHover] = useState(false);
   const [terms, setTerms] = useState(false);
+  const [animation, setAnimation] = useState(false);
   const [priv, setPriv] = useState(false);
   const date = new Date();
   const year = date.getFullYear();
   const termsBGIn = useRef(null);
   const termsAniIn = useRef(null);
 
-/*HOW CAN YOU ACHIEVE THE SAME EFFECT BUT THEN BACKWARDS WITH ANIME? CAN YOU THROW IT INTO A TIMELINE, AND THEN REVERSE THE TIMELINE?
-like const animation = anime.timeline({})
-animation.current.reverse() OR CAN YOU DO USESTATE false. when you click it becomes true. When you want to do the exit animation if (terms == undefined // setTerms == undefined) and then move to false?*/
+  useEffect(() => {
+    const termsbackgroundIn = termsBGIn.current;
+    const termsContIn = termsAniIn.current;
 
-    useEffect(() => {
-     const termsbackgroundIn = termsBGIn.current;
-     const termsContIn = termsAniIn.current;
-  
     if (terms) {
       anime({
         targets: termsbackgroundIn,
@@ -38,17 +35,45 @@ animation.current.reverse() OR CAN YOU DO USESTATE false. when you click it beco
         delay: 200,
         duration: 700,
         marginTop: [-2000, 0],
-        easing: "easeInOutExpo"
+        easing: "easeInOutExpo",
       });
     }
   }, [terms]);
+
+  useEffect(() => {
+    const termsbackgroundIn = termsBGIn.current;
+    const termsContIn = termsAniIn.current;
+
+    if (animation) {
+      anime({
+        targets: termsContIn,
+        duration: 700,
+        marginTop: [0, -2000],
+        easing: "easeInOutExpo",
+      });
+
+      anime({
+        targets: termsbackgroundIn,
+        delay: 200,
+        duration: 800,
+        opacity: [0.8, 0],
+        easing: "easeInOutExpo",
+      });
+    }
+  }, [animation]);
 
   const openTerms = () => {
     setTerms(true);
   };
 
   const closeTerms = () => {
-    setTerms(false);
+    setAnimation(true);
+    setTimeout(() => {
+      setAnimation(false);
+    }, 900);
+    setTimeout(() => {
+      setTerms(false);
+    }, 900);
   };
 
   const handlePrivHover = () => {
@@ -1564,9 +1589,8 @@ animation.current.reverse() OR CAN YOU DO USESTATE false. when you click it beco
             </div>
           </div>
         </>
-      )};
-       
-      {/*PRIVACY STATEMENT*/}
+      )}
+      ;{/*PRIVACY STATEMENT*/}
       {priv && (
         <>
           <div className="privacy">
