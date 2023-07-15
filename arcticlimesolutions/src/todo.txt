@@ -1,5 +1,3 @@
-- Homepage main
-- Homepage background video
 - Homepage buttons for services, rates and work
 - Homepage responsive
 - Update all of the CSS to % if possible. Make a backup of the original scss file.
