@@ -199,6 +199,7 @@ h5 {
     background-color: #000000;
     overflow: hidden;
     position: fixed;
+    opacity: 0;
 };
 
 .termscontainer {
@@ -333,13 +334,21 @@ a {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: #000000;
     display: flex;
     top: 0%;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    opacity: 1;
+};
+
+.privbg {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    background-color: #000000;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
 };
 
 .privacycontainer {
@@ -351,7 +360,6 @@ a {
     color: $SMOKEWHITE;
     display: flex;
     flex-flow: row nowrap;
-    opacity: 1;
 };
 
 .privcontent {
@@ -363,7 +371,6 @@ a {
     overflow-y: scroll;
     scroll-behavior: smooth;
     flex-flow: column nowrap;
-    opacity: 1;
 };
 
 .privheader {
@@ -374,13 +381,8 @@ a {
     font-family: $BG;
     font-size: 1vw;
     color: $DUSK;
-    opacity: 1;
 };
 
-.bg {
-    background-color: #000000;
-    opacity: 0;
-}
 
 @media screen and (orientation: portrait) {
     .ticker-wrap .text {

@@ -12,11 +12,56 @@ const Footer = () => {
   const [termHover, setTermHover] = useState(false);
   const [terms, setTerms] = useState(false);
   const [animation, setAnimation] = useState(false);
+  const [privAni, setPrivAni] = useState(false);
   const [priv, setPriv] = useState(false);
   const date = new Date();
   const year = date.getFullYear();
   const termsBGIn = useRef(null);
   const termsAniIn = useRef(null);
+  const privBGIn = useRef(null);
+  const privAniIn = useRef(null);
+
+  useEffect(() => {
+    const privbackgroundIn = privBGIn.current;
+    const privContIn = privAniIn.current;
+
+    if (priv) {
+      anime({
+        targets: privbackgroundIn,
+        duration: 800,
+        opacity: [0, 0.8],
+        easing: "easeInOutExpo",
+      });
+      anime({
+        targets: privContIn,
+        delay: 200,
+        duration: 700,
+        marginBottom: [-2000, 0],
+        easing: "easeInOutExpo",
+      });
+    }
+  }, [priv]);
+
+  useEffect(() => {
+    const privbackgroundIn = privBGIn.current;
+    const privContIn = privAniIn.current;
+
+    if (privAni) {
+      anime({
+        targets: privContIn,
+        duration: 800,
+        marginBottom: [0, -2000],
+        easing: "easeInOutExpo",
+      });
+      anime({
+        targets: privbackgroundIn,
+        delay: 200,
+        duration: 800,
+        opacity: [0.8, 0],
+        easing: "easeInOutExpo",
+      });
+    }
+  }, [privAni]);
 
   useEffect(() => {
     const termsbackgroundIn = termsBGIn.current;
@@ -97,7 +142,13 @@ const Footer = () => {
   };
 
   const closePriv = () => {
-    setPriv(false);
+    setPrivAni(true);
+    setTimeout(() => {
+      setPrivAni(false);
+    }, 900);
+    setTimeout(() => {
+      setPriv(false);
+    }, 900);
   };
 
   return (
@@ -170,7 +221,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-
       {/* TERMS AND CONDITIONS */}
       {terms && (
         <>
@@ -1593,8 +1643,9 @@ const Footer = () => {
       ;{/*PRIVACY STATEMENT*/}
       {priv && (
         <>
+        <div className="privbg" ref={privBGIn}></div>
           <div className="privacy">
-            <div className="privacycontainer">
+            <div className="privacycontainer" ref={privAniIn}>
               <div className="language">
                 <a href="#privnl" title="Click here for the Privacy Statement in Dutch">
                   <span>

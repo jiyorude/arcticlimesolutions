@@ -2,17 +2,16 @@ ARCTIC LIME SOLUTIONS WEBSITE
 © JORDY VEENSTRA 2023
 
 CURRENT VERSION:
-0.0.2
-
-
-TO-DO FOR VERSION 0.0.3:
-Links to Terms/Conditions with corresponding modals and content
-Home Page Content: Background Video and navigation
-Fix Google search popup on mobile upon click/hover
-Add animation for correspondig modals.
+0.0.3
 
 
 CHANGELOG:
+
+0.0.3 - July 16, 2023
+Terms and Conditions: Content added in both NL/EN with scroll buttons.
+Privacy: Content added in both NL/EN with scroll buttons
+Animations working for true/false states for both pages.
+
 0.0.2 - July 7, 2023
 Footer Component 100% done
 Footer Component fully responsive
