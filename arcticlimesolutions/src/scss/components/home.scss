@@ -60,6 +60,7 @@ video {
     margin-top: 5vw;
     top: 50%;
     overflow: hidden;
+    border: 2px solid red;
 };
 
 h6 {
@@ -71,5 +72,34 @@ h6 {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+};
+
+@media screen and (orientation: portrait) {
+   
+    h1 {
+        font-size: 3.2vh;
+   };
+
+   .menu {
+        display: flex;
+        justify-content: unset;
+        align-items: unset;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 20%;
+        height: 80%;
+        bottom: 5vh;
+        padding-bottom: unset;
+        z-index: 1;
+        position: fixed;
+        margin-bottom: unset;
+        top: unset;
+        overflow: unset;
+        border: 2px solid red;
+   };
+
+   h6 {
+        font-size: 1.4vh;
+   };
 };
 

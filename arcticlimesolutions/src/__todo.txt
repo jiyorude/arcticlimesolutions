@@ -1,4 +1,4 @@
-- Fix scrolling issue on 404 page on mobile.
+- HOMEPAGE: FIX MENU BAR FLEXBOX
 - Homepage responsive
 - Check all of the homepage content for typos. SCSS text bigger on desktop?
 - Once homepage is fully done, update to version 0.1.0

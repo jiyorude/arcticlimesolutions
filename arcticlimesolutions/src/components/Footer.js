@@ -36,7 +36,7 @@ const Footer = () => {
         targets: privContIn,
         delay: 200,
         duration: 700,
-        marginBottom: [-2000, 0],
+        marginBottom: [-3000, 0],
         easing: "easeInOutExpo",
       });
     }
@@ -50,7 +50,7 @@ const Footer = () => {
       anime({
         targets: privContIn,
         duration: 800,
-        marginBottom: [0, -2000],
+        marginBottom: [0, -3000],
         easing: "easeInOutExpo",
       });
       anime({
@@ -79,7 +79,7 @@ const Footer = () => {
         targets: termsContIn,
         delay: 200,
         duration: 700,
-        marginTop: [-2000, 0],
+        marginTop: [-3000, 0],
         easing: "easeInOutExpo",
       });
     }
@@ -93,7 +93,7 @@ const Footer = () => {
       anime({
         targets: termsContIn,
         duration: 700,
-        marginTop: [0, -2000],
+        marginTop: [0, -3000],
         easing: "easeInOutExpo",
       });
 

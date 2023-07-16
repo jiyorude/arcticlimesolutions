@@ -42,7 +42,7 @@ const Main = () => {
   return (
     <>
       <main className="container">
-        <video autoPlay loop muted>
+        <video autoPlay loop muted className='fullscreen'>
           <source src={indexvid} type="video/mp4" />
           Your video does not support fullscreen video.
         </video>

@@ -1,7 +1,7 @@
 @import '../base/typography.scss';
 @import '../abstracts/variables.scss';
 
-.flex {
+.flexcontainer {
     width: 100vw;
     height: 100vh;
     background-color: $DUSK;
@@ -11,35 +11,32 @@
 };
 
 .error {
-    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    
 }
 
 .page {
     font-family: $CS-BO;
-    font-size: 2.5vw;
-    width: 100%;
-    border: 2px solid yellow;
-    position: fixed;
+    font-size: 3.5vw;
+    text-align: center;
+    color: $SMOKEWHITE;
 };
 
 .direct {
     font-family: $CS-TH;
     font-size: 1vw;
     color: $SMOKEWHITE;
-    margin-top: 5vw;
-    position: fixed;
-    width: 100%;
     text-align: center;
-    border: 2px solid pink;
+
 };
 
 @media screen and (orientation: portrait) {
-    .error {
-        font-size: 2.5vh;
+    .page {
+        font-size: 3.5vh;
     };
 
     .direct {
         font-size: 1.4vh;
-        margin-top: 6vh;
     };
 };

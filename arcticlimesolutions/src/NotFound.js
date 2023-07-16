@@ -3,7 +3,7 @@ import "./css/404.min.css";
 import { useState } from "react";
 
 const NotFound = () => {
-  const [countdown, setCountdown] = useState(999);
+  const [countdown, setCountdown] = useState(4);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -19,9 +19,9 @@ const NotFound = () => {
   }, [countdown]);
  
   return (
-    <main className="flex">
+    <main className="flexcontainer">
       <div className="error">
-        <h1 className='page'>404 - PAGE NOT FOUND</h1>
+        <p className='page'>404 - PAGE NOT FOUND</p>
         <p className='direct'>You will be redirected to the homepage in {countdown} seconds.</p>
         </div>
     </main>
