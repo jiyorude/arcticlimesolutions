@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from './components/Header'
 
 const Rates = () => {
   return (
-    <div>Rates</div>
+    <Header />
   )
 }
 

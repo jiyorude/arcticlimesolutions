@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from './components/Header'
 
 const Work = () => {
   return (
-    <div>Work</div>
+    <Header />
   )
 }
 

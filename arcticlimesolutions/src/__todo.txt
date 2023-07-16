@@ -1,6 +1,5 @@
-- Create 404 page
+- Fix scrolling issue on 404 page on mobile.
 - Homepage responsive
-- Update all of the CSS to % if possible. Make a backup of the original scss file.
 - Check all of the homepage content for typos. SCSS text bigger on desktop?
 - Once homepage is fully done, update to version 0.1.0
 - Add header to both pages
@@ -40,6 +39,8 @@
 - Create list of things to change
 - Final change
 - Update to version 0.3.4
+
+- CHECK THE SCSS THINGS, MAYBE ADD MEDIA QUERIES FOR LARGER SCREENS THAT TEXT BECOMES SMALLER BECAUSE VW IS REALLY BIG ON 4k, OR UPDATE FONTS TO EM/REM/%
 - Final check before deployment
 - Update to version 1.0.0 - Initial deployment
 - Deploy react app
