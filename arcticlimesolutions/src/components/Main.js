@@ -2,6 +2,7 @@ import React from 'react'
 import "../css/home.min.css";
 import indexvid from '../video/index.mp4';
 import { useState } from 'react';
+import { Outlet, Link } from "react-router-dom";
 
 const Main = () => {
   const [service, setService] = useState(false);
@@ -49,27 +50,30 @@ const Main = () => {
         <section className="menu">
           <ul>
             <li>
-              <h6 
-              style={styleService}
-              onMouseEnter={handleService}
-              onMouseLeave={handleService}>
-                SERVICES</h6>
+              <Link to={"/services"} style={{ textDecoration: "none" }}>
+                <h6 style={styleService} onMouseEnter={handleService} onMouseLeave={handleService}>
+                  SERVICES
+                </h6>
+              </Link>
             </li>
             <li>
-              <h6
-              style={styleProject}
-              onMouseEnter={handleProject}
-              onMouseLeave={handleProject}>PROJECTS</h6>
+              <Link to={"/work"} style={{ textDecoration: "none" }}>
+                <h6 style={styleProject} onMouseEnter={handleProject} onMouseLeave={handleProject}>
+                  PROJECTS
+                </h6>
+              </Link>
             </li>
             <li>
-              <h6
-              style={styleRate}
-              onMouseEnter={handleRate}
-              onMouseLeave={handleRate}>RATES</h6>
+              <Link to={"/rates"} style={{ textDecoration: "none" }}>
+                <h6 style={styleRate} onMouseEnter={handleRate} onMouseLeave={handleRate}>
+                  RATES
+                </h6>
+              </Link>
             </li>
           </ul>
         </section>
       </main>
+      <Outlet />
     </>
   );
 };

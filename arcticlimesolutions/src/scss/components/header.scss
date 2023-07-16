@@ -1,6 +1,13 @@
 @import '../base/typography.scss';
 @import '../abstracts/variables.scss';
 
+* {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+};
+
 header {
     background-color: $DUSK;
     height: 4.85vw;

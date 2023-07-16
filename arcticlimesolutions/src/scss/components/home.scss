@@ -36,6 +36,11 @@ h1 {
     font-size: 3.7vw;
     color: $SMOKEWHITE;
     z-index: 1;
+    pointer-events:none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 };
 
 video {
@@ -62,4 +67,9 @@ h6 {
     font-size: 1.4vw;
     color: $ARCTICLIME;
     cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 };
+

@@ -1,6 +1,14 @@
 @import '../base/typography.scss';
 @import '../abstracts/variables.scss';
 
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+;
 .footerblock {
     width: 100vw;
     height: 4.5vw;
@@ -533,13 +541,3 @@ a {
         margin-bottom: 0.5vh;
     };
 };
-
-
-
-
-
-
-
-
-
-

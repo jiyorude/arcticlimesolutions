@@ -1,9 +1,8 @@
-- Homepage buttons for services, rates and work
+- Create 404 page
 - Homepage responsive
 - Update all of the CSS to % if possible. Make a backup of the original scss file.
 - Check all of the homepage content for typos. SCSS text bigger on desktop?
 - Once homepage is fully done, update to version 0.1.0
-- React Routers to both pages
 - Add header to both pages
 - Create a tiny footer that returns the user to the homepage.
 - Link ARC Lime logo to homepage as well
@@ -37,7 +36,7 @@
 - Update to version 0.3.3
 - Beta test: test website on smartphones and computers. 
 - Beta test: test transitions, pages, modals
-- Beta test: check for spelling typo'same
+- Beta test: check for spelling typo's
 - Create list of things to change
 - Final change
 - Update to version 0.3.4
