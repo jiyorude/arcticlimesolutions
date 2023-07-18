@@ -1,0 +1,19 @@
+@import '../base/typography.scss';
+@import '../abstracts/variables.scss';
+
+.flowroot {
+    display: flow-root;
+};
+
+.pricescontainer {
+    background-color: $SMOKEWHITE;
+    width: 100%;
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vw;
+};
+
+.serviceOne, .serviceTwo, .pricesone, .pricesTwo {
+    border: 2px solid blue;
+};

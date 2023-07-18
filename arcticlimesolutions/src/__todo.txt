@@ -1,5 +1,4 @@
-- Once homepage is fully done, update to version 0.1.0
-- Create a tiny footer that returns the user to the homepage on all other pages.
+- Prop drilling function for footerAlt in which it takes the URL to the page as a prop.
 - Check homepage/terms and conditions for typos.
 - Update to version 0.1.1
 - Create grid on services page
