@@ -49,18 +49,17 @@ video {
 
 .menu {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: center;
     align-items: flex-end;
-    width: 33vw;
     bottom: 5vw;
-    padding-bottom: 0.8vw;
-    z-index: 1;
     position: fixed;
-    margin-top: 5vw;
-    top: 50%;
     overflow: hidden;
-    border: 2px solid red;
+    top: 65%;
+};
+
+.unordered {
+    flex-flow: row nowrap;  
 };
 
 h6 {
@@ -81,25 +80,21 @@ h6 {
    };
 
    .menu {
-        display: flex;
-        justify-content: unset;
-        align-items: unset;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 20%;
-        height: 80%;
-        bottom: 5vh;
-        padding-bottom: unset;
-        z-index: 1;
-        position: fixed;
-        margin-bottom: unset;
-        top: unset;
-        overflow: unset;
-        border: 2px solid red;
+       display: flex;
+       justify-content: center;
+       align-items: unset;
+       bottom: 12vh;
+       top: unset;
+       position: fixed;
+       overflow: hidden;
+       line-height: 4.5vh;
+   };
+
+   .unordered {
+       flex-flow: column nowrap;
    };
 
    h6 {
-        font-size: 1.4vh;
+        font-size: 2.5vh;
    };
 };
-

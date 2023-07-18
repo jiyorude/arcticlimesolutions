@@ -47,8 +47,9 @@ const Main = () => {
           Your video does not support fullscreen video.
         </video>
         <h1>Solutions. For every screen.</h1>
+        </main>
         <section className="menu">
-          <ul>
+          <ul className='unordered'>
             <li>
               <Link to={"/services"} style={{ textDecoration: "none" }}>
                 <h6 style={styleService} onMouseEnter={handleService} onMouseLeave={handleService}>
@@ -72,7 +73,6 @@ const Main = () => {
             </li>
           </ul>
         </section>
-      </main>
       <Outlet />
     </>
   );

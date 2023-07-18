@@ -2,10 +2,14 @@ ARCTIC LIME SOLUTIONS WEBSITE
 © JORDY VEENSTRA 2023
 
 CURRENT VERSION:
-0.0.3
+0.1.0
 
 
 CHANGELOG:
+
+0.1.0 - July 18, 2023
+Main: fully responsive and working properly
+Homepage completed (header, main and footer complete)
 
 0.0.3 - July 16, 2023
 Terms and Conditions: Content added in both NL/EN with scroll buttons.

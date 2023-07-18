@@ -1,10 +1,6 @@
-- HOMEPAGE: FIX MENU BAR FLEXBOX
-- Homepage responsive
-- Check all of the homepage content for typos. SCSS text bigger on desktop?
 - Once homepage is fully done, update to version 0.1.0
-- Add header to both pages
-- Create a tiny footer that returns the user to the homepage.
-- Link ARC Lime logo to homepage as well
+- Create a tiny footer that returns the user to the homepage on all other pages.
+- Check homepage/terms and conditions for typos.
 - Update to version 0.1.1
 - Create grid on services page
 - Fill grid with content
@@ -41,6 +37,9 @@
 - Update to version 0.3.4
 
 - CHECK THE SCSS THINGS, MAYBE ADD MEDIA QUERIES FOR LARGER SCREENS THAT TEXT BECOMES SMALLER BECAUSE VW IS REALLY BIG ON 4k, OR UPDATE FONTS TO EM/REM/%
+- SEE IF YOU CAN UPDATE THE CODE WITH USEREDUCER 
+- CODE CLEANUP
+
 - Final check before deployment
 - Update to version 1.0.0 - Initial deployment
 - Deploy react app
