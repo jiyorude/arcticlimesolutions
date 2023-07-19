@@ -1,8 +1,9 @@
-- Create grid on services page
-- Fill grid with content
+- Fill grid with content, create missing photos.
+- Update SCSS so that pictures look good in tablet/smartphone setups
+- useReducer system for all effects on grid.
 - Update to version 0.1.2
-- Ideas for content modals
-- Create prop drilling system in combination with anime so that a full screen page pops up with the content
+- Ideas for content modals in database 
+- Create prop drilling system in combination with anime so that a full screen page pops up with the content with useRef and useEffect
 - Content for services
 - Update to version 0.1.3
 - Services: SCSS 100%, responsive, content, prop drilling works properly
