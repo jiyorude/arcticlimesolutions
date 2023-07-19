@@ -1,0 +1,9 @@
+[
+        {"id": 0, "description": "Homepage", "url": "/"},
+        {"id": 1, "description": "Rates", "url": "/rates"},
+        {"id": 2, "description": "Services", "url": "/services"},
+        {"id": 3, "description": "Projects", "url": "/work"}
+]
+
+
+

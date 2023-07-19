@@ -8,7 +8,7 @@ const Rates = () => {
     <>
     <Header />
     <RatesContent />
-    <FooterAlt />
+    <FooterAlt selectedID={0}/>
     </>
   )
 }

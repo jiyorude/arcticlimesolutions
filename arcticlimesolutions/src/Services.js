@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <>
     <Header />
-    <FooterAlt />
+    <FooterAlt selectedID={0} />
     </>
   )
 }

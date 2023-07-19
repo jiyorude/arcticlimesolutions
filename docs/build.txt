@@ -2,10 +2,13 @@ ARCTIC LIME SOLUTIONS WEBSITE
 © JORDY VEENSTRA 2023
 
 CURRENT VERSION:
-0.1.0
+0.1.1
 
 
 CHANGELOG:
+
+0.1.1 - July 19, 2023
+Created prop drill system for changing 'back' url in footerAlt
 
 0.1.0 - July 18, 2023
 Main: fully responsive and working properly

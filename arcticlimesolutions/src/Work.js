@@ -6,7 +6,7 @@ const Work = () => {
   return (
     <>
     <Header />
-    <FooterAlt />
+    <FooterAlt selectedID={0} />
     </>
   )
 }
