@@ -14,7 +14,9 @@ const NotFound = () => {
 
   useEffect(() => {
     if (countdown === 0) {
-        window.location.href = "/"
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 1000);  
     }
   }, [countdown]);
  
