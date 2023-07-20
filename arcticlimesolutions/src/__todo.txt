@@ -1,4 +1,4 @@
-- Fill grid with content, create missing photos.
+- Work on useReducer system where every single button is changed separately instead of all at once.
 - Update SCSS so that pictures look good in tablet/smartphone setups
 - useReducer system for all effects on grid.
 - Update to version 0.1.2
