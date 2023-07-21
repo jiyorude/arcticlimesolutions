@@ -1,0 +1,16 @@
+[
+    {
+    "id": 1,
+    "title": "VIDEO EDITING",
+    "description": "Description for Item 1",
+    "photo": "item1.jpg",
+    "text": "Text for Item 1"
+  },
+  {
+    "id": 2,
+    "title": "Item 2",
+    "description": "Description for Item 2",
+    "photo": "item2.jpg",
+    "text": "Text for Item 2"
+  }
+]

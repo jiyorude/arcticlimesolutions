@@ -16,7 +16,7 @@ const NotFound = () => {
     if (countdown === 0) {
       setTimeout(() => {
         window.location.href = "/";
-      }, 1000);  
+      }, 500);  
     }
   }, [countdown]);
  

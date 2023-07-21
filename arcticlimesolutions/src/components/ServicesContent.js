@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import "../css/services.min.css";
-import Editing from '../image/jpg/services/Editing.jpg';
+import serviceData from "../database/services.json";
+import Editing from "../image/jpg/services/Editing.jpg";
 import MoGraph from "../image/jpg/services/Mograph.jpg";
 import Audio from "../image/jpg/services/Audio.jpg";
 import Animation from "../image/jpg/services/Animatie.jpg";
@@ -15,28 +16,35 @@ import Upscale from "../image/jpg/services/Upscale.jpg";
 import Translation from "../image/jpg/services/Translation.jpg";
 
 const colorDB = {
-  colors: [
-    "#D0FF14",
-    "#BA1A50",
-    "#32A0AE",
-    "#32B156",
-    "#9DE637",
-  ]
+  colors: ["#D0FF14", "#BA1A50", "#32A0AE", "#32B156", "#9DE637"],
 };
 
 const ServicesContent = () => {
+  const [colors, setColors] = useState(Array(12).fill("#FAFAFA"));
+  const [selectedItem, setSelectedItem] = useState(null);
 
-  const [coloring, setColoring] = useState(colorDB.colors[0]);
-
-  const handleColor = () => {
-    const randomColor = Math.floor(Math.random()  * colorDB.colors.length);
-    setColoring(colorDB.colors[randomColor]);
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
   };
 
-  const returnColor = {
-    color: "#FAFAFA"
+  const closeModal = () => {
+    setSelectedItem(null);
   };
-  
+
+  const handleColor = (index) => {
+    const randomColorIndex = Math.floor(Math.random() * colorDB.colors.length);
+    const randomColor = colorDB.colors[randomColorIndex];
+    const newColors = [...colors];
+    newColors[index] = randomColor;
+    setColors(newColors);
+  };
+
+  const handleMouseLeave = (index) => {
+    const newColors = [...colors];
+    newColors[index] = "#FAFAFA";
+    setColors(newColors);
+  };
+
   return (
     <main className="flowroot white">
       <section className="servicegrid">
@@ -44,13 +52,27 @@ const ServicesContent = () => {
           className="servicecontent editing"
           style={{
             backgroundImage: `url(${Editing})`,
+            position: "relative",
           }}
         >
+          <div
+            onMouseEnter={() => {
+              handleColor(0);
+            }}
+            onMouseLeave={() => {
+              handleMouseLeave(0);
+            }}
+          ></div>
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[0] }}
+            onMouseEnter={() => {
+              handleColor(0);
+            }}
+            onMouseLeave={() => {
+              handleMouseLeave(0);
+            }}
+            onClick={() => handleItemClick(serviceData[0])}
           >
             Video Editing
           </p>
@@ -59,17 +81,32 @@ const ServicesContent = () => {
           className="servicecontent mograph"
           style={{
             backgroundImage: `url(${MoGraph})`,
+            position: "relative",
           }}
         >
+          <div
+            onMouseEnter={() => {
+              handleColor(1);
+            }}
+            onMouseLeave={() => {
+              handleMouseLeave(1);
+            }}
+          ></div>
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[1] }}
+            onMouseEnter={() => {
+              handleColor(1);
+            }}
+            onMouseLeave={() => {
+              handleMouseLeave(1);
+            }}
+            onClick={() => handleItemClick(serviceData[1])}
           >
             Motion Graphics
           </p>
         </div>
+
         <div
           className="servicecontent audio"
           style={{
@@ -78,9 +115,10 @@ const ServicesContent = () => {
         >
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[2] }}
+            onMouseEnter={() => handleColor(2)}
+            onMouseLeave={() => handleMouseLeave(2)}
+            onClick={() => handleItemClick(serviceData[2])}
           >
             Audio Post
           </p>
@@ -93,9 +131,10 @@ const ServicesContent = () => {
         >
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[3] }}
+            onMouseEnter={() => handleColor(3)}
+            onMouseLeave={() => handleMouseLeave(3)}
+            onClick={() => handleItemClick(serviceData[3])}
           >
             Animation
           </p>
@@ -108,9 +147,10 @@ const ServicesContent = () => {
         >
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[4] }}
+            onMouseEnter={() => handleColor(4)}
+            onMouseLeave={() => handleMouseLeave(4)}
+            onClick={() => handleItemClick(serviceData[4])}
           >
             Subtitling
           </p>
@@ -123,9 +163,10 @@ const ServicesContent = () => {
         >
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[5] }}
+            onMouseEnter={() => handleColor(5)}
+            onMouseLeave={() => handleMouseLeave(5)}
+            onClick={() => handleItemClick(serviceData[5])}
           >
             Translation
           </p>
@@ -139,9 +180,10 @@ const ServicesContent = () => {
         >
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[6] }}
+            onMouseEnter={() => handleColor(6)}
+            onMouseLeave={() => handleMouseLeave(6)}
+            onClick={() => handleItemClick(serviceData[6])}
           >
             Delivery
           </p>
@@ -154,9 +196,10 @@ const ServicesContent = () => {
         >
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[7] }}
+            onMouseEnter={() => handleColor(7)}
+            onMouseLeave={() => handleMouseLeave(7)}
+            onClick={() => handleItemClick(serviceData[7])}
           >
             DVD/Blu-Ray Authoring
           </p>
@@ -169,9 +212,10 @@ const ServicesContent = () => {
         >
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[8] }}
+            onMouseEnter={() => handleColor(8)}
+            onMouseLeave={() => handleMouseLeave(8)}
+            onClick={() => handleItemClick(serviceData[8])}
           >
             File Duplication
           </p>
@@ -184,9 +228,10 @@ const ServicesContent = () => {
         >
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[9] }}
+            onMouseEnter={() => handleColor(9)}
+            onMouseLeave={() => handleMouseLeave(9)}
+            onClick={() => handleItemClick(serviceData[9])}
           >
             Digitization/Upscaling
           </p>
@@ -199,9 +244,10 @@ const ServicesContent = () => {
         >
           <p
             className="context"
-            style={{ color: coloring ? coloring : returnColor.color }}
-            onMouseEnter={handleColor}
-            onMouseLeave={() => setColoring("")}
+            style={{ color: colors[10] }}
+            onMouseEnter={() => handleColor(10)}
+            onMouseLeave={() => handleMouseLeave(10)}
+            onClick={() => handleItemClick(serviceData[10])}
           >
             UX/UI Design
           </p>
@@ -212,9 +258,29 @@ const ServicesContent = () => {
             backgroundImage: `url(${WebDev})`,
           }}
         >
-          <p className="context" style={{color: coloring ? coloring : returnColor.color}} onMouseEnter={handleColor} onMouseLeave={() => setColoring("")}>Web/Software Development</p>
+          <p
+            className="context"
+            style={{ color: colors[11] }}
+            onMouseEnter={() => handleColor(11)}
+            onMouseLeave={() => handleMouseLeave(11)}
+            onClick={() => handleItemClick(serviceData[11])}
+          >
+            Web/Software Development
+          </p>
         </div>
       </section>
+      
+      {/*MODAL*/}
+      {selectedItem && (
+        <>
+          <div className="modalcontainer" onClick={closeModal}>
+            <h2 className="modalheader">{selectedItem.title}</h2>
+            <p className="modaldesc">{selectedItem.description}</p>
+            <img src={selectedItem.photo} alt={selectedItem.alt} srcset={selectedItem.photo} />
+            <p className="modaltxt">{selectedItem.text}</p>
+          </div>
+        </>
+      )}
     </main>
   );
 };

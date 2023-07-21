@@ -41,6 +41,8 @@
        -moz-user-select: none; 
         -ms-user-select: none; 
             user-select: none;
+    cursor: pointer;
+    z-index: 2;
 };
 
 .editing, .mograph, .audio, .animation, .subs, .delivery, .authoring, .duplication, .uxui, .webdev, .upscale, .translation {
@@ -61,8 +63,19 @@
     background-position-y:top !important;
 };
 
-
-
+.modalcontainer {
+    width: 100vw;
+    height: 60vh;
+    background-color: $DUSK;
+    opacity: 1;
+    z-index: 3;
+    border: 10px solid orange;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center; 
+    bottom: 0;
+}
 
 @media screen and (min-width: 1px) and (max-width: 599px) and (orientation: portrait) {
     .servicegrid {
