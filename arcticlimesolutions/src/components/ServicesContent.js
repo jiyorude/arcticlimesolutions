@@ -25,10 +25,18 @@ const ServicesContent = () => {
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
+    setTimeout(() => {
+      document.body.scrollIntoView({ behavior: "smooth", block: "end" });
+    }, 100);
   };
 
   const closeModal = () => {
-    setSelectedItem(null);
+    setTimeout(() => {
+      document.body.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
+    setTimeout(() => {
+      setSelectedItem(null);
+    }, 300);
   };
 
   const handleColor = (index) => {
@@ -269,7 +277,6 @@ const ServicesContent = () => {
           </p>
         </div>
       </section>
-      
       {/*MODAL*/}
       {selectedItem && (
         <>

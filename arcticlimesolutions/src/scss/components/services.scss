@@ -3,6 +3,9 @@
 
 .white {
     background-color: $SMOKEWHITE;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 0;
 };
 
 .servicegrid {
@@ -19,7 +22,6 @@
     padding: 20px;
     background-color: $SMOKEWHITE;
     border: 2px solid red;
-    z-index: 0;
 };
 
 .servicecontent {
@@ -30,7 +32,6 @@
     align-items: flex-end;
     padding-left: 0.7vw;
     padding-bottom: 0.5vw;
-
 };
 
 .context {
@@ -43,7 +44,6 @@
         -ms-user-select: none; 
             user-select: none;
     cursor: pointer;
-    z-index: 2;
 };
 
 .editing, .mograph, .audio, .animation, .subs, .delivery, .authoring, .duplication, .uxui, .webdev, .upscale, .translation {
@@ -69,13 +69,12 @@
     height: 60vh;
     background-color: $DUSK;
     opacity: 1;
-    z-index: 3;
     border: 10px solid orange;
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
     justify-content: center; 
-    bottom: 0;
+
 }
 
 @media screen and (min-width: 1px) and (max-width: 599px) and (orientation: portrait) {

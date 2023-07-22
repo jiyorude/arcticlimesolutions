@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from './components/Header'
+import HeaderAlt from './components/HeaderAlt'
 import FooterAlt from "./components/FooterAlt";
 import ServicesContent from './components/ServicesContent';
 
 const Services = () => {
   return (
     <>
-    <Header />
+    <HeaderAlt />
     <ServicesContent />
     <FooterAlt selectedID={0} />
     </>

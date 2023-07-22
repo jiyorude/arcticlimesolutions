@@ -8,13 +8,13 @@
             user-select: none;
 };
 
-header {
+.headeralt {
     background-color: $DUSK;
     height: 4.85vw;
     width: 100vw;
     position: fixed;
+    z-index: 1;
 };
-
 
 .arclimelogo {
     height: 7vw;
