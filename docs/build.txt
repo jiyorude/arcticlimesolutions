@@ -2,10 +2,17 @@ ARCTIC LIME SOLUTIONS WEBSITE
 © JORDY VEENSTRA 2023
 
 CURRENT VERSION:
-0.1.1
+0.1.3
 
 
 CHANGELOG:
+
+0.1.3 - July 23, 2023
+Services: Contents for service-block animation completed
+
+0.1.2 - July 23, 2023
+Services: Service grid fully completed and fully responsive
+Serivces: Prop drilling system for service content plus animations have been completed.
 
 0.1.1 - July 19, 2023
 Created prop drill system for changing 'back' url in footerAlt

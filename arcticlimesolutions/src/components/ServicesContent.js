@@ -267,7 +267,6 @@ const ServicesContent = () => {
           <div className="modalcontainer" onClick={closeModal}>
             <h2 className="modalheader">{selectedItem.title}</h2>
             <p className="modaldesc">{selectedItem.description}</p>
-            <img src={selectedItem.photo} alt={selectedItem.alt} srcset={selectedItem.photo} />
             <p className="modaltxt">{selectedItem.text}</p>
           </div>
         </>
