@@ -69,8 +69,48 @@
     align-items: center;
     flex-flow: column nowrap;
     justify-content: center; 
+};
 
-}
+.modalheader {
+    font-family: $BG;
+    color: $DUSK;
+    background-color: $SMOKEWHITE;
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+    padding-top: 0.3vw;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+    margin-top: 2vw;
+};
+
+.modaldesc {
+    font-family: $CS-ME;
+    color: $SMOKEWHITE;
+    font-size: 1.1vw;
+    letter-spacing: 2px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+};
+
+.modaltxt {
+    width: 40%;
+    font-family: $CS-RE;
+    color: $SMOKEWHITE;
+    font-size: 0.9vw;
+    text-align: justify;
+    margin-top: 1vw;
+    margin-bottom: 8.5vw;
+
+};
+
+.modalclose {
+    font-family: $CS-LI;
+    color: $SMOKEWHITE;
+    font-size: 0.5vw;
+    letter-spacing: 5px;
+    text-transform: uppercase;    
+};
 
 @media screen and (min-width: 1px) and (max-width: 669px) and (orientation: portrait) {
     .servicegrid {
@@ -92,7 +132,7 @@
     };
 
     .context {
-        font-size: 1.1vh;
+        font-size: 1.3vh;
     };
 
     .audio {
@@ -107,6 +147,40 @@
     .upscale {
         background-position-x: left !important;
         background-position-y: center !important;
+    };
+
+    .modalcontainer {
+        height: unset;
+    }
+
+    .modalheader {
+        font-size: 2vh;
+        margin-bottom: 0.5vh;
+        padding-top: 0.3vh;
+        padding-left: 0.2vh;
+        padding-right: 0.2vh;
+        margin-top: 5vh;
+    };
+    
+    .modaldesc {
+        font-size: 1.2vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        width: 65%;
+        text-align: center;
+    };
+    
+    .modaltxt {
+        font-size: 1vh;
+        margin-top: 1vh;
+        margin-bottom: 6vh;
+        line-height: 1.5vh;
+    };
+
+    .modalclose {
+        font-size: 0.7vh !important;
+        letter-spacing: 0.5px !important;
+        margin-bottom: 2vh;
     };
 };
 
@@ -135,7 +209,6 @@
         font-size: 1.1vh;
     };
     
-
     .mograph {
         background-position-y: center;
         background-position-x: left;
@@ -161,5 +234,43 @@
     .uxui {
         background-position-y: center;
         background-position-x: left;
-    }
+    };
+        .modalcontainer {
+            height: 40vh;
+        }
+    
+        .modalheader {
+            font-size: 2vh;
+            margin-bottom: 0.5vh;
+            padding-top: 0.3vh;
+            padding-left: 0.2vh;
+            padding-right: 0.2vh;
+            margin-top: 5vh;
+        }
+    
+        ;
+    
+        .modaldesc {
+            font-size: 1.2vh;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+    
+        ;
+    
+        .modaltxt {
+            font-size: 1vh;
+            margin-top: 1vh;
+            margin-bottom: 6vh;
+            line-height: 1.5vh;
+        }
+    
+        ;
+    
+        .modalclose {
+            font-size: 0.7vh !important;
+            letter-spacing: 0.5px !important;
+        }
+    
+        ;
 };

@@ -1,5 +1,3 @@
-- Content for services
-- Update to version 0.1.3
 - Services: SCSS media queries/SCSS for service block content
 - Page transition from homepage to service grid
 - Update to version 0.2.0

@@ -268,6 +268,7 @@ const ServicesContent = () => {
             <h2 className="modalheader">{selectedItem.title}</h2>
             <p className="modaldesc">{selectedItem.description}</p>
             <p className="modaltxt">{selectedItem.text}</p>
+            <p className="modalclose">Click anywhere in this purple block to go back.</p>
           </div>
         </>
       )}
