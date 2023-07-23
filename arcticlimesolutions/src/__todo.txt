@@ -1,4 +1,4 @@
-- SCSS Services: Media queries for tablet and smartphone. Update pictures so they look good.
+
 - Update to version 0.1.2
 - Content for services
 - Media queries for services
@@ -6,7 +6,6 @@
 - Services: SCSS 100%, responsive, content, prop drilling works properly
 - Page transition from homepage to service grid
 - Update to version 0.2.0
-
 - Think of idea of work page. Similar to old ARCTIC LIME? Something new?
 - Same header and simple footer from the services page
 - Route back to home 

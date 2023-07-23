@@ -63,14 +63,6 @@ const ServicesContent = () => {
             position: "relative",
           }}
         >
-          <div
-            onMouseEnter={() => {
-              handleColor(0);
-            }}
-            onMouseLeave={() => {
-              handleMouseLeave(0);
-            }}
-          ></div>
           <p
             className="context"
             style={{ color: colors[0] }}
@@ -92,14 +84,6 @@ const ServicesContent = () => {
             position: "relative",
           }}
         >
-          <div
-            onMouseEnter={() => {
-              handleColor(1);
-            }}
-            onMouseLeave={() => {
-              handleMouseLeave(1);
-            }}
-          ></div>
           <p
             className="context"
             style={{ color: colors[1] }}
