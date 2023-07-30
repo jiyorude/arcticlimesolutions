@@ -2,10 +2,13 @@ ARCTIC LIME SOLUTIONS WEBSITE
 © JORDY VEENSTRA 2023
 
 CURRENT VERSION:
-0.1.3
+0.2.0
 
 
 CHANGELOG:
+
+0.20 - July 30, 2023
+Overall: Fully working page transitions
 
 0.1.3 - July 23, 2023
 Services: Contents for service-block animation completed

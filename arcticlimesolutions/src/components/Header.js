@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <>
-      <header>
+      <header >
         <Link to={"/"} style={{ textDecoration: "none" }}>
           <Logo className="arclimelogo" />
         </Link>

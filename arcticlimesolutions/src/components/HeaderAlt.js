@@ -68,7 +68,7 @@ const HeaderAlt = () => {
         </ul>
       </header>
 
-      <Outlet />
+    <Outlet/>
     </>
   );
 };

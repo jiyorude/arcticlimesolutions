@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { ReactComponent as FlagNL } from "../image/svg/flag_nl.svg";
 import { ReactComponent as FlagUSA } from "../image/svg/flag_us.svg";
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   const [privHover, setPrivHover] = useState(false);
@@ -153,7 +154,10 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="footerblock">
+      <motion.footer className="footerblock" 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      exit={{ opacity: 0 }}>
         <div className="newsticker">
           <div className="ticker-wrap">
             <div className="ticker">
@@ -220,7 +224,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-      </footer>
+      </motion.footer>
       {/* TERMS AND CONDITIONS */}
       {terms && (
         <>
@@ -1643,7 +1647,7 @@ const Footer = () => {
       ;{/*PRIVACY STATEMENT*/}
       {priv && (
         <>
-        <div className="privbg" ref={privBGIn}></div>
+          <div className="privbg" ref={privBGIn}></div>
           <div className="privacy">
             <div className="privacycontainer" ref={privAniIn}>
               <div className="language">

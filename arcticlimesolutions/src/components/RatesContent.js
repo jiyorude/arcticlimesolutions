@@ -1,9 +1,13 @@
 import React from 'react'
 import "../css/prices.min.css";
+import { motion } from "framer-motion";
 
 const RatesContent = () => {
   return (
-    <main className="flowroot">
+    <motion.main className="flowroot" 
+    initial={{ opacity: 0 }} 
+    animate={{ opacity: 1 }} 
+    exit={{ opacity: 0 }}>
       <main className="pricescontainer">
         <div className="serviceOne">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti distinctio saepe architecto hic rem, minima
@@ -76,7 +80,7 @@ const RatesContent = () => {
           corrupti. Maxime obcaecati et dolorum nemo a.
         </div>
       </main>
-    </main>
+    </motion.main>
   );
 }
 

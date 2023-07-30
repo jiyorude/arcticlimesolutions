@@ -14,6 +14,7 @@ import UXUI from "../image/jpg/services/UX.jpg";
 import WebDev from "../image/jpg/services/Web.jpg";
 import Upscale from "../image/jpg/services/Upscale.jpg";
 import Translation from "../image/jpg/services/Translation.jpg";
+import { motion } from "framer-motion";
 
 const colorDB = {
   colors: ["#D0FF14", "#BA1A50", "#32A0AE", "#32B156", "#9DE637"],
@@ -54,7 +55,10 @@ const ServicesContent = () => {
   };
 
   return (
-    <main className="flowroot white">
+    <motion.main className="flowroot white" 
+    initial={{ opacity: 0 }} 
+    animate={{ opacity: 1 }} 
+    exit={{ opacity: 0 }}>
       <section className="servicegrid">
         <div
           className="servicecontent editing"
@@ -272,7 +276,7 @@ const ServicesContent = () => {
           </div>
         </>
       )}
-    </main>
+    </motion.main>
   );
 };
 

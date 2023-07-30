@@ -1,10 +1,9 @@
 import React from "react";
 import "../css/home.min.css";
-import "../css/up.min.css";
 import indexvid from "../video/index.mp4";
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
-
+import { motion } from 'framer-motion';
 
 const Main = () => {
   const [service, setService] = useState(false);
@@ -43,14 +42,17 @@ const Main = () => {
 
   return (
     <>
-      <main className="container">
+      <motion.main className="container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         <video loading="lazy" autoPlay loop muted className="fullscreen">
           <source src={indexvid} type="video/mp4" />
           Your video does not support fullscreen video.
         </video>
         <h1>Solutions. For every screen.</h1>
-      </main>
-      <section className="menu">
+      </motion.main>
+      <motion.section className="menu" 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      exit={{ opacity: 0 }}>
         <ul className="unordered">
           <li>
             <Link to={"/services"} style={{ textDecoration: "none" }}>
@@ -74,7 +76,7 @@ const Main = () => {
             </Link>
           </li>
         </ul>
-      </section>
+      </motion.section>
       <Outlet />
     </>
   );
