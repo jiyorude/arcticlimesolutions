@@ -1,27 +1,23 @@
-
-- Think of idea of work page. Similar to old ARCTIC LIME? Something new?
-- Same header and simple footer from the services page
-- Route back to home 
-- Update to version 0.2.1
-- Code work page content
-- Page transitions
-- Update to version 0.2.2
-- Work: SCSS 100%, responsive, content
-- Create work pages and route these properly
+- Rates page content
+- Rates page media queries 
+- Test rates page 
 - Update to version 0.3.0
-- Create work project page based on old arctic lime project page
-- Page transitions
+- Work Template page for prop drilling
 - Update to version 0.3.1
-- Work project: SCSS 100%, responsive
+- SCSS and media queries for Work Template page (one page for all)
 - Update to version 0.3.2
-- Fill all work pages with content
-- Update to version 0.3.3
+- Make database for all of the projects and content
+- Map all of the database content on the Main Work page.
+- Link all of these to the one work template page
+- Media queries SCCSS
+- Test everything if it works 
+- Update to version 0.4.0
 - Beta test: test website on smartphones and computers. 
 - Beta test: test transitions, pages, modals
 - Beta test: check for spelling typo's
 - Create list of things to change
 - Final change
-- Update to version 0.3.4
+- Update to version 0.5.0
 
 - CHECK THE SCSS THINGS, MAYBE ADD MEDIA QUERIES FOR LARGER SCREENS THAT TEXT BECOMES SMALLER BECAUSE VW IS REALLY BIG ON 4k, OR UPDATE FONTS TO EM/REM/%
 - SEE IF YOU CAN UPDATE THE CODE WITH USEREDUCER 
