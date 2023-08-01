@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 4vw;
+    
     justify-content: space-evenly;
 };
 
@@ -19,10 +20,10 @@
     border: 2px solid blue;
     width: 20%;
     padding-top: 1vw;
+    padding-bottom: 4vw;
 };
 
 .priceOne, .priceTwo {
-    text-align: right;
     padding-right: 1vw;
 };
 
@@ -50,7 +51,54 @@
 };
 
 .rateheader {
-    text-transform: uppercase;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    width:fit-content;
     background-color: $DUSK;
     color: $SMOKEWHITE;
-}
+    font-family: $BG;
+    text-transform: UPPERCASE;
+    padding: 0.3vw;
+    font-size: 0.65vw;
+};
+
+.right {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 100%;
+};
+
+.servdescr {
+    font-family: $CS-BO;
+    font-size: 0.6vw;
+    letter-spacing: 0.4px;
+    padding-bottom: 0.3vw;
+};
+
+.servprice {
+    font-family: $CS-RE;
+    text-align: right;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: 0.4px;
+    padding-bottom: 0.3vw;
+    font-size: 0.6vw;
+};
+
+.servextra {
+    font-family: $CS-TH;
+    font-size: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 95%;
+    border: 2px solid red;
+    word-break: break-all;
+};
+
+.servhidden {
+    font-family: $CS-TH;
+    font-size: 0.5vw;
+    display: none;
+    width: 95%;
+    padding-bottom: 0.5vw;
+    word-break: break-all;
+};
