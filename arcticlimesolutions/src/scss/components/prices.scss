@@ -12,23 +12,15 @@
     display: flex;
     flex-direction: row;
     margin-top: 4vw;
-    
-    justify-content: space-evenly;
+    justify-content: center;
 };
 
-.serviceOne, .serviceTwo, .priceOne, .priceTwo {
-    border: 2px solid blue;
-    width: 20%;
-    padding-top: 1vw;
-    padding-bottom: 4vw;
-};
-
-.priceOne, .priceTwo {
-    padding-right: 1vw;
-};
-
-.serviceOne, .serviceTwo {
-    padding-left: 1vw;
+.pricesflex {
+    display: flex;
+    border: 2px solid red;
+    width: 40%;
+    flex-wrap: wrap;
+    margin-top: 1vw;
 };
 
 .tax {
@@ -49,6 +41,17 @@
     justify-content: center;
     align-items: center;
 };
+
+.spanrow {
+    width: 100%;
+    display: inline-flex;
+    height: 3vh;
+    border: 2px solid red;
+};
+
+.spanrow:first-child {
+    margin-bottom: 1vw;
+}
 
 .rateheader {
     width:-webkit-fit-content;
@@ -73,6 +76,7 @@
     font-size: 0.6vw;
     letter-spacing: 0.4px;
     padding-bottom: 0.3vw;
+    padding-left: 1vw;
 };
 
 .servprice {
@@ -83,22 +87,35 @@
     letter-spacing: 0.4px;
     padding-bottom: 0.3vw;
     font-size: 0.6vw;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    padding-right: 1vw;
 };
 
 .servextra {
     font-family: $CS-TH;
     font-size: 0.5vw;
     padding-bottom: 0.5vw;
-    width: 95%;
-    border: 2px solid red;
-    word-break: break-all;
+    width: 100%;
+    word-break: word-break;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    padding-left: 1vw;
 };
 
 .servhidden {
     font-family: $CS-TH;
     font-size: 0.5vw;
-    display: none;
+    opacity: 0;
     width: 95%;
     padding-bottom: 0.5vw;
-    word-break: break-all;
+    word-break: word-break;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 };
