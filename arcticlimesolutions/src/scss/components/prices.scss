@@ -5,6 +5,7 @@
     display: flow-root;
 };
 
+
 .pricescontainer {
     background-color: $SMOKEWHITE;
     width: 100%;
@@ -13,12 +14,13 @@
     flex-direction: row;
     margin-top: 4vw;
     justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
 };
 
 .pricesflex {
     display: flex;
-    border: 2px solid red;
-    width: 40%;
+    width: 60%;
     flex-wrap: wrap;
     margin-top: 1vw;
 };
@@ -27,8 +29,8 @@
     text-align: center;
     margin-top: 0.5vw;
     font-family: $CS-LI;
-    font-size: 0.6vw;
-    line-height: 0.8vw;
+    font-size: 0.8vw;
+    line-height: 1vw;
 }
 
 .row {
@@ -45,9 +47,12 @@
 .spanrow {
     width: 100%;
     display: inline-flex;
-    height: 3vh;
-    border: 2px solid red;
+    height: 4vh;
 };
+
+.spanrow:nth-child(38), .spanrow:nth-child(39) {
+    height: 5.5vh;
+}
 
 .spanrow:first-child {
     margin-bottom: 1vw;
@@ -61,19 +66,21 @@
     color: $SMOKEWHITE;
     font-family: $BG;
     text-transform: UPPERCASE;
-    padding: 0.3vw;
-    font-size: 0.65vw;
+    padding: 0.4vw;
+    font-size: 0.8vw;
 };
 
 .right {
     position: -webkit-sticky;
     position: sticky;
     left: 100%;
-};
+    z-index: 0 !important;
+    text-align: right;
+}
 
 .servdescr {
     font-family: $CS-BO;
-    font-size: 0.6vw;
+    font-size: 0.75vw;
     letter-spacing: 0.4px;
     padding-bottom: 0.3vw;
     padding-left: 1vw;
@@ -86,7 +93,7 @@
     text-decoration: underline;
     letter-spacing: 0.4px;
     padding-bottom: 0.3vw;
-    font-size: 0.6vw;
+    font-size: 0.75vw;
     -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -96,8 +103,8 @@
 
 .servextra {
     font-family: $CS-TH;
-    font-size: 0.5vw;
-    padding-bottom: 0.5vw;
+    font-size: 0.6vw;
+    padding-bottom: 0.6vw;
     width: 100%;
     word-break: word-break;
     -webkit-user-select: none;
@@ -107,15 +114,3 @@
     padding-left: 1vw;
 };
 
-.servhidden {
-    font-family: $CS-TH;
-    font-size: 0.5vw;
-    opacity: 0;
-    width: 95%;
-    padding-bottom: 0.5vw;
-    word-break: word-break;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-};

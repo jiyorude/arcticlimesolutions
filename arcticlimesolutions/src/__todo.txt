@@ -1,5 +1,4 @@
-- Rates page content
-- Rates page media queries 
+- Rates page media queries portrait and tablet
 - Test rates page 
 - Update to version 0.3.0
 - Work Template page for prop drilling
