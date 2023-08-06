@@ -31,7 +31,7 @@ const RatesContent = () => {
           </div>
           <div className="spanrow">
             <div className="servextra">
-              Dit uurtarief geldt op de meeste video en vrijwel alle web/software development werkzaamheden.<br></br>
+              Dit uurtarief geldt op de meeste video en vrijwel alle web/software development werkzaamheden.
               This hourly rate applies to most video- and practically all web/software development activities.
             </div>
           </div>
@@ -142,14 +142,14 @@ const RatesContent = () => {
           <div className="spanrow">
             <div className="servextra">
               U dient uw master-bestanden als een 2K of 4K Master bestand aan te leveren met een Flat of Scope
-              resolutie. <br></br>Vergeet niet uw losse 5.1/7.1 audiolagen mee te sturen! Hulp nodig met aanleveren?
+              resolutie. Vergeet niet uw losse 5.1/7.1 audiolagen mee te sturen! Hulp nodig met aanleveren?
               Geen probleem!
             </div>
           </div>
           <div className="spanrow">
             <div className="servextra">
               You are supposed to deliver your master-files as a 2K/4K Master file with either a Flat or Scope
-              resolution. <br></br>Don't forget to provide your separate 5.1/7.1 audio layers! Need any help with
+              resolution. Don't forget to provide your separate 5.1/7.1 audio layers! Need any help with
               delivering the files to us? No problem!
             </div>
           </div>
@@ -167,16 +167,16 @@ const RatesContent = () => {
           <div className="spanrow">
             <div className="servextra">
               De DCP kan digitaal of op een externe harde schijf worden aangeboden. Als u een externe harde schijf heeft
-              opgestuurd, dan zal de DCP op dezelfde schijf worden opgeslagen<br></br>nadat de schijf is
-              geherformatteerd naar EXT2/EXT3. Oude bestanden op de schijf zullen dan verloren gaan. <br></br>De DCP kan
+              opgestuurd, dan zal de DCP op dezelfde schijf worden opgeslagen nadat de schijf is
+              geherformatteerd naar EXT2/EXT3. Oude bestanden op de schijf zullen dan verloren gaan.  De DCP kan
               ook op een nieuwe harde schijf worden opgeslagen. Zie kosten hieronder voor schijven en verzenden.
             </div>
           </div>
           <div className="spanrow">
             <div className="servextra">
               DCP's can be delivered digitally or on a external Hard Drive. If you shipped a Hard Drive to ARCTIC LIME
-              Solutions then the same Drive will be used to save the DCP on<br></br>after the drive is reformatted to
-              EXT2/EXT3. Existing files on the drive will be irreversibly lost. <br></br>DCP's may be saved on a new
+              Solutions then the same Drive will be used to save the DCP on after the drive is reformatted to
+              EXT2/EXT3. Existing files on the drive will be irreversibly lost.  DCP's may be saved on a new
               external Hard Drive if desired. See below for Hard Drive and shipping costs.
             </div>
           </div>
