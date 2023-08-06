@@ -47,15 +47,16 @@
 .spanrow {
     width: 100%;
     display: inline-flex;
-    height: 4vh;
+    height: 6vh;
 };
 
 .spanrow:nth-child(38), .spanrow:nth-child(39) {
-    height: 5.5vh;
+    height: 10vh;
 }
 
 .spanrow:first-child {
     margin-bottom: 1vw;
+    height: 3.5vh;
 }
 
 .rateheader {
@@ -104,8 +105,8 @@
 .servextra {
     font-family: $CS-TH;
     font-size: 0.6vw;
-    padding-bottom: 0.6vw;
-    width: 100%;
+    padding-bottom: 1vw;
+    width: 40%;
     word-break: word-break;
     -webkit-user-select: none;
         -moz-user-select: none;
@@ -114,3 +115,139 @@
     padding-left: 1vw;
 };
 
+@media screen and (min-width: 1px) and (max-width: 669px) and (orientation: portrait) {
+    .pricescontainer {
+        margin-top: 4vh;    
+    };
+    
+    .pricesflex {
+        margin-top: 1vh;
+    };
+    
+    .tax {
+        margin-top: 0.5vh;
+        font-size: 0.7vh;
+        line-height: 1vh;
+        width: 95%;
+        word-break: break-all;
+        margin: 0 auto;
+        text-align: center;
+    };
+    
+    .row {    
+        margin-top: 12vh;
+        font-size: 2vh;
+    };
+    
+    .spanrow {
+        height: 3vh;
+    };
+
+    .spanrow:nth-child(33) {
+        height: 6vh;
+    };
+    
+    .spanrow:nth-child(38) {
+        height: 7.5vh;
+    };
+
+    .spanrow:nth-child(39) {
+        height: 5vh;
+    }
+
+    .spanrow:nth-child(45) {
+        height: 5vh;
+    }
+    
+    .spanrow:first-child {
+        margin-bottom: 2vh;
+        height: 2vh;
+    }
+    
+    .rateheader {
+        padding: 0.4vh;
+        font-size: 0.9vh;
+    };
+    
+    .servdescr {
+        font-size: 0.72vh;
+        padding-bottom: 0.3vh;
+        padding-left: 0vh;
+        width: 50%;
+    };
+    
+    .servprice {
+        padding-bottom: 0.3vh;
+        font-size: 0.72vh;
+        padding-right: 0vh;
+        width: 60%;
+    };
+    
+    .servextra {
+        font-size: 0.75vh;
+        padding-bottom: 1vh;
+        padding-left: 0vh;
+        width: 100%;
+    };  
+};
+
+@media  screen and (min-width:670px) and (orientation: portrait) {
+    .pricescontainer {
+        margin-top: 4vh;
+    };
+    
+    .pricesflex {
+        margin-top: 1vh;
+    };
+    
+    .tax {
+        margin-top: 0.5vh;
+        font-size: 0.9vh;
+        line-height: 1.2vh;  
+    };
+    
+    .row {
+        margin-top: 12vh;
+        font-size: 2vh;
+    };
+    
+    .spanrow {
+        height: 3.5vh;
+    };
+    
+    .spanrow:nth-child(38),
+    .spanrow:nth-child(39) {
+        height: 6vh;
+     };
+    
+    .spanrow:first-child {
+        margin-bottom: 1vh;
+        height: 2vh;
+    };
+    
+    .rateheader {
+        padding: 0.4vh;
+        font-size: 1vh;
+    };
+    
+    .servdescr {
+        font-size: 0.9vh;
+        padding-bottom: 0.5vh;
+        padding-left: 0vh;
+        width: 60%;
+    };
+    
+    .servprice {
+        padding-bottom: 0.3vh;
+        font-size: 0.8vh;
+        padding-right: 0vh;
+        width: 40%;
+    };
+    
+    .servextra {
+        font-size: 0.8vh;
+        padding-bottom: 1vh;
+        padding-left: 0vh;
+        width: 100%;
+    };
+};
