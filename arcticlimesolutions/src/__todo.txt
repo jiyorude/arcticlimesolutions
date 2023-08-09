@@ -1,4 +1,4 @@
-- Work Template page for prop drilling
+- Work Template page for prop drilling - css for scroll bar??? arctic lime green?
 - Update to version 0.3.1
 - SCSS and media queries for Work Template page (one page for all)
 - Update to version 0.3.2
