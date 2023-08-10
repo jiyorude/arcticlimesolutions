@@ -1,6 +1,25 @@
 @import '../base/typography.scss';
 @import '../abstracts/variables.scss';
 
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: $ARCTICLIME;
+};
+
+::-webkit-scrollbar-track {
+    background: $DUSK;
+};
+
+::-webkit-scrollbar-thumb {
+    background: $ARCTICLIME;
+};
+
+::-webkit-scrollbar-thumb:hover {
+    background: $COTTONCANDY;
+};
+
 .workarea {
     width: 100vw;
     height: 100vh;
@@ -31,6 +50,11 @@ article {
     padding: 0.2vw;
     font-family: $CS-RE;
     font-size: 0.5vw;
+    scrollbar-color: $ARCTICLIME $DUSK;
+};
+
+article:hover {
+    scrollbar-color: $COTTONCANDY $DUSK;
 };
 
 .clientinfo {
@@ -49,4 +73,4 @@ article {
 .clientname {
     font-family: $BG;
     color: $ARCTICLIME;
-};
+}; 

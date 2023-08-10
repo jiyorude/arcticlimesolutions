@@ -12,7 +12,7 @@ const WorkTemplate = () => {
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       exit={{opacitiy: 0}}>
-        <section className="workdescr">
+        <section className="workdescr scrollbar">
             <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, architecto. Ipsam impedit sunt possimus autem totam, libero ratione incidunt quos ducimus nihil veniam sed facilis. Culpa quos sit sapiente alias?
             Harum facere adipisci dicta, debitis officiis sed praesentium voluptas facilis eius quibusdam ut rerum excepturi nemo similique quo optio numquam impedit et mollitia in eveniet, architecto aspernatur. Eos, praesentium id.
             Rerum sed veritatis id dolorem minus? Ipsam provident minima excepturi fuga fugiat labore, placeat sit. Sed placeat consectetur officia consequuntur voluptatibus? Eligendi explicabo minus, autem aliquam modi rerum. Saepe, dignissimos.
