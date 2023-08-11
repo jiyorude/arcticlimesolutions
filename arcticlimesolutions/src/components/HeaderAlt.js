@@ -5,7 +5,6 @@ import { ReactComponent as WhatsApp } from "../image/svg/whatsapp.svg";
 import { ReactComponent as EMail } from "../image/svg/email.svg";
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 const HeaderAlt = () => {
   const [hover, setHover] = useState(false);
@@ -29,7 +28,7 @@ const HeaderAlt = () => {
 
   return (
     <>
-      <motion.header className="headeralt"
+      <header className="headeralt"
       initial={{ opacity: 0}}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0}}>
@@ -70,8 +69,7 @@ const HeaderAlt = () => {
             </a>
           </li>
         </ul>
-      </motion.header>
-
+      </header>
     <Outlet/>
     </>
   );

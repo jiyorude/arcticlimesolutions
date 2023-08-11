@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { ReactComponent as FlagNL } from "../image/svg/flag_nl.svg";
 import { ReactComponent as FlagUSA } from "../image/svg/flag_us.svg";
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 
 const Footer = () => {
   const [privHover, setPrivHover] = useState(false);

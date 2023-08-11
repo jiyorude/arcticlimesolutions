@@ -37,7 +37,7 @@ const ServicesContent = () => {
     }, 100);
     setTimeout(() => {
       setSelectedItem(null);
-    }, 300);
+    }, 500);
   };
 
   const handleColor = (index) => {
