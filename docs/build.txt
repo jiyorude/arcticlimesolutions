@@ -7,6 +7,10 @@ CURRENT VERSION:
 
 CHANGELOG:
 
+0.3.1 - August ?? 2023
+Work Template: Created initial Work Template page
+SCSS: Updated scrollbars everywhere
+
 0.3.0 - August 6, 2023
 Rates: Page completed incl media queries
 Services: Updated smartphone media queries

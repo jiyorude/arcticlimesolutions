@@ -8,6 +8,7 @@
 - Map all of the database content on the Main Work page.
 - Link all of these to the one work template page
 - Media queries SCCSS
+- Create a system that if the contents of the project page are empty, link to 404 instead.
 - Test everything if it works 
 - Update to version 0.4.0
 - Beta test: test website on smartphones and computers. 
