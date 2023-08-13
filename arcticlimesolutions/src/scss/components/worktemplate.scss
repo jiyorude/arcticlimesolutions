@@ -63,8 +63,8 @@ article:hover {
     font-size: 1.9vw;
     line-height: 1.7vw;
     position: fixed;
-    bottom: 7vw;
-    left: 13vw;
+    bottom: 1.5vw;
+    left: 20vw;
     margin: 0 auto;
     text-align: justify;
     text-justify: distribute-all-lines;
@@ -79,17 +79,21 @@ article:hover {
 .backgroundvideo {
     top: 0;
     left: 18vw;
-    width: 82%;
-    height: 100%;
-    overflow: hidden;
-    -o-object-fit: cover;
-    object-fit: cover;
+    width: 82vw;
+    height: 100vh;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     position: fixed;
     z-index: -1;
+};
+
+.bgprojectvid {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 };
 
 .roleinfo {
@@ -104,70 +108,96 @@ article:hover {
     letter-spacing: 0.4px;
     font-size: 0.8vw;
     line-height: 1.3vw;
-}
+};
 
+ //Smartphone queries
 @media screen and (min-width: 1px) and (max-width: 669px) and (orientation: portrait) {
-  
     .workdescr {
         background-color: $DUSK;
-        top: 4.82vh;
+        top: 7vh;
         height: 95.2vh;
         width: 100%;
-        height: 20%;
+        height: 40%;
+        padding-bottom: 3%;
     };
-    
+
     article {
-        left: -0.5vh;
-        top: 10vh;
-        line-height: 1vh;
-        padding: 0.2vh;
-        font-size: 0.75vh;
+        left: 1vh;
+        top: 8.5vh;
+        margin: 0 auto !important;
+        line-height: 1.7vh;
+        padding-right: 2vh;
+        font-size: 1.2vh;
     };
     
     .clientinfo { 
-        font-size: 1.9vh;
-        line-height: 1.7vh;
+        font-size: 3vh;
+        line-height: 2.8vh;
         bottom: 7vh;
-        left: 13vh;
+        width: 40%;
+        left: 2.2vh;
     };
     
-        .clientname {
-            font-family: $BG;
-            color: $ARCTICLIME;
-        }
+    .backgroundvideo {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    };
+
+    .roleinfo {
+        top: 40%;
+        bottom: unset;
+        right: unset;
+        font-size: 1vh;
+        line-height: 1.2vh;
+        width: 100%;
+        text-align: center;
+        padding-top: 1.4%;
+    };
+};
+
+// Tab queries
+@media screen and (min-width: 670px) and (orientation: portrait) {
+    .workdescr {
+        background-color: $DUSK;
+        top: 7vh;
+        height: 95.2vh;
+        width: 100%;
+        height: 40%;
+    };
     
-        ;
+    article {
+        left: 1vh;
+        top: 7vh;
+        margin: 0 auto !important;
+        line-height: 1.7vh;
+        padding-right: 2vh;
+        font-size: 1.2vh;
+    };
     
-        .backgroundvideo {
-            top: 0;
-            left: 18vw;
-            width: 82%;
-            height: 100%;
-            overflow: hidden;
-            -o-object-fit: cover;
-            object-fit: cover;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            position: fixed;
-            z-index: -1;
-        }
+    .clientinfo {
+        font-size: 3vh;
+        line-height: 2.8vh;
+        bottom: 7vh;
+        width: 40%;
+        left: 2.5vh;
+    };
     
-        ;
+    .backgroundvideo {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    };
     
-        .roleinfo {
-            position: fixed;
-            z-index: 0;
-            bottom: 1.5vw;
-            right: 1.5vw;
-            text-align: right;
-            text-transform: uppercase;
-            color: $SMOKEWHITE;
-            font-family: $CS-TH;
-            letter-spacing: 0.4px;
-            font-size: 0.8vw;
-            line-height: 1.3vw;
-        }
-    
-}
+    .roleinfo {
+        top: 40.5vh;
+        bottom: unset;
+        right: unset;
+        font-size: 1.3vh;
+        line-height: 1.4vh;
+        width: 100%;
+        text-align: center;
+    };
+};

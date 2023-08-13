@@ -1,6 +1,5 @@
 - Work Template page for prop drilling 
 - Update scroll bar everywhere else
-- Add motion to all of the other sections found on the work template page.
 - Update to version 0.3.1
 - SCSS and media queries for Work Template page (one page for all)
 - Update to version 0.3.2
