@@ -8,7 +8,24 @@
     user-select: none;
 }
 
-;
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: $ARCTICLIME;
+};
+
+::-webkit-scrollbar-track {
+    background: $DUSK;
+};
+
+::-webkit-scrollbar-thumb {
+    background: $ARCTICLIME;
+};
+
+::-webkit-scrollbar-thumb:hover {
+    background: $COTTONCANDY;
+};
+
 .footerblock {
     width: 100vw;
     height: 4.5vw;
@@ -255,6 +272,11 @@ h5 {
     scroll-behavior: smooth;
     flex-flow: column nowrap;
     opacity: 1;
+    scrollbar-color: $ARCTICLIME $SMOKEWHITE
+};
+
+.termcontent:hover {
+    scrollbar-color: $COTTONCANDY $SMOKEWHITE;
 };
 
 a {
@@ -379,6 +401,11 @@ a {
     overflow-y: scroll;
     scroll-behavior: smooth;
     flex-flow: column nowrap;
+    scrollbar-color: $ARCTICLIME $SMOKEWHITE
+};
+    
+.privcontent:hover {
+    scrollbar-color: $COTTONCANDY $SMOKEWHITE;
 };
 
 .privheader {

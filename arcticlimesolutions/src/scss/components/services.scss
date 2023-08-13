@@ -1,6 +1,25 @@
 @import '../base/typography.scss';
 @import '../abstracts/variables.scss';
 
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: $ARCTICLIME;
+};
+
+::-webkit-scrollbar-track {
+    background: $DUSK;
+};
+
+::-webkit-scrollbar-thumb {
+    background: $ARCTICLIME;
+};
+
+::-webkit-scrollbar-thumb:hover {
+    background: $COTTONCANDY;
+};
+
 .white {
     background-color: $SMOKEWHITE;
 };
