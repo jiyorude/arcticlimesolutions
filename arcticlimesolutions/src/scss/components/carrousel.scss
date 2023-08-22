@@ -1,0 +1,19 @@
+@import '../base/typography.scss';
+@import '../abstracts/variables.scss';
+
+.carrouselgrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid yellow;
+};
+
+.gridcontent {
+    display: grid;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    overflow-x: auto;
+}
