@@ -1,10 +1,31 @@
 @import '../base/typography.scss';
 @import '../abstracts/variables.scss';
 
+html {
+    scrollbar-color: $ARCTICLIME $SMOKEWHITE;
+};
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: $ARCTICLIME;
+};
+
+::-webkit-scrollbar-track {
+    background: $DUSK;
+};
+
+::-webkit-scrollbar-thumb {
+    background: $ARCTICLIME;
+};
+
+::-webkit-scrollbar-thumb:hover {
+    background: $COTTONCANDY;
+};
+
 .flowroot {
     display: flow-root;
 };
-
 
 .pricescontainer {
     background-color: $SMOKEWHITE;
@@ -17,6 +38,10 @@
     position: -webkit-sticky;
     position: sticky;
 };
+
+.pricescontainer:hover {
+    scrollbar-color: $DUSK $SMOKEWHITE !important;
+}
 
 .pricesflex {
     display: flex;

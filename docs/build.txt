@@ -2,14 +2,20 @@ ARCTIC LIME SOLUTIONS WEBSITE
 © JORDY VEENSTRA 2023
 
 CURRENT VERSION:
-0.3.0
+0.3.1
 
 
 CHANGELOG:
 
-0.3.1 - August ?? 2023
+0.4.0 - ?? ?? 2023
+Work Template: Database complete
+Work Template: Completed prop drilling system for project
+SCSS: Updated mobile/tablet queries for prices
+
+0.3.1 - August 22 2023
 Work Template: Created initial Work Template page
-SCSS: Updated scrollbars everywhere
+SCSS: Updated scrollbars all across the website
+SCSS: Work Template fully responsive
 
 0.3.0 - August 6, 2023
 Rates: Page completed incl media queries

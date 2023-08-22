@@ -1,8 +1,3 @@
-- Work Template page for prop drilling 
-- Update scroll bar everywhere else
-- Update to version 0.3.1
-- SCSS and media queries for Work Template page (one page for all)
-- Update to version 0.3.2
 - Make database for all of the projects and content
 - Map all of the database content on the Main Work page.
 - Link all of these to the one work template page

@@ -1,7 +1,6 @@
 @import '../base/typography.scss';
 @import '../abstracts/variables.scss';
 
-
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -22,7 +21,9 @@
 
 .white {
     background-color: $SMOKEWHITE;
+    scrollbar-color: $ARCTICLIME $SMOKEWHITE;
 };
+
 
 .servicegrid {
     display: grid;
