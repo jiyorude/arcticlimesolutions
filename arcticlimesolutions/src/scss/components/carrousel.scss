@@ -7,13 +7,40 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    border: 2px solid yellow;
+    border: 2px solid black;
 };
 
 .gridcontent {
-    display: grid;
+    display: flex;
     width: 100%;
-    height: auto;
-    gap: 10px;
+    gap: 2vw;
     overflow-x: auto;
+    border: 2px solid green;
+    padding: 2vw;
+    margin-top: 2vw;
+};
+
+.projectblock {
+    border: 2px solid red;
+    width: 20vw;
+    height: 60vh;
+    border-radius: 10px;
+    -o-object-fit: cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: auto;
+};
+
+.projectblock:hover {
+    cursor: pointer;
+}
+
+.projtitle {
+    font-family: $CS-BO;
+    text-transform: uppercase;
+    padding: 1vw;
+    font-size: 1.2vw;
+    color: $SMOKEWHITE;
 }

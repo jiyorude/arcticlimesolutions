@@ -1,3 +1,4 @@
+- Fix issue with images not loading in the carrousel.
 - Make database for all of the projects and content
 - Map all of the database content on the Main Work page.
 - Link all of these to the one work template page
