@@ -8,9 +8,9 @@ CURRENT VERSION:
 CHANGELOG:
 
 0.4.0 - ?? ?? 2023
-Work Template: Database complete
-Work Template: Completed prop drilling system for project
-SCSS: Updated mobile/tablet queries for prices
+Work Carrousel: Database complete
+Work Carrousel: Completed prop drilling system for project
+SCSS: Updated mobile/tablet queries for work carrousel
 
 0.3.1 - August 22 2023
 Work Template: Created initial Work Template page
