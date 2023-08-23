@@ -1,15 +1,11 @@
 import React from "react";
 import "../css/carrousel.min.css";
-import workData from "../database/work.json";
-
+import projects from "../database/work";
 
 const ProjectCarrousel = () => {
   const ProjectBlock = ({ project }) => {
-    const blockStyle = {
-      backgroundImage: `url(${process.env.PUBLIC_URL + project.thumbnail})`,
-    };
     return (
-      <div className="projectblock" style={blockStyle}>
+      <div className="projectblock" style={{ backgroundImage: `url(${project.thumbnail})` }}>
         <h3 className="projtitle">{project.title}</h3>
         <p className="projdescr">{project.short}</p>
       </div>
@@ -19,7 +15,7 @@ const ProjectCarrousel = () => {
   return (
     <main className="carrouselgrid">
       <section className="gridcontent">
-        {workData.map((project, index) => (
+        {projects.map((project, index) => (
           <ProjectBlock key={index} project={project} />
         ))}
       </section>
