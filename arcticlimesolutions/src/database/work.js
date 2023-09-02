@@ -12,7 +12,7 @@ const projects = [
     roleTwo: "Video-Editing",
     roleThree: "Grading and Audio",
     thumbnail: require("../image/jpg/thumb/thumb_arena.jpg"),
-    video: "",
+    video: require("../video/arena.mp4"),
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projects = [
     roleTwo: "Video-Editing",
     roleThree: "Grading and Audio",
     thumbnail: require("../image/jpg/thumb/thumb_experience.jpg"),
-    video: "",
+    video: require("../video/experience.mp4"),
   },
   {
     id: 3,
@@ -87,7 +87,7 @@ const projects = [
     roleTwo: "Editing (YouTube/Social)",
     roleThree: "Grading",
     thumbnail: require("../image/jpg/thumb/thumb_chronometer.jpg"),
-    video: ""
+    video: require("../video/chronometer.mp4")
   }
 ];
 
