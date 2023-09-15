@@ -45,50 +45,48 @@ const projects = [
     roleTwo: "AI Operation",
     roleThree: "Poster Design",
     thumbnail: require("../image/jpg/thumb/thumb_mmf23.jpg"),
-    video: "",
+    video: require("../video/mmf.mp4"),
   },
   {
     id: 4,
     title: "Dominion",
     short: "JavaScript Algorithm",
     text: [
-      "DOMINION is an algorithm written in JavaScript that generates random data for the production of experimental, depthmap-based Quake III Machinima. The algorithm outputs a list of various elements that correspond to Quake III Machinima-making processes and certain parameters found in Q3MME. Technically speaking, DOMINION is able to generate endless variations of potential experimental machinima films."
+      "DOMINION is an algorithm written in JavaScript that generates random data for the production of experimental, depthmap-based Quake III Machinima. The algorithm outputs a list of various elements that correspond to Quake III Machinima-making processes and certain parameters found in Q3MME. Technically speaking, DOMINION is able to generate endless variations of potential experimental machinima films.",
     ],
     client: "Dominion",
     roleOne: "",
     roleTwo: "",
     roleThree: "Programming",
     thumbnail: require("../image/jpg/thumb/thumb_dominion.jpg"),
-    video: "",
+    video: require("../video/dominion.mp4"),
   },
   {
     id: 5,
     title: "Exotic",
     short: "AI Art",
-    text: [
-      "Generated with BlueWillow AI. Edited in Adobe Photoshop"
-    ],
+    text: ["Generated with BlueWillow AI. Edited in Adobe Photoshop"],
     client: "Exotic",
     roleOne: "",
     roleTwo: "Photo Editing",
     roleThree: "AI Operation",
     thumbnail: require("../image/jpg/thumb/thumb_exotic.jpg"),
-    video: ""
+    video: require("../video/exotic.mp4"),
   },
   {
     id: 6,
     title: "Chronometer",
     short: "YouTube Content",
     text: [
-      "Longform content for a YouTube Channel 'ChronometerCheck', which mainly focuses on watch reviews, best-of/top 10 video's, unboxings and other watch-related content"
+      "Longform content for a YouTube Channel 'ChronometerCheck', which mainly focuses on watch reviews, best-of/top 10 video's, unboxings and other watch-related content",
     ],
     client: "Chronometer Check",
     roleOne: "Audio Mix",
     roleTwo: "Editing (YouTube/Social)",
     roleThree: "Grading",
     thumbnail: require("../image/jpg/thumb/thumb_chronometer.jpg"),
-    video: require("../video/chronometer.mp4")
-  }
+    video: require("../video/chronometer.mp4"),
+  },
 ];
 
 export default projects;
