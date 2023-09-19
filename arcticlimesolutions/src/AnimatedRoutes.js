@@ -7,6 +7,7 @@ import Work from "./Work";
 import WorkTemplate from "./components/WorkTemplate";
 import NotFound from "./NotFound";
 import { AnimatePresence } from "framer-motion";
+import projects from "./database/work";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -17,7 +18,8 @@ const AnimatedRoutes = () => {
         <Route path="/rates" element={<Rates />} />
         <Route path="/services" element={<Services />} />
         <Route path="/work" element={<Work />} />
-        <Route path="/project" element={<WorkTemplate />} />
+        <Route path="/404" element={<NotFound />} />
+        <Route path="/project/:projectId" element={<WorkTemplate projects={projects} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>

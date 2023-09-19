@@ -10,7 +10,7 @@ CHANGELOG:
 0.4.0 - ?? ?? 2023
 Work Carrousel: Database complete
 Work Carrousel: Completed prop drilling system for project
-SCSS: Updated mobile/tablet queries for work carrousel
+SCSS: Updated mobile/tablet queries for work carrousel and project pages
 
 0.3.1 - August 22 2023
 Work Template: Created initial Work Template page

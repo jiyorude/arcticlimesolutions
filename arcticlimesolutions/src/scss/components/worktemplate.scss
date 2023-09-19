@@ -33,16 +33,15 @@
     z-index: 0;
 };
 
-article {
+.article {
     color: $SMOKEWHITE;
     width: 80%;
     max-height: 60%;
     overflow-y:auto;
     overflow-x:hidden;
     margin: 0 auto;
-    text-align: justify;
     text-justify:inter-word;
-    word-break: break-all;
+    word-break: keep-all;
     position: relative;
     left: -0.25vw;
     top: 4.5vw;
