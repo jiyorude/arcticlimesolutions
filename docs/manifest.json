@@ -1,5 +1,6 @@
 {
   "short_name": "ARCLIME",
+  "homepage": ".",
   "name": "ARCTIC LIME Solutions",
   "icons": [
     {
@@ -18,8 +19,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "./",
-  "homepage":"https://jiyorude.github.io/arcticlimesolutions/docs",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
