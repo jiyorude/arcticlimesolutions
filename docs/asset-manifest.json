@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/arcticlimesolutions/docs/static/css/main.7b2936c2.css",
-    "main.js": "/arcticlimesolutions/docs/static/js/main.c609a40a.js",
+    "main.js": "/arcticlimesolutions/docs/static/js/main.fb4f2576.js",
     "static/media/experience.mp4": "/arcticlimesolutions/docs/static/media/experience.9b05dddb96dfd99a4e3b.mp4",
     "static/media/arena.mp4": "/arcticlimesolutions/docs/static/media/arena.9f1780f8235b1e6c94b3.mp4",
     "static/media/chronometer.mp4": "/arcticlimesolutions/docs/static/media/chronometer.656ac704943b95dc94a5.mp4",
@@ -40,10 +40,10 @@
     "static/media/email.svg": "/arcticlimesolutions/docs/static/media/email.1f479986d48777ed16dd057c3f3a9963.svg",
     "static/media/flag_nl.svg": "/arcticlimesolutions/docs/static/media/flag_nl.cfe72ae0b3d6d848523400f70f59efe7.svg",
     "main.7b2936c2.css.map": "/arcticlimesolutions/docs/static/css/main.7b2936c2.css.map",
-    "main.c609a40a.js.map": "/arcticlimesolutions/docs/static/js/main.c609a40a.js.map"
+    "main.fb4f2576.js.map": "/arcticlimesolutions/docs/static/js/main.fb4f2576.js.map"
   },
   "entrypoints": [
     "static/css/main.7b2936c2.css",
-    "static/js/main.c609a40a.js"
+    "static/js/main.fb4f2576.js"
   ]
 }
